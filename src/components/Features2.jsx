@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import feature5 from "../assets/images/feature5.jpg";
+import feature5 from "../assets/images/yuk_animated_environmentally_sustainable_coin_for_website_logo__7caf2b54-cb5e-493f-a47d-8dc39a95586e.png";
 import feature6 from "../assets/images/feature6.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
@@ -22,13 +22,13 @@ export const Features2 = () => (
                 className="rounded-xl  custom-border-gray"
               />
             </div>
-            <div className="py-3 md:pl-20 lg:pl-12 md:pr-2 rounded ">
+            {/* <div className="py-3 md:pl-20 lg:pl-12 md:pr-2 rounded ">
               <img
                 src={feature6}
                 alt="f2"
                 className="rounded-xl  custom-border-gray"
               />
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -38,7 +38,7 @@ export const Features2 = () => (
               Dolor sit amet consectutar
             </span>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-              Issue tracking you’ll enjoy using
+              Reduce CO2 to earn token
             </h2>
             <p className="mb-12 text-customGrayText leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.

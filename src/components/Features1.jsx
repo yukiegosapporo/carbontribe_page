@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
-import feature1 from "../assets/images/feature1.jpg";
-import feature2 from "../assets/images/feature2.jpg";
-import feature3 from "../assets/images/feature3.jpg";
-import feature4 from "../assets/images/feature4.jpg";
+import feature1 from "../assets/images/yuk_satelite_scanning_the_eath_isometric_cartoon_8k_octane_06ae898c-b015-4395-a6d9-a32cd6fb8159.png";
+import feature2 from "../assets/images/yuk_satelite_scanning_the_eath_without_background_isometric_car_48e9ee53-838d-42e0-af63-8d1f0a117013.png";
+import feature3 from "../assets/images/yuk_forest_detection_from_space_website_image_0c01f990-b359-47f7-ab4f-c96f2a8a6a47.png";
+import feature4 from "../assets/images/yuk_forest_detection_from_space_website_image_9fd182d9-cfb8-4c42-bdca-bcd5e01de02b.png";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 export const Features1 = () => {
@@ -25,7 +25,7 @@ export const Features1 = () => {
                 Dolor sit amet consectutar
               </span>
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-                Unlike any tool you used before
+                Science backed digital twin
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -48,16 +48,16 @@ export const Features1 = () => {
               </ul>
             </div>
           </div>
-          <div className="w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center lg:pl-4 xl:px-8">
-            <div className="mb-8 lg:mb-0 w-full sm:w-1/2 px-2 lg:px-0">
-              <div className="mb-4 py-3 pl-3 pr-2 rounded">
+          <div className="w-3 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center lg:pl-4 xl:px-8">
+            <div className="">
+              <div className="rounded">
                 <img
                   src={feature1}
                   alt="f1"
                   className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
                 />
               </div>
-              <div className="py-3 pl-3 pr-2 rounded ">
+              {/* <div className="py-3 pl-3 pr-2 rounded ">
                 <img
                   src={feature2}
                   alt="f2"
@@ -79,7 +79,7 @@ export const Features1 = () => {
                   alt="f4"
                   className="rounded-xl  custom-border-gray"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

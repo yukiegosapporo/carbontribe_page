@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 import { InvitationModal } from "./InvitationModal";
-import featuresdiagonal from "../assets/images/featuresdiagonal.jpg";
+import featuresdiagonal from "../assets/images/yuk_forest_detection_from_space_website_image_0c01f990-b359-47f7-ab4f-c96f2a8a6a47.png";
 
 export const FeaturesDiagonal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,7 +35,7 @@ export const FeaturesDiagonal = () => {
               Dolor sit amet consectutar
             </span>
             <h2 className="mt-10 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-              Build &amp; Launch without problems
+              Forest owner? Register your forest
             </h2>
             <p className="mb-16 text-customGrayText leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.

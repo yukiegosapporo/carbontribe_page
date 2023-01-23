@@ -57,7 +57,7 @@ export const Hero = () => {
               className="w-80 sm:w-52 h-12 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customDarkBg3 border-customPrimary transition"
               onClick={() => setIsModalOpen(true)}
             >
-              Live demo
+              Demo (Coming soon)
             </div>
           </div>
         </motion.div>
@@ -91,9 +91,9 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      {isModalOpen && (
+      {/* {isModalOpen && (
         <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
-      )}
+      )} */}
     </section>
   );
 };

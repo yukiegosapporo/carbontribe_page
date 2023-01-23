@@ -2,6 +2,7 @@ import { FacebookIcon } from "../assets/icons/FacebookIcon";
 import { InstagramIcon } from "../assets/icons/InstagramIcon";
 // import { Logo } from "../assets/logos/Logo";
 import { TwitterIcon } from "../assets/icons/TwitterIcon";
+import { LinkedinIcon } from "../assets/icons/LinkedinIcon";
 
 
 export const Footer = () => {
@@ -25,9 +26,10 @@ export const Footer = () => {
               <div className="w-36 mx-auto lg:mx-0">
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
+                  href="https://www.linkedin.com/company/carbontribe/"
+                  target="_blank" rel="noopener noreferrer"
                 >
-                  <FacebookIcon />
+                  <LinkedinIcon />
                 </a>
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"

@@ -35,28 +35,26 @@ export const Features2 = () => (
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
           <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
             <span className="custom-block-subtitle">
-              Dolor sit amet consectutar
+              Preserving nature to earn
             </span>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
               Reduce CO2 to earn token
             </h2>
             <p className="mb-12 text-customGrayText leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque efficitur nisl sodales egestas lobortis. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit.
+              Our Eco Citizen Token is minted according to the Co2 emission capability of the Landowner's land and forest. By promoting forest retention instead of deforestation, landowners can protect biodiversity and nature to earn revenue by tokens. Companies can also use the certificates issued by Carbontribe to offset their carbon emissions in order to achieve their ESG goals.
             </p>
             <ul className="mb-6 text-white">
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Vestibulum viverra</span>
+                <span>Prevent double registration of Voluntary Carbon</span>
               </li>
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Morbi mollis metus pretium</span>
+                <span>Traceable value for nature conservation</span>
               </li>
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Etiam lectus nunc, commodo</span>
+                <span>Contribute to carbon offsetting</span>
               </li>
             </ul>
           </div>

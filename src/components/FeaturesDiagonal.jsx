@@ -32,21 +32,19 @@ export const FeaturesDiagonal = () => {
         <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
           <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
             <span className="custom-block-subtitle">
-              Dolor sit amet consectutar
+              Preserving nature to earn
             </span>
             <h2 className="mt-10 mb-8 text-4xl lg:text-5xl custom-block-big-title">
               Forest owner? Register your forest
             </h2>
             <p className="mb-16 text-customGrayText leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque efficitur nisl sodales egestas lobortis. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit.
+              Forest owners can assess the CO2 reduction potential of their land holdings by registering their land data with Carbontribe.
             </p>
             <div
               className="w-[210px] h-12 custom-button-colored mr-10 "
               onClick={() => setIsModalOpen(true)}
             >
-              Get Started
+              Coming soon
             </div>
           </div>
           <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">

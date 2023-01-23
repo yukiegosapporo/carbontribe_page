@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
+import { Logo } from "../assets/logos/logo";
 import { GithubIcon } from "../assets/icons/GithubIcon";
 import { FacebookIcon } from "../assets/icons/FacebookIcon";
 import { InstagramIcon } from "../assets/icons/InstagramIcon";
@@ -19,14 +19,15 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
+          
           <a className="navbar-link" href="#home" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
               <div className="text-white mr-2 text-6xl">
-                <TailcastLogo />
+                <Logo />
               </div>
-              <div className="text-white font-['Inter'] font-bold text-xl">
-                Tailcast
-              </div>
+              {/* <div className="text-white font-['Inter'] font-bold text-xl">
+                Carbontribe
+              </div> */}
             </div>
           </a>
         </motion.div>
@@ -43,7 +44,7 @@ export const Navbar = () => {
             <a className="navbar-link" href="#features" aria-label="Features">
               Features
             </a>
-            <a className="navbar-link" href="#pricing" aria-label="Pricing">
+            {/* <a className="navbar-link" href="#pricing" aria-label="Pricing">
               Pricing
             </a>
             <a className="navbar-link" href="#feedback" aria-label="Feedback">
@@ -51,7 +52,7 @@ export const Navbar = () => {
             </a>
             <a className="navbar-link" href="#FAQ" aria-label="FAQ">
               FAQ
-            </a>
+            </a> */}
           </div>
         </motion.div>
         <motion.div
@@ -60,7 +61,7 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <div className="grow basis-0 justify-end hidden lg:flex">
+          {/* <div className="grow basis-0 justify-end hidden lg:flex">
             <a
               className="text-white custom-border-gray rounded-xl
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
@@ -71,7 +72,7 @@ export const Navbar = () => {
               <GithubIcon />
               Source code
             </a>
-          </div>
+          </div> */}
         </motion.div>
         <div
           className="lg:hidden flex flex-col  px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-customDarkBg2"
@@ -111,7 +112,7 @@ export const Navbar = () => {
               >
                 Features
               </a>
-              <a
+              {/* <a
                 className="navbar-link"
                 href="#pricing"
                 onClick={() => setIsOpen(false)}
@@ -143,7 +144,7 @@ export const Navbar = () => {
               >
                 <GithubIcon />
                 Source code
-              </a>
+              </a> */}
             </div>
           </motion.div>
         )}

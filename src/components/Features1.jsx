@@ -22,28 +22,26 @@ export const Features1 = () => {
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <span className="custom-block-subtitle">
-                Dolor sit amet consectutar
+                Preserving nature to earn
               </span>
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
                 Science backed digital twin
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque efficitur nisl sodales egestas lobortis. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit.
+                Our AI model learns from satellite data, biodiversity data and predicts the capability of Co2 reduction of the land by our digital twin.
               </p>
               <ul className="mb-6 text-white">
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Vestibulum viverra</span>
+                  <span>Capturing satellite data</span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Morbi mollis metus pretium</span>
+                  <span>Analysing the capability of Co2 capturing of the land</span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Etiam lectus nunc, commodo</span>
+                  <span>Mint Eco Citizen Tokens for Landowners by the Co2 emission capability</span>
                 </li>
               </ul>
             </div>

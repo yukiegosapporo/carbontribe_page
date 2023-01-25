@@ -26,21 +26,21 @@ export const Footer = () => {
               <div className="w-36 mx-auto lg:mx-0">
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="https://www.linkedin.com/company/carbontribe/"
+                  href="/carbontribe_page/https://www.linkedin.com/company/carbontribe/"
                   target="_blank" rel="noopener noreferrer"
                 >
                   <LinkedinIcon />
                 </a>
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="https://twitter.com/Carbontribeme"
+                  href="/carbontribe_page/https://twitter.com/Carbontribeme"
                   target="_blank" rel="noopener noreferrer"
                 >
                   <TwitterIcon />
                 </a>
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
+                  href="/carbontribe_page/#"
                 >
                   <InstagramIcon />
                 </a>
@@ -51,22 +51,22 @@ export const Footer = () => {
                 <h3 className="mb-6 text-2xl font-bold text-white">Products</h3>
                 <ul>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a className="text-gray-400 hover:text-gray-300" href="/carbontribe_page/#" aria-label="" >
                       Services
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a className="text-gray-400 hover:text-gray-300" href="/carbontribe_page/#" aria-label="" >
                       About Us
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a className="text-gray-400 hover:text-gray-300" href="/carbontribe_page/#" aria-label="" >
                       News and Stories
                     </a>
                   </li>
                   <li>
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a className="text-gray-400 hover:text-gray-300" href="/carbontribe_page/#" aria-label="" >
                       Roadmap
                     </a>
                   </li>
@@ -78,32 +78,32 @@ export const Footer = () => {
                 </h3>
                 <ul>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a className="text-gray-400 hover:text-gray-300" href="/carbontribe_page/#" aria-label="" >
                       Organization Team
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a className="text-gray-400 hover:text-gray-300" href="/carbontribe_page/#" aria-label="" >
                       Our Journeys
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a className="text-gray-400 hover:text-gray-300" href="/carbontribe_page/#" aria-label="" >
                       Pricing Plans
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a className="text-gray-400 hover:text-gray-300" href="/carbontribe_page/#" aria-label="" >
                       Roadmap
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a className="text-gray-400 hover:text-gray-300" href="/carbontribe_page/#" aria-label="" >
                       Terms &amp; Conditions
                     </a>
                   </li>
                   <li>
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a className="text-gray-400 hover:text-gray-300" href="/carbontribe_page/#" aria-label="" >
                       Privacy Policy
                     </a>
                   </li>
@@ -113,22 +113,22 @@ export const Footer = () => {
                 <h3 className="mb-6 text-2xl font-bold text-white">Company</h3>
                 <ul>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a className="text-gray-400 hover:text-gray-300" href="/carbontribe_page/#" aria-label="" >
                       About Us
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a className="text-gray-400 hover:text-gray-300" href="/carbontribe_page/#" aria-label="" >
                       Jobs
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a className="text-gray-400 hover:text-gray-300" href="/carbontribe_page/#" aria-label="" >
                       Press
                     </a>
                   </li>
                   <li>
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
+                    <a className="text-gray-400 hover:text-gray-300" href="/carbontribe_page/#" aria-label="" >
                       Contact Us
                     </a>
                   </li>

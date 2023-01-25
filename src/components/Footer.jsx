@@ -26,14 +26,14 @@ export const Footer = () => {
               <div className="w-36 mx-auto lg:mx-0">
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="/carbontribe_page/https://www.linkedin.com/company/carbontribe/"
+                  href="https://www.linkedin.com/company/carbontribe/"
                   target="_blank" rel="noopener noreferrer"
                 >
                   <LinkedinIcon />
                 </a>
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="/carbontribe_page/https://twitter.com/Carbontribeme"
+                  href="https://twitter.com/Carbontribeme"
                   target="_blank" rel="noopener noreferrer"
                 >
                   <TwitterIcon />

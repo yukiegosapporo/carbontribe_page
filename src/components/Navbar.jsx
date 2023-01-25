@@ -71,10 +71,10 @@ export const Navbar = () => {
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
               href="https://carbontribe-preserving-nature-to.gitbook.io/carbontribe.me-lite-paper-beta/light-papaer-ver.1.0/general-information"
               target="_blank"
-              aria-label="source code"
+              aria-label="Light Paper"
             >
               <GithubIcon />
-              Light paper
+              Light Paper
             </a>
           </div>
         </motion.div>
@@ -148,7 +148,7 @@ export const Navbar = () => {
                 target="_blank"
               >
                 <GithubIcon />
-                Source code
+                Light Paper
               </a>
             </div>
           </motion.div>

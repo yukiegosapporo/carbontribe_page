@@ -52,7 +52,7 @@ export const Features1 = () => {
                 <img
                   src={feature1}
                   alt="f1"
-                  className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
+                  className="rounded-xl  custom-border-gray"
                 />
               </div>
               {/* <div className="py-3 pl-3 pr-2 rounded ">

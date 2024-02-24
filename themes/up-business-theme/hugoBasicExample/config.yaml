@@ -1,0 +1,67 @@
+baseURL: "https://www.example.com/"
+theme: "up-business-theme"
+languageCode: "en-us"
+
+title: "Carbontribe"
+
+# googleAnalytics: ""
+
+summaryLength: 20
+
+params:
+  title: "Carbontribe"
+  description: "Discover new ways to save the earth"
+  images: 
+    - "images/main_company_logo.png"
+
+  logo: "logo.png"
+
+  favicons:
+    themeColor: "#FFFFFF"
+    backgroundColor: "#FFFFFF"
+    faviconColor: "#000000"
+
+  social:
+    dribbble: "#"
+    instagram: "#"
+    facebook: "#"
+    twitter: "#"
+
+  location:
+    - "3891 Ranchview Dr. Richardson, California 62639"
+    - "4517 Washington Ave. Manchester, Kentucky 39495"
+
+  contact:
+    - "trungkienspktnd@gamail.com"
+    - "207.555.0119"
+
+  copyright: "© 2024 Carbontribe Labs OÜ All Rights Reserved"
+
+menus:
+  main:
+    - name: "Home"
+      url: "/#hero"
+      weight: 1
+
+    - name: "News"
+      url: "/blog"
+      weight: 2
+
+  buttons:
+    - name: "Book a call"
+      url: "/#"
+      weight: 5
+      pre: "btn btn-primary text-light"
+
+  footer:
+    - name: "Home"
+      url: "/#hero"
+      weight: 1
+
+    - name: "News"
+      url: "/blog"
+      weight: 2
+
+taxonomies:
+  series: "series"
+  tags: "tags"

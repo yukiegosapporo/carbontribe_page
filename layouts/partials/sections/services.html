@@ -1,0 +1,39 @@
+<section class="section services py-5">
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-12 col-xl-6">
+        {{ with .content.title }}
+        <h3 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h3>
+        {{ end }}
+        {{ with .content.text }}
+        <p class="text-black-61 text-center pb-3">{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row no-gutters">
+      {{ range .content.cards }}
+      <div class="col-16 col-xl-4">
+        <div class="card bg-green border-0 border-radius-34 p-4">
+          <div class="row no-gutters align-items-start">
+            <!-- Image on the left -->
+            <div class="col-sm-4">{{ with .image }}{{ partial "utilities/image-fluid.html" . }}{{ end }}</div>
+            <!-- Title on the right -->
+            <div class="col-sm-8">
+              <div class="card-body">
+                {{ with .title }}<h4 class="card-title text-center text-primary pb-4">{{ . }}</h4>{{ end }}
+                <!-- Text below both image and title -->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="card-body">
+              {{ with .text }}<p class="card-text text-black-61 pb-4">{{ . }}</p>{{ end }}
+              <!-- {{ with .button }}<a class="btn btn-outline-primary px-4" href="{{ .url }}">{{ .label }}</a>{{ end }} -->
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

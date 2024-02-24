@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DeImp23 on Carbontribe</title>
+    <link>http://localhost:1313/tags/deimp23/</link>
+    <description>Recent content in DeImp23 on Carbontribe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/deimp23/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Carbontribe speak at the DeImp23</title>
+      <link>http://localhost:1313/post/deimp-2023/</link>
+      <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/deimp-2023/</guid>
+      <description>&amp;ldquo;Happy to speak at the hashtag#DeImp23 on the topic of ReFi Firechat. The event will bring various projects leveraging web3 technologies in the fields of Regenerative Finance, Climate, Supply Chain, DeSci, Defi/UBI and more!</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,15 @@
+enabled: true
+id: "news"
+
+content:
+  title: "Latest News"
+  buttonPrimary:
+    label: "Read more news"
+    url: "#"
+  items:
+    - "images/ggg.png"
+    - "images/tepco.png"
+    - "images/brands-google.png"
+    #
+    # - "images/brands-spotify.png"
+    # - "images/brands-dropbox.png"

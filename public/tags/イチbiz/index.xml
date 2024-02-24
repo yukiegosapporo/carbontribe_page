@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>イチBiz on Carbontribe</title>
+    <link>http://localhost:1313/tags/%E3%82%A4%E3%83%81biz/</link>
+    <description>Recent content in イチBiz on Carbontribe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E3%82%A4%E3%83%81biz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Carbontribe Labs, developer of a carbon credit generation AI tool, awarded the Decarbonization Division Prize at the Ichibiz Awards hosted by the Japan&#39;s Cabinet Office</title>
+      <link>http://localhost:1313/post/ichi-biz-award-2023/</link>
+      <pubDate>Tue, 07 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/ichi-biz-award-2023/</guid>
+      <description>https://prtimes.jp/main/html/rd/p/000000001.000132024.html&#xA;Thrilled to announce that Carbontribe clinched the Decarbonization Award at the &amp;ldquo;IchiBiz Award,&amp;rdquo; a business contest organized by the Cabinet Office of Japan🇯🇵, harnessing geospatial information.</description>
+    </item>
+  </channel>
+</rss>

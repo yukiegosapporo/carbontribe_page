@@ -1,0 +1,27 @@
+enabled: true
+id: "services"
+
+content:
+  title: "Team"
+  # text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec quam nibh elit pellentesque velit netus suspendisse. Sed enim, pretium, montes, in ut dolor urna."
+  cards:
+    - image: "images/kay.png"
+      title: "Keiichiro (Kay) Yano"
+      text: "Ex-Google, ex-Salesforce, resides in Berlin. +15 years B2B tech enterprise bizdev. 4 times founder in Germany, Japan, Estonia. Web3 entrepreneur since 2017. IE Business School MBA"
+      button:
+        label: "Learn more"
+        url: "#"
+
+    - image: "images/yuki.png"
+      title: "Web development"
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+      button:
+        label: "Learn more"
+        url: "#"
+
+    - image: "images/services-web-development.png"
+      title: "Web development"
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+      button:
+        label: "Learn more"
+        url: "#"

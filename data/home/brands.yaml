@@ -1,0 +1,20 @@
+enabled: true
+id: "brands"
+
+content:
+  title: "We are saving the earth together with "
+  items:
+    - "images/ggg.png"
+    - "images/google.png"
+    - "images/tepco.png"
+    - "images/TEPCO Fintech.png"
+    - "images/brands-google.png"
+    - "images/ECOTA.png"
+    - "images/INATBA.png"
+    - "images/Nature Tech Collective (MRV collective).png"
+    - "images/PositiveBlockchain-logo.png"
+    - "images/TechFounder_Logo_greyscale_pos_150dpi.png"
+    - "images/TechFounder_Logo_Web_neg_300.png"
+    #
+    # - "images/brands-spotify.png"
+    # - "images/brands-dropbox.png"

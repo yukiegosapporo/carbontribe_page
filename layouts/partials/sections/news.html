@@ -1,0 +1,34 @@
+<section class="section news py-5">
+    <div class="container" role="main">
+        {{ with .content.title }}
+        <h3 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h3>
+        {{ end }}
+        {{ .Content }}
+        <div class="row no-gutters">
+            {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+            {{ range sort $pages "PublishDate" "desc" | first 3}}
+            <div class="col-16 col-xl-4">
+                <div class="card">
+                    {{ $image := resources.Get .Params.featured_image }}
+                    <img src="{{ ($image.Fill " 400x320 q100 Center").RelPermalink }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>
+                            <a href="{{.Permalink}}">{{.Title}} </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {{end}}
+        </div>
+        <div class="row justify-content-center">
+            <br>
+            <div class="col-12 col-xl-6 text-center">
+                {{ with .content.buttonPrimary }}
+                <a class="btn btn-outline-primary px-4" href="{{ .Site.BaseURL }}/blog">{{ .label }}<span
+                        class="ms-2"></span></a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+</section>

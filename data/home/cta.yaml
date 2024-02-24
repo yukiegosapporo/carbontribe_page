@@ -1,0 +1,9 @@
+enabled: true
+id: "cta"
+
+content:
+  title: "Forest owner? Register your forest"
+  image: "images/forest3.png"
+  buttonPrimary:
+    label: "Coming soon"
+    url: "#"

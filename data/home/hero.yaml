@@ -1,0 +1,15 @@
+enabled: true
+id: "hero"
+
+content:
+  title: "Discover new ways to save the earth **Carbontribe**"
+  text: "Preserving Nature to Earn Protocol"
+
+  buttonPrimary:
+    label: "Get started"
+    url: "#"
+
+  buttonSecondary:
+    label: "Demo (coming soon)"
+    url: ""
+

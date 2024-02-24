@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>INATBA on Carbontribe</title>
+    <link>http://localhost:1313/tags/inatba/</link>
+    <description>Recent content in INATBA on Carbontribe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/inatba/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Carbontribe selected as the most exciting project of 2024 in the ReFi</title>
+      <link>http://localhost:1313/post/inatba-2023/</link>
+      <pubDate>Sat, 30 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/inatba-2023/</guid>
+      <description>https://www.linkedin.com/posts/inatba_inatba-inatbaawards-dlt-activity-7141381390679359488-ZFhX?utm_source=share&amp;amp;utm_medium=member_desktop&#xA;Thrilled to share that we&amp;rsquo;ve been nominated for the most exciting project of 2024 in the ReFi category at the INATBA Awards!</description>
+    </item>
+  </channel>
+</rss>

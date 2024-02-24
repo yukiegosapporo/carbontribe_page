@@ -1,0 +1,27 @@
+enabled: true
+id: "services"
+
+content:
+  title: "Team"
+  # text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec quam nibh elit pellentesque velit netus suspendisse. Sed enim, pretium, montes, in ut dolor urna."
+  cards:
+    - image: "images/kay.png"
+      title: "Keiichiro (Kay) Yano, Co-Founder & CEO"
+      text: "Ex-Google, ex-Salesforce, resides in Berlin. +15 years B2B tech enterprise bizdev. 4 times founder in Germany, Japan, Estonia. Web3 entrepreneur since 2017. IE Business School MBA"
+      button:
+        label: "Learn more"
+        url: "#"
+
+    - image: "images/yuki.png"
+      title: "Yuki Katoh, Co-Founder & CTO"
+      text: "A master in computer vision, machine learning, AI, big data, blockchain and software engineering. University of Essex, MSC with distinction"
+      button:
+        label: "Learn more"
+        url: "#"
+
+    - image: "images/sachiko.png"
+      title: "Sachiko Miyake"
+      text: "Business Development Manager. Ex Itochu Corporation, handled international finance and trade of forestry resource products in the US, China and APAC. Berlin School of Economics and Law MBA"
+      button:
+        label: "Learn more"
+        url: "#"

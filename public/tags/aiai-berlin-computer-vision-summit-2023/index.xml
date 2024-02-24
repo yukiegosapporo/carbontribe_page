@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AIAI Berlin Computer Vision Summit 2023 on Carbontribe</title>
+    <link>http://localhost:1313/tags/aiai-berlin-computer-vision-summit-2023/</link>
+    <description>Recent content in AIAI Berlin Computer Vision Summit 2023 on Carbontribe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/aiai-berlin-computer-vision-summit-2023/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Carbontribe Labs speaking at AIAI Berlin Computer Vision summit 2023</title>
+      <link>http://localhost:1313/post/aiai-2023/</link>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/aiai-2023/</guid>
+      <description>https://world.aiacceleratorinstitute.com/location/berlin&#xA;Carbontribe Labs will be speaking at AIAI Berlin Computer Vision summit 2023 next week!&#xA;Join me in-person as the leading innovators from across the European ecosystem unite for the co-located Computer Vision Summit &amp;amp; Generative AI Summit.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Startup on Carbontribe</title>
+    <link>http://localhost:1313/tags/startup/</link>
+    <description>Recent content in Startup on Carbontribe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/startup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Carbontribe Labs OÜ is selected for TechFounders&#39; 19th batch</title>
+      <link>http://localhost:1313/post/tech-founders-2024-2/</link>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/tech-founders-2024-2/</guid>
+      <description>Carbontribe Labs OÜ has been selected for TechFounders&amp;rsquo; 19th batch with startups across EU and the US, starting from this week.</description>
+    </item>
+    <item>
+      <title>TechFounders welcomes 12 pioneering start-ups to their newest cohort</title>
+      <link>http://localhost:1313/post/tech-founders-2024-1/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/tech-founders-2024-1/</guid>
+      <description>https://www.linkedin.com/posts/techfounders_startups-founders-startupaccelerator-activity-7155189887900565505-BfBY?utm_source=share&amp;amp;utm_medium=member_desktop&#xA;Carbontribe Labs OÜ has been selected for TechFounders&amp;rsquo; 19th batch with 11 rising startups across EU and the US, starting from this week.</description>
+    </item>
+  </channel>
+</rss>

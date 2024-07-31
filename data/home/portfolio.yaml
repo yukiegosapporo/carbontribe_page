@@ -4,8 +4,8 @@ id: "portfolio"
 content:
   - image: "images/main_company_logo2.png"
     pretitle: "PRESERVING NATURE TO EARN"
-    title: "Science backed digital twin"
-    text: "Our AI model learns from satellite data, biodiversity data and predicts the capability of Co2 reduction of the land by our digital twin."
+    title: "Computer Vision dMRV"
+    text: "Our AI / Deep Learning model can learn, monitor & predict GHG sequestration with geospatial data. Always up-to-date. Scalable by our digital twin"
 
     buttons: 
       - label: "See live"
@@ -16,8 +16,8 @@ content:
 
   - image: "images/coin.png"
     pretitle: "PRESERVING NATURE TO EARN"
-    title: "Reduce CO2 to earn token"
-    text: "Our Eco Citizen Token is minted according to the Co2 emission capability of the Landowner's land and forest. By promoting forest retention instead of deforestation, landowners can protect biodiversity and nature to earn revenue by tokens. Companies can also use the certificates issued by Carbontribe to offset their carbon emissions in order to achieve their ESG goals."
+    title: "C Tribe Standard"
+    text: "Streamlined Full-digital credit generation protocol to automatically issue NFT credits for GHG offset & inset within Scope 1 to 3."
 
     buttons: 
       - label: "See live"
@@ -28,8 +28,8 @@ content:
 
   - image: "images/forest1.png"
     pretitle: "PRESERVING NATURE TO EARN"
-    title: "Analyze anything on the earth"
-    text: "Our patent-pending technology brings deep learning-based computer vision to analyze natural disasters such as floods or forest fires, as well as urban planning issues"
+    title: "Our protocol proves GHG reduction with full transparency"
+    text: "Accelerates “Real World Assets” economy without greenwashing. Currently we support CO2 (forests & mangroves), methane (irrigation extension) and nitrous oxide (fertilizer reduction)"
 
     buttons: 
       - label: "See live"

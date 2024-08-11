@@ -25,3 +25,17 @@ content:
       button:
         label: "Learn more"
         url: "#"
+
+    - image: "images/norika.png"
+      title: "Norika Kizawa, NFT Tokenomics Advisor"
+      text: "Expert in NFT / DeFi technical lead / architect, NFT marketplace, IEO, token economics design"
+      button:
+        label: "Learn more"
+        url: "#"
+
+    - image: "images/takayoshi.png"
+      title: "Takayoshi Sonoda, Carbon Credit Advisor"
+      text: "Specialized in third-party verification and promotes regional revitalization, corporate ESG branding, emission caluclation and ESG disclosure for startups"
+      button:
+        label: "Learn more"
+        url: "#"

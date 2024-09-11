@@ -12,7 +12,7 @@ tags = [
 ]
 +++
 
-https://www.linkedin.com/posts/paris-techstars-accelerator_paris-techstars-is-becoming-techstars-sustainability-activity-6983810513235238912-AAiJ?utm_source=share&utm_medium=member_desktop
+[Great news!](https://www.linkedin.com/posts/paris-techstars-accelerator_paris-techstars-is-becoming-techstars-sustainability-activity-6983810513235238912-AAiJ?utm_source=share&utm_medium=member_desktop)
 
 We are thrilled to announce that [Carbontribe Labs OÜ](https://www.linkedin.com/company/carbontribe/posts/?feedView=all) has been selected to join the [Techstars Sustainability Paris](https://www.linkedin.com/company/paris-techstars-accelerator/posts/?feedView=all)! 🎉
 Thank you to everyone who has supported us on this journey so far, and we look forward to the exciting challenges and opportunities ahead! 🚀

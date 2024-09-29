@@ -1,0 +1,22 @@
+enabled: true
+id: "methodologies"
+
+content:
+  title: "Our Coverage"
+  # buttonPrimary:
+  #   label: "Coming soon"
+  #   url: "#"
+
+  list:
+    - text: We capture Above-Ground Biomass (AGB), Below-Ground Biomass (BGB) and Soil organic carbon stock (SOCS) for a forest ARR (Afforestation, Reforestation, & Revegetation) project
+      img: images/solution3.png
+      client: CO₂
+
+    - text: Methane (CH₄) is a potent greenhouse gas with a global warming potential much higher than that of carbon dioxide over a 20-year period. We offer a promising strategy to reduce methane emissions extending the irrigation period in paddy fields
+      img: images/solution3.png
+      client: CH₄
+
+    - text: N₂O has a global warming potential approximately 300 times greater than carbon dioxide over a 100-year period. Reducing the use of nitrogen-based fertilizers presents a significant opportunity to mitigate environmental impacts
+      img: images/solution3.png
+      client: N₂O
+

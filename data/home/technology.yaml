@@ -1,0 +1,27 @@
+enabled: true
+id: "technology"
+
+
+content:
+  title: "Our Solution"
+  # buttonPrimary:
+  #   label: "Coming soon"
+  #   url: "#"
+  featured:
+    image: "images/technology.png"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
+    client: "Anonymous Customer"
+
+  list:
+    # - text: Our satellite & computer vision technology provides both real-time and historical analysis of land usages and green indices from anywhere on the planet
+    #   img: images/solution3.png
+    #   client: AI-based dMRV
+
+    # - text: Using our science-backed methodologies, verified through independent third-party audit, we accurately calculate greenhouse gas reductions for your projects
+    #   img: images/solution3.png
+    #   client: Science-based methodologies
+
+    # - text: We stores all the related data on the blockchain, ensuring tamper-proof records and scientific reproducibility. This process creates a new form of carbon credit as a digital asset, free from greenwashing
+    #   img: images/solution3.png
+    #   client: Web3-based data management
+

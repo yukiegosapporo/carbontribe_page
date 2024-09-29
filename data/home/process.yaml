@@ -1,0 +1,54 @@
+enabled: true
+id: "process"
+title: Our process
+
+content:
+  - image: 
+    pretitle: ""
+    title: 
+    text: 
+    text2: 
+    text3: 
+
+  
+  - image: "images/partner_process.png"
+    pretitle: ""
+    title: "For Partners"
+    text: "Carbontribe brings together sustainable innovators, landowners, and investors to collaboratively create Carbon Removal Digital Assets in the form of NFTs"
+    text2: "With our patent-pending software that leverages advanced AI, scientific methods, and web3 technology, NFTs are created through a semi-automated process."
+    
+    # buttons: 
+    #   - label: "See live"
+    #     url: "#"
+
+    #   - label: "Read more"
+    #     url: "#"
+
+  - image: 
+    pretitle: ""
+    title: 
+    text: 
+    text2: 
+    text3: 
+
+  - image: "images/buyer_process.png"
+    pretitle: ""
+    title: "For buyers"
+    text: "The NFTs can be traded across multiple platforms, supporting organizations seeking to enhance their carbon accounting."
+    text2: "The NFTs can be used for carbon offsetting. You just need to burn the NFTs to do so. Then Carbontribe issues an offset certificate"
+    # buttons: 
+    #   - label: "See live"
+    #     url: "#"
+
+    #   - label: "Read more"
+    #     url: "#"
+
+
+    # buttons: 
+    #   - label: "See live"
+    #     url: "#"
+
+    #   - label: "Read more"
+    #     url: "#"
+
+

@@ -10,6 +10,6 @@ content:
     url: "#"
 
   buttonSecondary:
-    label: "Demo (coming soon)"
-    url: ""
+    label: "Demo"
+    url: "https://testnets.opensea.io/assets/base-sepolia/0xf62ec313596a563879bdf537c7fa96a2a3994066/1"
 

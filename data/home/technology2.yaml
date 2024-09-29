@@ -25,9 +25,9 @@ content:
     text3: "CH₄: Methane emission reduction extending the irrigation period in paddy fields"
     text4: "N₂O: Reducing the use of nitrogen-based fertilizers"
 
-    buttons: 
-      - label: "Read more (coming soon)"
-        url: "#"
+    # buttons: 
+    #   - label: "Read more (coming soon)"
+    #     url: "#"
 
   - image: "images/nft_demo.png"
     pretitle: ""
@@ -37,8 +37,8 @@ content:
       - label: "See demo CARDAT (CArbon Removal Digital AsseT)"
         url: "https://testnets.opensea.io/assets/base-sepolia/0xf62ec313596a563879bdf537c7fa96a2a3994066/1"
 
-      - label: "Read more (coming soon)"
-        url: "#"
+      # - label: "Read more (coming soon)"
+      #   url: "#"
 
 
     # buttons: 

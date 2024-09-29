@@ -46,11 +46,11 @@ menus:
       weight: 2
 
   buttons:
-    - name: "Read our lightpaper"
-      url: "https://carbontribe.gitbook.io/carbontribe-lite-paper/light-papaer-ver.1.0/general-information"
-      weight: 5
-      pre: "btn btn-primary text-light"
-      target: "_blank"
+    # - name: "Read our lightpaper"
+    #   url: "https://carbontribe.gitbook.io/carbontribe-lite-paper/light-papaer-ver.1.0/general-information"
+    #   weight: 5
+    #   pre: "btn btn-primary text-light"
+    #   target: "_blank"
 
   footer:
     - name: "Home"

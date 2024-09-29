@@ -10,7 +10,7 @@ summaryLength: 20
 
 params:
   title: "Carbontribe"
-  description: "Discover new ways to save the earth"
+  description: "Buy carbon credits without greenwashing"
   images: 
     - "images/main_company_logo.png"
 

@@ -2,8 +2,8 @@ enabled: true
 id: "hero"
 
 content:
-  title: "Discover new ways to save the earth **Carbontribe**"
-  text: "Preserving Nature to Earn Protocol"
+  title: "Buy carbon removal digital assets without greenwashing **Carbontribe**"
+  text: 
 
   buttonPrimary:
     label: "Get started"

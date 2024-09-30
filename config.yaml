@@ -23,9 +23,7 @@ params:
 
   social:
     dribbble: "#"
-    instagram: "#"
-    facebook: "#"
-    twitter: "#"
+    linkedin: "https://www.linkedin.com/company/carbontribe/"
 
   location:
     - "Kesklinna Linnaosa, Ahtri 12,, 15551, Tallinn, Estonia"

@@ -17,8 +17,8 @@ params:
   logo: "images/logo.png"
 
   favicons:
-    themeColor: "#FFFFFF"
-    backgroundColor: "#FFFFFF"
+    themeColor: ""
+    backgroundColor: ""
     faviconColor: "#000000"
 
   social:

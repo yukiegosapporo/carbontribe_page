@@ -1,0 +1,56 @@
+enabled: true
+id: "product"
+title: Our products
+
+content:
+  - image: 
+    pretitle: ""
+    title: 
+    text: 
+    text2: 
+    text3: 
+
+  
+  - image: "images/comparison.png"
+    pretitle: ""
+    title: "Faster, cheaper and safer than carbon credits"
+    text: "Our CARDAT (Carbon Removal Digital Asset) will be seamlessly and automatically generated through our patent-pending software, which integrates AI, science, and web3 technologies, minimizing the need for manual work."
+    text2: "And we do everything to make your assets safe: "
+    text3: "- Third-party audit"
+    text4: "- Carbon insurance"
+    text5: "- Web3 powered data transparency"
+    text6: "- Calculation reproducibility"
+    buttons: 
+      - label: "See demo CARDAT (CArbon Removal Digital AsseT)"
+        url: "https://testnets.opensea.io/assets/base-sepolia/0xf62ec313596a563879bdf537c7fa96a2a3994066/1"
+
+    # buttons: 
+    #   - label: "See live"
+    #     url: "#"
+
+    #   - label: "Read more"
+    #     url: "#"
+
+  - image: 
+    pretitle: ""
+    title: 
+    text: 
+    text2: 
+    text3: 
+
+    # buttons: 
+    #   - label: "See live"
+    #     url: "#"
+
+    #   - label: "Read more"
+    #     url: "#"
+
+
+    # buttons: 
+    #   - label: "See live"
+    #     url: "#"
+
+    #   - label: "Read more"
+    #     url: "#"
+
+

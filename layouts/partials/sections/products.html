@@ -1,4 +1,4 @@
-<section class="section portfolio">
+<section class="section product">
   <br></br>
   <div class="row pb-5">
     <div class="col-12">
@@ -9,7 +9,7 @@
   </div>
   <div class="container">
     {{ range .content }}
-    <div class="row portfolio-feature">
+    <div class="row product-feature">
       <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
         {{ with .image }}
         {{ partial "utilities/image-fluid.html" . }}
@@ -31,9 +31,21 @@
         {{ with .text3 }}
         <p class="text-black-61 pb-3" style="font-size:25px; ">{{ . }}</p>
         {{ end }}
+        {{ with .text4 }}
+        <p class="text-black-61 pb-3" style="font-size:25px; ">{{ . }}</p>
+        {{ end }}
+        {{ with .text5 }}
+        <p class="text-black-61 pb-3" style="font-size:25px; ">{{ . }}</p>
+        {{ end }}
+        {{ with .text6 }}
+        <p class="text-black-61 pb-3" style="font-size:25px; ">{{ . }}</p>
+        {{ end }}
         <div class="">
           {{ range .buttons }}
-          <a class="text-decoration-none me-3" href="{{ .url }}">{{ .label }}</a>
+          <a class="text-decoration-none btn btn-outline-primary btn-outline-primary me-3" href="{{ .url }}">{{ .label
+            }}</a>
+
+
           {{ end }}
         </div>
       </div>

@@ -1,0 +1,14 @@
+enabled: true
+id: "video"
+content:
+  title: "Our Solution"
+
+
+  buttonPrimary:
+    label: 
+    url: 
+
+  buttonSecondary:
+    label: 
+    url: 
+

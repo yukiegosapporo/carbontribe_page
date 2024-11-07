@@ -26,6 +26,13 @@ content:
         label: "Learn more"
         url: "#"
 
+    - image: "images/julia.png"
+      title: "Julia Sluis, Sustainability Strategist"
+      text: "Passionate about sustainable systems and development economics, with a multidisciplinary, hands-on background in the Netherlands and Spain. Holds MSc’s in Environment & Resource Management and International Development."
+      button:
+        label: "Learn more"
+        url: "#"
+
     - image: "images/norika.png"
       title: "Norika Kizawa, NFT Tokenomics Advisor"
       text: "Expert in NFT / DeFi technical lead / architect, NFT marketplace, IEO, token economics design"

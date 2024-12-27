@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Carbontribe</title>
+    <title></title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Carbontribe</description>
+    <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Marine Debris</title>
+      <link>http://localhost:1313/projects/clean_ocean_ensemble/</link>
+      <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/clean_ocean_ensemble/</guid>
+      <description>Our project is dedicated to collecting and removing marine debris from oceans and shorelines around the world. We aim to create a cleaner and safer environment for marine life by addressing the growing issue of ocean pollution.</description>
+    </item>
     <item>
       <title>Carbontribe Labs joining Techstars Paris!</title>
       <link>http://localhost:1313/post/techstars_paris_2024/</link>

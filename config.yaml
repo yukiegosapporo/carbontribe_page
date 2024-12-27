@@ -43,6 +43,10 @@ menus:
       url: "/blog"
       weight: 2
 
+    - name: "Projects"
+      url: "/projects"
+      weight: 2
+
   # buttons:
     # - name: "Read our lightpaper"
     #   url: 
@@ -60,6 +64,15 @@ menus:
       url: "/blog"
       weight: 2
 
+    - name: "Projects"
+      url: "/projects"
+      weight: 2
+
 taxonomies:
   series: "series"
   tags: "tags"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

@@ -11,6 +11,40 @@
         {{ end }}
       </div>
     </div>
+
+
+
+
+
+    <!-- Dynamic Image Gallery with Text Between -->
+    {{ if .Params.image_data }}
+    <div class="row">
+      {{ $firstImage := true }} <!-- Flag to detect the first image -->
+      {{ range .Params.image_data }}
+      <!-- Full-width first image -->
+      {{ if $firstImage }}
+      <div class="col-12">
+        <div class="image-card">
+          <img src="{{ .image | relURL }}" class="img-fluid w-100 mb-3" alt="Reforestation project image">
+        </div>
+      </div>
+      {{ $firstImage = false }} <!-- Set the flag to false after the first image -->
+      {{ else }}
+
+
+      <!-- Display the image in a grid layout for remaining images -->
+      <div class="col-12 col-md-4">
+        <div class="image-card">
+          <img src="{{ .image | relURL }}" class="img-fluid mb-3" alt="Reforestation project image">
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+    {{ end }}
+
+
+
     <div class="row pb-5">
       <div class="col-12 d-flex justify-content-center">
         <div class="blog-content fs-5">
@@ -20,6 +54,40 @@
     </div>
     <div class="row pb-5">
     </div>
+
+
+
+
+    <!-- Add a Table with NFT Names and Links -->
+    {{ if .Params.image_data }}
+    <div class="row justify-content-center py-5">
+      <div class="col-12 col-md-8">
+        <h4 class="text-center mb-3">NFT Collection</h4>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Year</th>
+              <th scope="col">Type</th>
+              <th scope="col">Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Loop through the nfts array in Params -->
+            {{ range .Params.nfts }}
+            <tr>
+              <td>{{ .year }}</td>
+              <td>{{ .type }}</td>
+              <td><a href="{{ .link }}" target="_blank">Buy NFT</a></td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    {{ end }}
+
+
+
   </div>
 </section>
 {{ end }}

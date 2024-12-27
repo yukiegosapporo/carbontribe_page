@@ -11,7 +11,7 @@ tags = [
 ]
 
 image_data = [
-  { image = "images/noaa-eSSu1xTHQso-unsplash.png", text = "This is the first piece of text between the images." },
+  { image = "/images/noaa-eSSu1xTHQso-unsplash.png", text = "This is the first piece of text between the images." },
 ]
 
 nfts = [

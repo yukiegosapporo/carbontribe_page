@@ -1,0 +1,85 @@
+{{ define "main" }}
+<section class="section blog-single py-5">
+    <div class="container">
+        <!-- Full-width Image at the very top -->
+        {{ if .Params.image_data }}
+        <div class="row">
+            {{ $firstImage := true }} <!-- Flag to detect the first image -->
+            {{ range .Params.image_data }}
+            <!-- Full-width first image -->
+            {{ if $firstImage }}
+            <div class="col-12">
+                <div class="image-card">
+                    <img src="{{ .image | relURL }}" class="img-fluid w-100 mb-3" alt="Reforestation project image"
+                        style="width: 100vw; max-width: 100%; height: auto;">
+                </div>
+            </div>
+            {{ $firstImage = false }} <!-- Set the flag to false after the first image -->
+            {{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+
+        <!-- Title and Description Section -->
+        <div class="row justify-content-center pb-5">
+            <div class="col-12">
+                {{ with .Title }}
+                <h2 class="display-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
+                {{ end }}
+                {{ with .Params.description }}
+                <p class="text-black-61 text-center pb-3">{{ . }}</p>
+                {{ end }}
+            </div>
+        </div>
+
+        <!-- Two-Column Layout for Text, Table on the Left and Iframes on the Right -->
+        <div class="row pb-5">
+            <div class="col-12 col-md-8">
+                <!-- Text and Table Section on the Left -->
+                <div class="blog-content fs-5">
+                    {{ .Content }}
+                </div>
+
+                <!-- Add a Table with NFT Names and Links -->
+                {{ if .Params.nfts }}
+                <div class="py-5">
+                    <h4 class="text-center mb-3">Marine Debris Collection NFTs</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Year</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Loop through the nfts array in Params -->
+                            {{ range .Params.nfts }}
+                            <tr>
+                                <td>{{ .year }}</td>
+                                <td>{{ .type }}</td>
+                                <td><a href="{{ .link }}" target="_blank">Buy NFT</a></td>
+                            </tr>
+                            {{ end }}
+                        </tbody>
+                    </table>
+                </div>
+                {{ end }}
+            </div>
+
+            <!-- Iframes Section on the Right -->
+            <div class="col-12 col-md-4">
+                <div class="iframe-container mb-3">
+                    <!-- First iframe -->
+                    <iframe src="{{ .Params.iframe1 }}" width="100%" height="300px" frameborder="0"></iframe>
+                </div>
+                <div class="iframe-container mb-3">
+                    <!-- Second iframe -->
+                    <iframe src="{{ .Params.iframe2 }}" width="100%" height="1000px" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{{ end }}

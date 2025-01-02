@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center pb-5">
 
-            <div class="col-12 col-xl-6">
+            <div class="col-11 justify-content-center col-xl-6">
                 {{ with .Title }}
                 <h2 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
                 {{ end }}
@@ -15,9 +15,9 @@
         </div>
 
     </div>
-    <div class="row">
+    <div class="row justify-content-center">
         <!-- Filter Buttons on the Left -->
-        <div class="col-12 col-md-2">
+        <div class="col-11 col-md-2">
             <div class="filter-buttons mb-3">
                 <h3 class="fs-5 fw-bold text-primary pb-3"></h3>
                 <button class="filter-button btn btn-outline-primary w-100 mb-2 active" data-filter="all">All</button>
@@ -35,7 +35,7 @@
         </div>
 
         <!-- Cards on the Right -->
-        <div class="col-12 col-md-9">
+        <div class="col-11 col-md-9">
             <h2 class="fs-1 fw-bold text-primary pb-3"></h2>
             <div class="row g-4 pb-5 filter-container">
                 {{ range (.Paginate .RegularPages).Pages }}

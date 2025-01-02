@@ -1,0 +1,53 @@
+.post-image img {
+    max-width: 100%;
+    /* Ensures the image does not exceed the container width */
+    height: auto;
+    /* Maintains the aspect ratio */
+    display: block;
+    /* Removes unnecessary spacing around the image */
+    margin: 0 auto;
+    /* Centers the image horizontally (optional) */
+}
+
+.post-image-wrapper {
+    max-width: 100%;
+    /* Ensures the wrapper does not exceed the screen width */
+    overflow: hidden;
+    /* Hides any overflow if the image size is not adjusted */
+    text-align: center;
+    /* Centers the image within the wrapper (optional) */
+}
+
+.post-image-wrapper img {
+    max-width: 100%;
+    /* Scales the image down to fit the container */
+    height: auto;
+    /* Keeps the image proportional */
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.filter-button.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.filter-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+    border-color: #0056b3;
+}

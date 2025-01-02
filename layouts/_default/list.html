@@ -18,9 +18,10 @@
         <a class="card text-decoration-none h-100" href="{{ .Permalink }}">
           <div class="aspect-ratio-62-5">
 
-            {{- $image := resources.Get .Params.featured_image -}}
-            <img src="{{ ($image.Fill " 400x320 q100 Center").RelPermalink }}">
 
+            {{- $image := resources.Get .Params.featured_image -}}
+            {{ warnf "Found image: %s for page: %s" $image.Permalink .Title }}
+            <img src="{{ ($image.Fill " 400x320 q100 Center").RelPermalink }}" alt="{{ .Title }}">
 
 
             <!-- {{ with ( partial "utilities/get-featured-image.html" . ) }}

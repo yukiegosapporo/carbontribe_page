@@ -35,17 +35,17 @@ params:
 
 menus:
   main:
-    - name: "Home"
-      url: "/#hero"
+    - name: "Projects"
+      url: "/projects"
       weight: 1
+
+    - name: "Standards"
+      url: "/standards"
+      weight: 2
 
     - name: "News"
       url: "/blog"
-      weight: 2
-
-    - name: "Projects"
-      url: "/projects"
-      weight: 2
+      weight: 3
 
   # buttons:
     # - name: "Read our lightpaper"

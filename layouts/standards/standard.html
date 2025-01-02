@@ -1,0 +1,114 @@
+{{ define "main" }}
+
+
+<section class="section blog-single py-5">
+
+    <div class="container">
+
+        <!-- Title and Description Section -->
+        <div class="row justify-content-center pb-5">
+            <div class="col-12">
+                {{ with .Title }}
+                <h2 class="display-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
+                {{ end }}
+
+            </div>
+        </div>
+
+        <!-- Two-Column Layout for Text, Table on the Left and Iframes on the Right -->
+        <div class="row pb-5">
+            <div class="col-12 col-md-8">
+
+                <!-- Full-width Image at the very top -->
+                {{ if .Params.image_data }}
+                <div class="row">
+                    {{ $firstImage := true }} <!-- Flag to detect the first image -->
+                    {{ range .Params.image_data }}
+                    <!-- Full-width first image -->
+                    {{ if $firstImage }}
+                    <div class="col-12">
+                        <div class="image-card">
+                            <img src="{{ .image | relURL }}" class="img-fluid w-100 mb-3" alt="Wide project image"
+                                style="width: 100vw; max-width: 100%; height: auto;">
+                        </div>
+                    </div>
+                    {{ $firstImage = false }} <!-- Set the flag to false after the first image -->
+                    {{ end }}
+                    {{ end }}
+                </div>
+                {{ end }}
+
+
+                <!-- Text and Table Section on the Left -->
+                <div class="blog-content fs-5">
+                    {{ .Content }}
+                </div>
+
+            </div>
+
+            <!-- Iframes Section on the Right -->
+            <div class="col-12 col-md-4">
+                <!-- Project Developer Section -->
+                <h3 class="fs-1 fw-bold text-primary pb-3">Standard Developer</h3>
+                <div class="developer-info mt-5 d-flex align-items-center">
+                    <!-- Developer Logo on the Left -->
+                    <div class="developer-logo">
+                        <img src="{{ .Params.developer_image | relURL }}" class="rounded-circle mb-3" width="100px"
+                            alt="Developer Logo">
+                    </div>
+
+                    <!-- Developer Name and Bio on the Right -->
+                    <div class="developer-details ms-3">
+                        <p><strong>{{ .Params.developer_name }}</strong></p>
+                        <p>{{ .Params.developer_bio }}</p>
+                        <p><a href="{{ .Params.developer_url }}" class="btn btn-secondary" target="_blank">Visit
+                                Developer's Project</a></p>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <br>
+
+                <div class="project-status mt-4">
+                    <h3 class="fs-1 fw-bold text-primary pb-3">Status</h3>
+                    <span class="badge 
+                        {{ if eq .Params.status " published" }}bg-success {{ else if eq .Params.status "review"
+                        }}bg-secondary {{ else if eq .Params.status "planned" }}bg-warning {{ else }}bg-dark {{ end }}"
+                        style="font-size: 1.1rem; padding: 12px 20px; border-radius: 10px;">
+                        {{ .Params.status | title }}
+                    </span>
+                </div>
+                <hr>
+                <br>
+
+                <div class="hashtags mt-4">
+                    <h3 class="fs-1 fw-bold text-primary pb-3">Tags</h3>
+                    <ul class="list-inline">
+                        {{- range .Params.hashtags -}}
+                        <li class="list-inline-item">
+                            <a href="/tags/{{ . | urlize }}"
+                                class="badge bg-primary text-decoration-none text-white">#{{ . }}</a>
+                        </li>
+                        {{- end -}}
+                    </ul>
+                </div>
+                <hr>
+                <br>
+                <div class="methodology-link mt-4">
+                    <h3 class="fs-1 fw-bold text-primary pb-3">Methodology</h3>
+                    {{- if .Params.methodology_url -}}
+                    <a href="{{ .Params.methodology_url }}" class="btn btn-primary" target="_blank" rel="noopener">
+                        View Methodology
+                    </a>
+                    {{- else -}}
+                    <p class="text-muted">Available soon</p>
+                    {{- end -}}
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</section>
+{{ end }}

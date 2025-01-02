@@ -3,10 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/blue-carbon/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/carbontribe/</loc>
-    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/standards/forest_lands/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/negros_mangrove/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/standards/mangroves/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/marine-debris/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/standards/marine_debris/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/clean_ocean_ensemble/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/projects/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/regenerative-agriculture/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/standards/regen_agriculture/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/renewable-energy/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/standards/renewable_energy/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/standards/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/standards/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/techstars_paris_2024/</loc>
     <lastmod>2024-09-11T00:00:00+00:00</lastmod>
@@ -21,9 +69,6 @@
     <lastmod>2024-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/regenerative-finance/</loc>
-    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/techstars/</loc>

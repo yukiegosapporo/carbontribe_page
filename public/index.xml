@@ -9,11 +9,53 @@
     <lastBuildDate>Fri, 27 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test Marine Debris</title>
+      <title>Forest lands</title>
+      <link>http://localhost:1313/standards/forest_lands/</link>
+      <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/standards/forest_lands/</guid>
+      <description>Since the mid-20th century, global forests have faced significant declines due to deforestation, land-use changes, and other human-driven activities. These disturbances have resulted in the loss of vast forested areas, diminishing their ability to act as natural carbon sinks and exacerbating the challenges of climate change.</description>
+    </item>
+    <item>
+      <title>Mangrove plantation in Negros island</title>
+      <link>http://localhost:1313/projects/negros_mangrove/</link>
+      <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/negros_mangrove/</guid>
+      <description>Mangrove plantations are among the most effective nature-based solutions for carbon dioxide (CO₂) sequestration, playing a crucial role in mitigating climate change.</description>
+    </item>
+    <item>
+      <title>Mangroves</title>
+      <link>http://localhost:1313/standards/mangroves/</link>
+      <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/standards/mangroves/</guid>
+      <description>Since the 1980s, global mangrove ecosystems have experienced significant declines, primarily driven by human activities such as deforestation, the expansion of aquaculture, and the extraction of soil for coastal development.</description>
+    </item>
+    <item>
+      <title>Marine Debris</title>
+      <link>http://localhost:1313/standards/marine_debris/</link>
+      <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/standards/marine_debris/</guid>
+      <description>Ocean debris poses a significant threat to ecosystems, biodiversity, and human livelihoods. Each year, millions of tons of waste, including plastics, metals, and other materials, enter aquatic environments, disrupting marine and freshwater systems.</description>
+    </item>
+    <item>
+      <title>Marine Debris Collection</title>
       <link>http://localhost:1313/projects/clean_ocean_ensemble/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/clean_ocean_ensemble/</guid>
-      <description>Our project is dedicated to collecting and removing marine debris from oceans and shorelines around the world. We aim to create a cleaner and safer environment for marine life by addressing the growing issue of ocean pollution.</description>
+      <description>Marine debris is one of the most pervasive environmental challenges facing our oceans today. Comprising plastics, fishing gear, and other waste materials, it poses a significant threat to marine life, ecosystems, and human health.</description>
+    </item>
+    <item>
+      <title>Regenerative Agriculture</title>
+      <link>http://localhost:1313/standards/regen_agriculture/</link>
+      <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/standards/regen_agriculture/</guid>
+      <description>Nitrogen-based fertilizers are vital for modern agriculture but pose significant environmental challenges, particularly through the emission of nitrous oxide (N₂O), a greenhouse gas with a global warming potential 300 times that of carbon dioxide over a century.</description>
+    </item>
+    <item>
+      <title>Renewable Energy</title>
+      <link>http://localhost:1313/standards/renewable_energy/</link>
+      <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/standards/renewable_energy/</guid>
+      <description>Renewable energy is a cornerstone of global efforts to combat climate change and transition to a sustainable future. By replacing fossil fuel-based power generation, renewable energy sources such as solar, wind, and hydroelectric power dramatically reduce greenhouse gas emissions, particularly carbon dioxide (CO₂), which is the leading driver of global warming.</description>
     </item>
     <item>
       <title>Carbontribe Labs joining Techstars Paris!</title>

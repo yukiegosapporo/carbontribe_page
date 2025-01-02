@@ -1,51 +1,97 @@
 {{ define "main" }}
+
 <section class="section blog-list py-5">
     <div class="container">
+        <div class="row justify-content-center pb-5">
 
-
-        <!-- Full-width image with button at the right corner -->
-        <div class="row">
-            <div class="col-12 position-relative">
-                <h2 class="fs-1 fw-bold text-primary pb-3">Featured</h2>
-                <img src="/images/projects/brian-yurasits-PzQNdXw2a6g-unsplash.png" class="img-fluid w-100 mb-4"
-                    alt="Full width image">
-
-
-                <!-- Button at the right corner of the image -->
-                <a href="clean_ocean_ensemble/"
-                    class="btn btn-secondary position-absolute bottom-0 end-0 mb-3 me-3 btn-lg px-4 py-3">View
-                    More</a>
-
+            <div class="col-11 justify-content-center col-xl-6">
+                {{ with .Title }}
+                <h2 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
+                {{ end }}
+                {{ with .Params.description }}
+                <p class="text-black-61 text-center pb-3">{{ . }}</p>
+                {{ end }}
             </div>
         </div>
-        <hr>
-        <br>
 
-        <!-- list -->
-        <h2 class="fs-1 fw-bold text-primary pb-3">Marine Debris</h2>
-        <div class="row g-4 pb-5">
-            {{ $p := (.Paginate .RegularPages).Pages }}
-            {{ $p = where $p "Params.tags" "intersect" (slice "Carbontribe" )}}
-            {{ range $p }}
-            <div class="col-12 col-md-6 col-lg-4">
-                <a class="card text-decoration-none h-100" href="{{ .Permalink }}">
-                    <div class="aspect-ratio-62-5">
-
-                        {{- $image := resources.Get .Params.featured_image -}}
-                        <img src="{{ ($image.Fill " 400x320 q100 Center").RelPermalink }}">
-
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title fw-semibold">{{ .Title }}</h5>
-                        <p class="card-text text-black-61">{{ .Summary | plainify }}</p>
-                    </div>
-                </a>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Filter Buttons on the Left -->
+        <div class="col-11 col-md-2">
+            <div class="filter-buttons mb-3">
+                <h3 class="fs-5 fw-bold text-primary pb-3"></h3>
+                <button class="filter-button btn btn-outline-primary w-100 mb-2 active" data-filter="all">All</button>
+                <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="blue">Blue
+                    Carbon</button>
+                <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="green">Green
+                    Carbon</button>
+                <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="marine_debris">Marine
+                    Debris</button>
+                <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="agri">Regen.
+                    Agriculture</button>
+                <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="renewable">Renewable
+                    Energy</button>
             </div>
-            {{ end }}
         </div>
-        <div class="row pb-5">
-            {{ template "_internal/pagination.html" . }}
+
+        <!-- Cards on the Right -->
+        <div class="col-11 col-md-9">
+            <h2 class="fs-1 fw-bold text-primary pb-3"></h2>
+            <div class="row g-4 pb-5 filter-container">
+                {{ range (.Paginate .RegularPages).Pages }}
+                <div class="col-12 col-md-6 col-lg-4 filter-item" data-filter="{{ .Params.category }}">
+                    <a class="card text-decoration-none h-100" href="{{ .Permalink }}">
+                        <div class="aspect-ratio-62-5">
+                            {{- $image := resources.Get .Params.featured_image -}}
+                            {{- if $image -}}
+                            <img src="{{ ($image.Fill " 400x320 q100 Center").RelPermalink }}" alt="{{ .Title }}">
+                            {{- else -}}
+
+                            {{- end -}}
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">{{ .Title }}</h5>
+                            <p class="card-text text-black-61">{{ .Summary | plainify }}</p>
+                        </div>
+                    </a>
+                </div>
+                {{ end }}
+            </div>
         </div>
     </div>
+
+
+    <div class="row pb-5">
+        {{ template "_internal/pagination.html" . }}
+    </div>
+    </div>
 </section>
+
+<script>
+    // Filter Logic
+    document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".filter-button");
+        const items = document.querySelectorAll(".filter-item");
+
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => {
+                // Remove "active" class from all buttons and add to clicked one
+                buttons.forEach((btn) => btn.classList.remove("active"));
+                button.classList.add("active");
+
+                const filter = button.getAttribute("data-filter");
+
+                items.forEach((item) => {
+                    if (filter === "all" || item.getAttribute("data-filter") === filter) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            });
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 {{ end }}

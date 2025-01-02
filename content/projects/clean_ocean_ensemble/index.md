@@ -1,11 +1,11 @@
 +++
 author = "Carbontribe"
-title = "Test Marine Debris"
+title = "Marine Debris Collection"
 date = "2024-12-27"
-layout = "clean_ocean_ensemble"
-description = "Test Marine Debris"
+category="marine_debris"
+layout = "project"
+description = "Marine Debris Collection"
 featured_image = "images/noaa-eSSu1xTHQso-unsplash.png"
-trees_planted = 10000
 tags = [
     "Marine debris",
     "Carbontribe",
@@ -18,10 +18,9 @@ developer_name = "Marine debris NGO"
 developer_bio = "Awesome organization doing awesome things awesomely"
 developer_image = "/images/projects/clean_ocean_ensemble/seal-logo-template-for-your-company-vector-33952832.png"
 developer_url = "https://carbontribe.me/"
+post_image = "/images/projects/brian-yurasits-PzQNdXw2a6g-unsplash.png"
 iframe1 = "https://www.openstreetmap.org/export/embed.html?bbox=133.96865844726565%2C34.27480789279758%2C134.54063415527347%2C34.71791112677537&amp;layer=mapnik&amp;marker=34.49665386781626%2C134.25464630126953"
 iframe3 = "https://mol.org/regions/region/species?regiontype=region&region_id=15c2ed3a-16f4-474c-8fc3-8764eeb7c302"
-
-image_gallery = ["/images/brian-yurasits-lHTVDzpEC68-unsplash.png", "/images/brian-yurasits-PzQNdXw2a6g-unsplash.png", "/images/ryan-brooklyn-e5Ja8Z_WEvA-unsplash.png"]
 
 nfts = [
   { year = "2024", type="Metal", link = "https://testnets.opensea.io/assets/base_sepolia/0x763b601914Fd9f8e31352b011e302F4EB7e8f50d/1" },

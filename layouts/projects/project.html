@@ -13,9 +13,10 @@
             <!-- Full-width first image -->
             {{ if $firstImage }}
             <div class="col-12">
-                <div class="image-card">
+                <div class="image-card"
+                    style="display: flex; justify-content: center; align-items: center; width: 100%; max-width: 100%; height: auto; max-height: 80vh;">
                     <img src="{{ .image | relURL }}" class="img-fluid w-100 mb-3" alt="Wide project image"
-                        style="width: 100vw; max-width: 100%; height: auto;">
+                        style="width: 90%; aspect-ratio: 5 / 2.5; object-fit: cover; max-width: 90%;">
                 </div>
             </div>
             {{ $firstImage = false }} <!-- Set the flag to false after the first image -->

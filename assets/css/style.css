@@ -2,25 +2,19 @@
 .post-image img {
     max-width: 100%;
     height: auto;
-    /* Maintains the aspect ratio */
     display: block;
-    /* Removes unnecessary spacing */
     margin: 0 auto;
-    /* Centers the image */
 }
 
 .post-image-wrapper {
     max-width: 100%;
     overflow: hidden;
-    /* Hides any overflow */
     text-align: center;
-    /* Centers the image within the wrapper */
 }
 
 .post-image-wrapper img {
     max-width: 100%;
     height: auto;
-    /* Keeps the image proportional */
 }
 
 /* Filter Buttons Styling */
@@ -28,37 +22,27 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* Allows buttons to wrap on smaller screens */
     gap: 10px;
-    /* Adds space between buttons */
 }
 
 .filter-button {
     background-color: #ffffff;
     border-radius: 8px;
-    /* Rounded corners */
     font-weight: 600;
     padding: 10px 20px;
     transition: all 0.3s ease;
-    /* Smooth transition for hover effects */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow */
 }
 
 .filter-button:hover {
     color: #ffffff;
-    /* White text on hover */
     transform: translateY(-3px);
-    /* Slight upward movement */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-    /* Larger shadow on hover */
 }
 
 .filter-button.active {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    /* Larger shadow for active button */
     transform: translateY(-3px);
-    /* Keep the active button elevated */
 }
 
 /* Card Styling */
@@ -91,194 +75,88 @@
     text-align: left;
 }
 
-/* Card Styling */
+/* Card Impact Styling */
 .card-impact {
     background-color: transparent;
-    /* Make the card background completely invisible */
     border: none;
-    /* Remove borders */
     box-shadow: none;
-    /* Remove shadow */
     padding: 0;
-    /* Optional: Remove padding if needed */
     text-align: center;
 }
 
-/* Card Body */
 .card-impact-body {
     padding: 0;
-    /* Optional: Adjust padding to fit content */
     display: flex;
     justify-content: center;
-    /* Center content horizontally */
     align-items: center;
-    /* Center content vertically */
     flex-direction: column;
-    /* Stack content vertically */
-}
-
-/* Card Placeholder for Missing Images */
-.card-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    background-color: #f8f9fa;
-    color: #aaa;
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-/* Shadow Hover Effect */
-.shadow-hover {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.shadow-hover:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.15);
-}
-
-/* Subtle Hover Effect on Card Text */
-.card-title,
-.card-text {
-    transition: color 0.2s ease;
-}
-
-.card:hover .card-title {
-    color: #007bff;
-}
-
-.card:hover .card-text {
-    color: #495057;
-}
-
-
-
-/* Badge Container */
-.badge-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    /* Adds horizontal spacing between badges */
-    flex-wrap: nowrap;
-    /* Ensures badges stay in a single row */
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Shadow Card Styling */
-.shadow-card {
-    background-color: rgba(255, 255, 255, 0.8);
-    /* Transparent white background */
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    /* Subtle shadow */
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.shadow-card:hover {
-    transform: translateY(-5px);
-    /* Lift effect on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    /* Larger shadow on hover */
 }
 
 /* Badge Styling */
 .badge {
     display: inline-flex;
     flex-direction: column;
-    /* Stack text vertically */
     justify-content: center;
     align-items: center;
     padding: 25px 50px;
-    /* Adjust size */
     font-size: 2.5rem;
-    /* Larger base font size */
     font-weight: bold;
     text-align: center;
     color: #ffffff;
-    /* White text */
     border-radius: 30px;
-    /* Smooth rounded corners */
     background: linear-gradient(135deg, #AECE00, #264653);
-    /* Green-to-dark earthy tones */
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    /* Depth with shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
-/* Glassmorphism Effect: Subtle Overlay for Texture */
-.badge::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 200%;
-    background: rgba(255, 255, 255, 0.2);
-    /* Transparent overlay */
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.5;
-    z-index: 0;
-    /* Place behind content */
-    animation: shine 10s infinite ease-in-out;
+.badge:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #AECE00, #083d77);
 }
 
 /* Badge Line Styling */
 .badge-line {
     font-size: 1.8rem;
-    /* Secondary line size */
     line-height: 1.4;
-    /* Adjust spacing between lines */
     margin: 5px 0;
-    z-index: 1;
-    /* Place above shine effect */
 }
 
-/* Hover Effects */
-.badge:hover {
-    transform: translateY(-8px) scale(1.05);
-    /* Slight lift and scaling */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-    /* More pronounced shadow */
-    background: linear-gradient(135deg, #AECE00, #083d77);
-    /* Earthy green-to-blue gradient on hover */
+/* General Badge Container Styling */
+.impact-badge-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* Spacing between badges */
+    flex-wrap: nowrap;
+    /* Keep badges in a single row for larger screens */
+    position: absolute;
+    /* Positioned in the hero section by default */
+    bottom: 20px;
+    /* Distance from the bottom of the hero */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Center the badges */
+    z-index: 2;
+    /* Ensure badges appear above the overlay */
 }
 
 /* Impact Section */
 .impact-section {
     width: 100%;
-    /* Full width */
     height: 70vh;
-    /* Half the viewport height */
     padding: 40px 20px;
     background: url('/images/impact-section.png') no-repeat center center;
-    /* Background image */
     background-size: cover;
-    /* Ensure the image covers the entire section */
     color: #ffffff;
-    /* Text color for contrast */
     text-align: center;
-    /* Center align all text and content */
     position: relative;
-    /* For positioning the badges at the bottom */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    /* Optional shadow for the section */
 }
 
-/* Optional Overlay for Better Text Readability */
 .impact-section::before {
     content: '';
     position: absolute;
@@ -287,28 +165,19 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-    /* Semi-transparent overlay */
     z-index: 1;
-    /* Place it behind content */
 }
 
-/* Impact Section Content */
 .impact-content {
     position: relative;
-    /* Ensure content is above the overlay */
     z-index: 2;
-    /* Place content above the overlay */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Vertically center the content */
     align-items: center;
-    /* Horizontally center the content */
     height: 100%;
-    /* Make the content container fill the section */
 }
 
-/* Title and Subtitle */
 .impact-title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -319,37 +188,12 @@
     font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: auto;
-    /* Push the badges to the bottom */
 }
 
-/* Badge Container */
-.impact-badge-container {
-    display: flex;
-    justify-content: center;
-    /* Center badges horizontally */
-    align-items: center;
-    /* Center badges vertically */
-    gap: 30px;
-    /* Adds horizontal spacing between badges */
-    flex-wrap: nowrap;
-    /* Keeps badges in a single row */
-    position: absolute;
-    /* Position badges at the bottom of the hero */
-    bottom: 20px;
-    /* Distance from the bottom edge */
-    left: 50%;
-    /* Horizontally center */
-    transform: translateX(-50%);
-    /* Adjust for center alignment */
-    z-index: 2;
-    /* Ensure badges are above the overlay */
-}
-
-
+/* Responsive Design */
 @media (max-width: 768px) {
     .impact-section {
         height: auto;
-        /* Allow height to adjust for smaller screens */
         padding: 40px 20px;
     }
 
@@ -363,38 +207,54 @@
 
     .impact-badge-container {
         flex-direction: column;
-        /* Stack badges vertically */
         gap: 20px;
-        /* Reduce spacing */
-    }
-}
-
-/* Glass Animation */
-@keyframes shine {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
     }
 
-    50% {
-        transform: translate(-30%, -30%) scale(1.5);
-    }
-
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
     .badge {
         font-size: 2rem;
-        /* Adjust font size */
         padding: 20px 40px;
-        /* Reduce padding */
     }
 
     .badge-line {
         font-size: 1.5rem;
-        /* Smaller text for secondary line */
+    }
+}
+
+/* Responsive Layout for Mobile */
+@media (max-width: 768px) {
+    .impact-section {
+        height: auto;
+        /* Allow hero height to adjust */
+        padding: 20px;
+        /* Reduce padding for smaller screens */
+    }
+
+    .impact-badge-container {
+        position: relative;
+        /* Remove absolute positioning for mobile */
+        bottom: unset;
+        /* Reset bottom value */
+        left: unset;
+        /* Reset left value */
+        transform: none;
+        /* Reset centering transformation */
+        margin-top: 20px;
+        /* Add space above badges */
+        flex-direction: column;
+        /* Stack badges vertically */
+        gap: 20px;
+        /* Reduce spacing for smaller screens */
+    }
+
+    .badge {
+        font-size: 2rem;
+        /* Adjust font size */
+        padding: 20px 40px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .badge-line {
+        font-size: 1.5rem;
+        /* Reduce secondary line font size */
     }
 }

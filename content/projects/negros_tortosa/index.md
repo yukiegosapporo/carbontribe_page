@@ -14,11 +14,11 @@ tags = [
 ]
 
 image_data = [
-  { image = "/images/projects/negros_Tortosa/tortosa.png", text = "This is the first piece of text between the images." },
+  { image = "/images/projects/negros_tortosa/tortosa.png", text = "This is the first piece of text between the images." },
 ]
 developer_name = "Marine debris NGO"
 developer_bio = "Awesome organization doing awesome things awesomely"
-developer_image = "/images/projects/negros_Tortosa/seal-logo-template-for-your-company-vector-33952832.png"
+developer_image = "/images/projects/negros_tortosa/seal-logo-template-for-your-company-vector-33952832.png"
 developer_url = "https://carbontribe.me/"
 post_image = "/images/projects/brian-yurasits-PzQNdXw2a6g-unsplash.png"
 iframe1 = "https://www.openstreetmap.org/export/embed.html?bbox=123.0889401177244,10.93209508114785&amp;layer=mapnik&amp;marker=123.0889401177244,10.93209508114785"

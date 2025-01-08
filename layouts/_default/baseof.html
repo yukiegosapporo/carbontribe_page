@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  {{ partial "head/head.html" . }}
-  <body>
-    {{- partial "shared/header.html" . -}}
-    {{- block "main" . -}}{{- end -}}
-    {{- partial "shared/footer.html" . -}}
-  </body>
+
+{{ partial "head/head.html" . }}
+{{ $styles := resources.Get "css/style.css" | minify }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+
+<body>
+  {{- partial "shared/header.html" . -}}
+  {{- block "main" . -}}{{- end -}}
+  {{- partial "shared/footer.html" . -}}
+</body>
+
 </html>

@@ -93,7 +93,7 @@
 }
 
 /* Badge Styling */
-.badge {
+.badge-big {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -111,7 +111,7 @@
     overflow: hidden;
 }
 
-.badge:hover {
+.badge-big:hover {
     transform: translateY(-8px) scale(1.05);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
     background: linear-gradient(135deg, #AECE00, #083d77);

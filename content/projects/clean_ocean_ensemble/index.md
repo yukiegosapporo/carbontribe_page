@@ -21,7 +21,7 @@ developer_url = "https://carbontribe.me/"
 post_image = "/images/projects/brian-yurasits-PzQNdXw2a6g-unsplash.png"
 iframe1 = "https://www.openstreetmap.org/export/embed.html?bbox=133.96865844726565%2C34.27480789279758%2C134.54063415527347%2C34.71791112677537&amp;layer=mapnik&amp;marker=34.49665386781626%2C134.25464630126953"
 iframe3 = "https://mol.org/regions/region/species?regiontype=region&region_id=15c2ed3a-16f4-474c-8fc3-8764eeb7c302"
-impact_kpi = 100
+impact_kpi = 352.25
 impact_kpi_type = "waste"
 
 nfts = [

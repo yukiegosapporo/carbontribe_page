@@ -13,25 +13,46 @@
     <div class="row no-gutters">
       {{ range .content.cards }}
       <div class="col-16 col-xl-4">
-        <div class="card bg-green border-0 border-radius-34 p-4">
-          <div class="row no-gutters align-items-start">
-            <!-- Image on the left -->
-            <div class="col-sm-4">{{ with .image }}{{ partial "utilities/image-fluid.html" . }}{{ end }}</div>
-            <!-- Title on the right -->
-            <div class="col-sm-8">
-              <div class="card-body">
-                {{ with .title }}<h4 class="card-title text-center text-primary pb-4">{{ . }}</h4>{{ end }}
-                <!-- Text below both image and title -->
+        <div class="card-container">
+          <div class="card bg-green border-0 border-radius-34 p-4 shadow">
+            <div class="row no-gutters align-items-start">
+
+              <!-- Image on the left -->
+              {{ with .image }}
+              <div class="col-sm-4">
+                {{ partial "utilities/image-fluid.html" . }}
+              </div>
+              {{ end }}
+
+              <!-- Title on the right -->
+              <div class="col-sm-8">
+                <div class="card-body">
+                  {{ with .title }}
+                  <h4 class="card-title text-center text-primary pb-4">{{ . }}</h4>
+                  {{ end }}
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Text and Button Below -->
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card-body">
+                  {{ with .text }}
+                  <p class="card-text text-black-61 pb-4">{{ . }}</p>
+                  {{ end }}
+
+                  {{ with .button }}
+                  <a class="btn btn-outline-primary px-4" href="{{ .url }}">{{ .label }}</a>
+                  {{ end }}
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-12">
-            <div class="card-body">
-              {{ with .text }}<p class="card-text text-black-61 pb-4">{{ . }}</p>{{ end }}
-              <!-- {{ with .button }}<a class="btn btn-outline-primary px-4" href="{{ .url }}">{{ .label }}</a>{{ end }} -->
-            </div>
+
           </div>
         </div>
+
       </div>
       {{ end }}
     </div>

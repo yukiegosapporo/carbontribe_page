@@ -20,7 +20,7 @@ content:
         url: "#"
 
     - image: "images/sachiko.png"
-      title: "Sachiko Miyake, Business Development Manager"
+      title: "Sachiko Miyake, BizDev Manager"
       text: "Ex Itochu Corporation, handled international finance and trade of forestry resource products in the US, China and APAC. Berlin School of Economics and Law MBA"
       button:
         label: "Learn more"

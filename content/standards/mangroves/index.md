@@ -20,6 +20,7 @@ developer_image = "/images/standards/mangroves/logo.png"
 hashtags = ["Afforestation", "Mangrove", "Remote sensing", "Computer vision", "Satellite data"]
 status="review"
 # published, planned
+review_method="Third party review"
 
 methodology_url="https://carbontribe.me/"
 

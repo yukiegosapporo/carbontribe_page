@@ -258,3 +258,132 @@
         /* Reduce secondary line font size */
     }
 }
+
+.project-stats {
+    display: flex;
+    justify-content: space-between;
+    /* Ensures equal spacing */
+    width: 100%;
+    gap: 20px;
+    /* Adjust spacing between items */
+}
+
+
+.stat-item {
+    flex: 1;
+    /* Makes each section equal width */
+    text-align: center;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stat-item h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.stat-item p {
+    font-size: 20px;
+    color: #666;
+}
+
+/* Modern Hugo Table Styling */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    /* Makes table scrollable on small screens */
+    margin-top: 30px;
+
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    background: white;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+
+/* Table Header */
+.table thead {
+
+
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.table th,
+.table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+/* Hover Effect */
+.table tbody tr:hover {
+    background-color: #e3f2fd;
+    /* Light blue hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .table th,
+    .table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* card */
+.card-container {
+    display: flex;
+    /* Makes all cards the same height */
+    flex-wrap: wrap;
+    /* Wraps onto new lines if needed */
+    gap: 16px;
+    /* Space between cards */
+    justify-content: center;
+    /* Centers cards */
+}
+
+.custom-card {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-left {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    flex: 1;
+    /* Takes left space */
+}
+
+.card-right {
+    text-align: right;
+    font-style: italic;
+    color: #666;
+    flex: 1;
+    /* Takes right space */
+}

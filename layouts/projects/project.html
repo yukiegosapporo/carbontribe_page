@@ -36,39 +36,14 @@
         </div>
 
         <!-- Two-Column Layout for Text, Table on the Left and Iframes on the Right -->
-        <div class="row pb-5">
-            <div class="col-12 col-md-8">
+        <div class="row justify-content-center pb-5">
+            <div class="col-10 col-md-6">
                 <!-- Text and Table Section on the Left -->
                 <div class="blog-content fs-5">
                     {{ .Content }}
                 </div>
 
-                <!-- Add a Table with NFT Names and Links -->
-                {{ if .Params.nfts }}
-                <hr>
-                <div class="py-5">
-                    <h4 class="fs-1 fw-bold text-center text-primary pb-3">Marine Debris Collection Credits</h4>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Year</th>
-                                <th scope="col">Type</th>
-                                <th scope="col">Link</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Loop through the nfts array in Params -->
-                            {{ range .Params.nfts }}
-                            <tr>
-                                <td>{{ .year }}</td>
-                                <td>{{ .type }}</td>
-                                <td><a href="{{ .link }}" target="_blank">View</a></td>
-                            </tr>
-                            {{ end }}
-                        </tbody>
-                    </table>
-                </div>
-                {{ end }}
+
             </div>
 
             <!-- Iframes Section on the Right -->
@@ -102,7 +77,82 @@
 
             </div>
         </div>
+        <div class="row justify-content-center pb-5">
+            <div class="col-10">
 
-    </div>
+                <!-- Add a Table with NFT Names and Links -->
+                {{ if .Params.nfts }}
+                <hr>
+                <div class="py-5">
+                    <h4 class="fs-1 fw-bold text-center text-primary pb-3">Credits</h4>
+                    <div class="row">
+                        <div class="custom-card w-100">
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <h3>Issued</h3>
+                                    {{if gt .Params.nft_issued 0}}
+                                    <p><strong>{{.Params.nft_issued}}</strong> {{.Params.project_stats_unit}}</p>
+                                    {{else}}
+                                    <p><strong>Preparing</strong></p>
+                                    {{end}}
+                                </div>
+                                <div class="stat-item">
+                                    <h3>Estimated</h3>
+                                    {{if gt .Params.nft_available 0}}
+                                    <p><strong>{{.Params.nft_available}}</strong> {{.Params.project_stats_unit}}</p>
+                                    {{else}}
+                                    <p><strong>Preparing</strong></p>
+                                    {{end}}
+                                </div>
+                                <div class="stat-item">
+                                    <h3>Retired</h3>
+                                    <p><strong>{{.Params.nft_retired}}</strong> {{.Params.project_stats_unit}}</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h3>Price</h3>
+                                    <p><strong>{{.Params.price}}</strong> {{.Params.price_unit}}</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="table-container">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Year</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Loop through the nfts array in Params -->
+                                    {{ range .Params.nfts }}
+                                    <tr>
+                                        <td>{{ .year }}</td>
+                                        <td>{{ .type }}</td>
+                                        {{if .link}}
+                                        <td><a href="{{ .link }}" target="_blank">View</a></td>
+                                        {{else}}
+                                        <td>Coming soon</td>
+                                        {{end}}
+                                    </tr>
+                                    {{ end }}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    {{ end }}
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
 </section>
 {{ end }}

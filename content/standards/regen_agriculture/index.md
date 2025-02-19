@@ -20,7 +20,7 @@ developer_image = "/images/standards/regen_agriculture/logo.png"
 hashtags = ["Regenerative Agriculture", "Object detection", "Computer vision"]
 status="review"
 # published, planned
-
+review_method="Third party review"
 methodology_url="https://carbontribe.me/"
 
 +++

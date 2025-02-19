@@ -20,10 +20,14 @@
 
 
             {{- $image := resources.Get .Params.featured_image -}}
-            {{ warnf "Found image: %s for page: %s" $image.Permalink .Title }}
+
+
+
+            {{ with $image }}
             <img src="{{ ($image.Fill " 400x320 q100 Center").RelPermalink }}" alt="{{ .Title }}">
-
-
+            {{else}}
+            <p>aa</p>
+            {{end}}
             <!-- {{ with ( partial "utilities/get-featured-image.html" . ) }}
             {{ partial "utilities/card-img-top" . }}
             {{ end }} -->

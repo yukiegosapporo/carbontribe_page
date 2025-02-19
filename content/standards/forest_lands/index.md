@@ -19,6 +19,7 @@ developer_image = "/images/standards/forest_lands/logo.png"
 
 hashtags = ["Afforestation", "Forest lands", "Remote sensing", "Computer vision", "Satellite data"]
 status="review"
+review_method="Third party review"
 # published, planned
 
 methodology_url="https://carbontribe.me/"

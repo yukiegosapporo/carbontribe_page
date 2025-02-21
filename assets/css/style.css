@@ -274,7 +274,7 @@
     /* Makes each section equal width */
     text-align: center;
     padding: 10px;
-    background: #f9f9f9;
+    background: #AECE9D;
     border-radius: 8px;
     min-height: 120px;
     display: flex;
@@ -290,6 +290,19 @@
 .stat-item p {
     font-size: 20px;
     color: #666;
+}
+
+@media (max-width: 600px) {
+    .project-stats {
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+        align-items: center;
+    }
+
+    .stat-item {
+        width: 90%;
+        /* Make items full width on mobile */
+    }
 }
 
 /* Modern Hugo Table Styling */

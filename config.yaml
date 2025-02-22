@@ -43,9 +43,13 @@ menus:
       url: "/standards"
       weight: 2
 
+    - name: "Carbontribe Book"
+      url: "/book/introduction"
+      weight: 3
+
     - name: "News"
       url: "/blog"
-      weight: 3
+      weight: 4
 
   # buttons:
     # - name: "Read our lightpaper"
@@ -56,17 +60,17 @@ menus:
     #   target: "_blank"
 
   footer:
-    - name: "Home"
-      url: "/#hero"
+    - name: "Projects"
+      url: "/projects"
       weight: 1
+
+    - name: "Standards"
+      url: "/standards"
+      weight: 2
 
     - name: "News"
       url: "/blog"
-      weight: 2
-
-    - name: "Projects"
-      url: "/projects"
-      weight: 2
+      weight: 3
 
 taxonomies:
   series: "series"

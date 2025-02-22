@@ -400,3 +400,84 @@
     flex: 1;
     /* Takes right space */
 }
+
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #f8f9fa;
+    /* Light background for sidebar */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar h4 {
+    font-size: 18px;
+    color: #AECE9D;
+    margin-bottom: 15px;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+}
+
+.toc-list li {
+    margin-bottom: 8px;
+}
+
+/* Default sidebar link styles */
+.toc-list a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Highlight the active page */
+.toc-list a.active-link {
+    background: #AECE9D;
+    /* Adjust to match your theme */
+    color: white;
+    font-weight: bold;
+}
+
+.toc-list a:hover {
+    background: #AECE9D;
+    color: white;
+}
+
+/* Content Area */
+.col-md-9 {
+    padding-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .col-md-9 {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+.content-text-book img {
+    max-width: 100%;
+    /* Ensures the image does not exceed the container's width */
+    height: auto;
+    /* Maintains the aspect ratio */
+    display: block;
+    /* Prevents extra inline spacing */
+    margin: 0 auto;
+    /* Optional: centers the image */
+}

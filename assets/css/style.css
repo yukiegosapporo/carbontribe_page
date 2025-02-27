@@ -481,3 +481,58 @@
     margin: 0 auto;
     /* Optional: centers the image */
 }
+
+
+#site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    /* Adjust for visibility */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    z-index: 1000;
+    /* Ensures it's above other elements */
+    padding: 5px 20px;
+    height: 100px;
+    /* Adjust to preferred height */
+}
+
+body {
+    padding-top: 60px;
+    /* Adjust based on header height to prevent overlap */
+}
+
+
+.navbar a {
+    font-size: 14px;
+    /* Reduce font size if needed */
+    padding: 5px 10px;
+    /* Adjust spacing for nav links */
+}
+
+
+#site-header img {
+    height: 80px;
+    /* Adjust as needed */
+    width: auto;
+    /* Keeps aspect ratio */
+}
+
+
+
+@media (max-width: 768px) {
+    #site-header {
+        height: 40px;
+        /* Smaller height on mobile */
+        line-height: 40px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    #site-header img {
+        height: 30px;
+    }
+}

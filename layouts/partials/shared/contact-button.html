@@ -1,0 +1,162 @@
+<!-- Floating Contact Button -->
+<button id="openPopup" class="contact-button">Contact Us</button>
+
+<!-- Contact Form Popup (Balloon Style) -->
+<div id="contactPopup" class="popup">
+    <div class="popup-content">
+        <span id="closePopup" class="close">&times;</span>
+        <form class="popup-form" action="https://formspree.io/f/xqazrdbb" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="company">Company & Role:</label>
+            <input type="text" id="company" name="company">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<!-- Styles for Floating Button and Popup -->
+<style>
+    .contact-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #AECE9D;
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 50px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .contact-button:hover {
+        background-color: #94b884;
+        transform: scale(1.1);
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .popup-content {
+        background-color: white;
+        padding: 30px;
+        width: 350px;
+        border-radius: 15px;
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+        position: relative;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .popup-content::before {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        right: 20px;
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 20px solid white;
+    }
+
+    .popup-form label {
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+        color: #555;
+    }
+
+    .popup-form input,
+    .popup-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    .popup-form button {
+        background-color: #AECE9D;
+        color: white;
+        border: none;
+        padding: 12px;
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .popup-form button:hover {
+        background-color: #94b884;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    /* Greyed out background when popup is open */
+    .popup-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+</style>
+
+<!-- JavaScript for Popup Functionality -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var popup = document.getElementById("contactPopup");
+        var openBtn = document.getElementById("openPopup");
+        var closeBtn = document.getElementById("closePopup");
+        var overlay = document.createElement("div");
+        overlay.classList.add("popup-overlay");
+        document.body.appendChild(overlay);
+
+        // Show popup when button is clicked
+        openBtn.addEventListener("click", function () {
+            popup.style.display = "block";
+            overlay.style.display = "block";
+        });
+
+        // Hide popup when close button is clicked
+        closeBtn.addEventListener("click", function () {
+            popup.style.display = "none";
+            overlay.style.display = "none";
+        });
+
+        // Hide popup if clicked outside of the form
+        overlay.addEventListener("click", function () {
+            popup.style.display = "none";
+            overlay.style.display = "none";
+        });
+    });
+</script>

@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="section blog-list py-5">
+    <div class="container">
+        <div class="row">
+            <div class="row justify-content-center pb-5">
+
+                <div class="col-12 col-xl-6">
+                    <h2 class="fs-1 fw-bold text-center text-primary pb-3">Our Mission</h2>
+                    <p class="text-black-61 text-center pb-3">Carbontribe is committed to preserving and enhancing what
+                        truly matters—nature, clean water, energy conservation, and fairness. We ensure all our actions
+                        are transparent and equitable, working alongside those in need and connecting them with people
+                        who genuinely want to make a difference😊</p>
+
+                </div>
+            </div>
+
+            {{ with .Site.Data.home.services }}{{ partial "sections/services.html" . }}{{ end }}
+            <div class="row pb-5">
+                {{ template "_internal/pagination.html" . }}
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+{{ end }}

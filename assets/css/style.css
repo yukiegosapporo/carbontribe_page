@@ -536,3 +536,10 @@ body {
         height: 30px;
     }
 }
+
+body,
+html,
+main,
+.content {
+    overflow: visible !important;
+}

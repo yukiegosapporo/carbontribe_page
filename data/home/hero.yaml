@@ -6,10 +6,10 @@ content:
   text: 
 
   buttonPrimary:
-    label: "Get started"
-    url: "#"
+    label: "View projects"
+    url: "https://carbontribe.me/projects/"
 
   buttonSecondary:
-    label: "Demo"
-    url: "https://testnets.opensea.io/assets/base-sepolia/0xf62ec313596a563879bdf537c7fa96a2a3994066/1"
+    label: "Read more"
+    url: "https://carbontribe.me/book/introduction/"
 

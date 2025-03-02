@@ -1,14 +1,13 @@
 +++
 author = "Carbontribe"
 layout = "book_single"
-title = "How to receive credit"
-date = "2025-02-21"
-weight = 4
+title = "How to receive our credits?"
+weight = 7
 +++
 
-You can choose from two formats:  
+# How to receive our credits?  
 
-✅ NFT – A tradeable digital asset that can be sold on marketplaces, enabling others to offset their emissions.  
-✅ PDF Certificate – A non-tradable document containing a retired NFT hash, ensuring your carbon offset is permanently verified.  
-
-Both options provide transparency and verifiable impact in the carbon market. 🌍🚀  
+You can choose from two formats, each offering transparency and verifiable impact:   
+✅ __NFT Credit__ – A tradeable digital asset that can be sold on marketplaces, allowing others to offset their emissions. This option provides flexibility and market liquidity.  
+✅ __PDF Certificate__ – A non-tradable document that includes the hash of a retired NFT, ensuring your carbon offset is permanently recorded and cannot be resold.  
+Both formats guarantee authenticity, security, and full traceability in the carbon market. 🌍🔗  

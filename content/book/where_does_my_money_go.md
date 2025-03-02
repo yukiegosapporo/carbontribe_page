@@ -2,17 +2,20 @@
 author = "Carbontribe"
 layout = "book_single"
 title = "Where does my money go?"
-date = "2025-02-21"
-weight = 5
+weight = 8
+
 +++
 
-
-Traditional credit issuers impose multiple fees, including registration fees, processing fees, and additional costs for third-party audits or consultations, leaving project proponents with a minimal share of the funding. 
-
-
-Carbontribe eliminates unnecessary intermediaries through technology, maximizing direct financial contributions to project proponents.
+# Where does my money go?  
 
 
 ![alt text](/images/where_does_my_money_go.png "where_does_my_money_go")
 
 
+
+In the traditional carbon credit market, project developers often receive only a small fraction of the funds raised from credit sales. This is due to multiple layers of intermediaries, each imposing various fees:    
+- __Registration Fees__ – Costs associated with enrolling projects in a registry.  
+- __Processing Fees__ – Charges for validating and listing carbon credits.  
+- __Third-Party Audit & Consultation Fees__ – Expenses for external verifiers and consultants assessing project credibility.  
+- __Transaction & Brokerage Fees__ – Additional costs from brokers or middlemen facilitating sales.  
+These accumulated fees reduce the financial support that reaches the actual project proponents, limiting their ability to scale initiatives and create meaningful impact.  

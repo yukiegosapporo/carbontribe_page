@@ -72,9 +72,17 @@ menus:
       url: "/standards"
       weight: 2
 
+    - name: "Carbontribe Book"
+      url: "/book/introduction"
+      weight: 3
+
+    - name: "About us"
+      url: "/aboutus"
+      weight: 4
+  
     - name: "News"
       url: "/blog"
-      weight: 3
+      weight: 5
 
 taxonomies:
   series: "series"

@@ -4,6 +4,7 @@
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 8px;
 }
 
 .post-image-wrapper {
@@ -15,6 +16,11 @@
 .post-image-wrapper img {
     max-width: 100%;
     height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-image-wrapper img:hover {
+    transform: scale(1.05);
 }
 
 /* Filter Buttons Styling */
@@ -22,27 +28,25 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
 }
 
 .filter-button {
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     border-radius: 8px;
     font-weight: 600;
-    padding: 10px 20px;
+    padding: 12px 24px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
 }
 
-.filter-button:hover {
-    color: #ffffff;
+.filter-button:hover,
+.filter-button.active {
+    color: white;
+    background-color: #94b884;
     transform: translateY(-3px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-}
-
-.filter-button.active {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    transform: translateY(-3px);
 }
 
 /* Card Styling */
@@ -259,6 +263,30 @@
     }
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .impact-section {
+        height: auto;
+        padding: 30px;
+    }
+
+    .table th,
+    .table td {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .badge {
+        font-size: 1.8rem;
+        padding: 16px 32px;
+    }
+}
+
+
 .project-stats {
     display: flex;
     justify-content: space-between;
@@ -314,40 +342,26 @@
 
 }
 
+/* Table Styling */
 .table {
     width: 100%;
     border-collapse: collapse;
-    font-family: "Arial", sans-serif;
     font-size: 16px;
     background: white;
-    background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
-}
-
-
-
-/* Table Header */
-.table thead {
-
-
-    text-transform: uppercase;
-    font-weight: bold;
+    border: 1px solid #ddd;
 }
 
 .table th,
 .table td {
-    padding: 12px 16px;
+    padding: 14px 18px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
 
-
-
-/* Hover Effect */
 .table tbody tr:hover {
-    background-color: #e3f2fd;
-    /* Light blue hover effect */
+    background-color: #f1f8e9;
 }
 
 /* Responsive Design */
@@ -504,11 +518,18 @@ body {
 }
 
 
+/* Navbar Styling */
 .navbar a {
-    font-size: 14px;
-    /* Reduce font size if needed */
-    padding: 5px 10px;
-    /* Adjust spacing for nav links */
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background-color: #94b884;
+    color: white;
+    border-radius: 5px;
+    transform: scale(1.05);
 }
 
 
@@ -557,4 +578,9 @@ textarea {
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+#header-item:hover {
+    background-color: #94b884;
+    transform: scale(1.2);
 }

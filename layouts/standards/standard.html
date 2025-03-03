@@ -62,7 +62,8 @@
                     <div class="developer-details ms-3">
                         <p><strong>{{ .Params.developer_name }}</strong></p>
                         <p>{{ .Params.developer_bio }}</p>
-                        <p><a href="{{ .Params.developer_url }}" class="btn btn-secondary" target="_blank">Visit
+                        <p><a href="{{ .Params.developer_url }}" class="btn btn-secondary text-white"
+                                target="_blank">Visit
                                 Developer's Project</a></p>
                         </p>
                     </div>
@@ -72,10 +73,11 @@
 
                 <div class="project-status mt-4">
                     <h3 class="fs-1 fw-bold text-primary pb-3">Status</h3>
+                    {{ $succeeStatus := slice "published" "peer reviewed" "community reviewed"}}
                     <span class="badge 
-                        {{ if eq .Params.status " published" }}bg-success {{ else if eq .Params.status "review"
-                        }}bg-secondary {{ else if eq .Params.status "planned" }}bg-warning {{ else }}bg-dark {{ end }}"
-                        style="font-size: 1.1rem; padding: 12px 20px; border-radius: 10px;">
+                        {{ if in $succeeStatus .Params.status }}bg-secondary {{ else if eq .Params.status " review"
+                        }}bg-secondary {{ else if eq .Params.status "planned" }}bg-secondary {{ else }}bg-secondary {{
+                        end }}" style="font-size: 1.1rem; padding: 12px 20px; border-radius: 10px;">
                         {{ .Params.status | title }}
                     </span>
                 </div>
@@ -88,7 +90,7 @@
                         {{- range .Params.hashtags -}}
                         <li class="list-inline-item">
                             <a href="/tags/{{ . | urlize }}"
-                                class="badge bg-primary text-decoration-none text-white">#{{ . }}</a>
+                                class="badge bg-secondary text-decoration-none text-white">#{{ . }}</a>
                         </li>
                         {{- end -}}
                     </ul>
@@ -98,14 +100,27 @@
                 <div class="methodology-link mt-4">
                     <h3 class="fs-1 fw-bold text-primary pb-3">Methodology</h3>
                     {{- if .Params.methodology_url -}}
-                    <a href="{{ .Params.methodology_url }}" class="btn btn-primary" target="_blank" rel="noopener">
+                    <a href="{{ .Params.methodology_url }}" class="btn btn-secondary text-white" target="_blank"
+                        rel="noopener noreferrer">
                         View Methodology
                     </a>
                     {{- else -}}
                     <p class="text-muted">Available soon</p>
                     {{- end -}}
                 </div>
-
+                <hr>
+                <br>
+                <div class="apply-link mt-4">
+                    {{- if .Params.application_form_url -}}
+                    <h3 class="fs-1 fw-bold text-primary pb-3">Apply</h3>
+                    <a href="{{ .Params.application_form_url }}" class="btn btn-secondary text-white" target="_blank"
+                        rel="noopener noreferrer">
+                        Download application form
+                    </a>
+                    {{- else -}}
+                    <p class="text-muted"></p>
+                    {{- end -}}
+                </div>
 
             </div>
         </div>

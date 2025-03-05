@@ -110,15 +110,15 @@
                 </div>
                 <hr>
                 <br>
+                <!-- Apply Section with Apply Trigger -->
                 <div class="apply-link mt-4">
                     {{- if .Params.application_form_url -}}
                     <h3 class="fs-1 fw-bold text-primary pb-3">Apply</h3>
-                    <a href="{{ .Params.application_form_url }}" class="btn btn-secondary text-white" target="_blank"
-                        rel="noopener noreferrer">
-                        Download application form
-                    </a>
+                    <button id="openApply" class="btn btn-secondary text-white">
+                        Complete the form
+                    </button>
                     {{- else -}}
-                    <p class="text-muted"></p>
+                    <p class="text-muted">Application form available soon</p>
                     {{- end -}}
                 </div>
 
@@ -127,4 +127,78 @@
 
     </div>
 </section>
+
+<!-- Apply Modal -->
+<div id="applyContainer" class="apply">
+    <div class="apply-content">
+        <span id="closeApply" class="close">&times;</span>
+        <iframe class="airtable-embed" src="{{ .Params.application_form_url }}" frameborder="0" onmousewheel=""
+            width="100%" height="733" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    </div>
+</div>
+
+<!-- CSS for Apply -->
+<style>
+    .apply {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .apply-content {
+        background: white;
+        padding: 20px;
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+        text-align: center;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+</style>
+
+<!-- JavaScript for Apply -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var apply = document.getElementById("applyContainer");
+        var openBtn = document.getElementById("openApply");
+        var closeBtn = document.getElementById("closeApply");
+
+        if (openBtn) {
+            openBtn.addEventListener("click", function () {
+                apply.style.display = "flex";
+            });
+        }
+
+        if (closeBtn) {
+            closeBtn.addEventListener("click", function () {
+                apply.style.display = "none";
+            });
+        }
+
+        // Close apply if clicked outside of content
+        window.addEventListener("click", function (event) {
+            if (event.target === apply) {
+                apply.style.display = "none";
+            }
+        });
+    });
+</script>
+
 {{ end }}

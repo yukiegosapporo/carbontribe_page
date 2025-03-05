@@ -22,7 +22,7 @@ status="peer reviewed"
 # published, planned
 
 methodology_url="https://ipfs.io/ipfs/bafybeihmy4b3yxow42oac5c4xnirtzj6z67hysyj7hmoemezru4h7kpcve"
-application_form_url="http://ipfs.io/ipfs/bafkreig2mfagkksvkt2wfxtnnqmqtwyb6seq2brd2g443kt4gkil2pysnu"
+application_form_url="https://airtable.com/embed/appLDP225PpbVDZbe/pagaAbex9LCtzIY4g/form"
 
 +++
 Ocean debris poses a significant threat to ecosystems, biodiversity, and human livelihoods. Each year, millions of tons of waste, including plastics, metals, and other materials, enter aquatic environments, disrupting marine and freshwater systems. This debris not only harms wildlife through entanglement and ingestion but also contributes to the degradation of habitats and the contamination of water resources. The persistence of these materials in the environment exacerbates global challenges related to pollution, climate change, and ecosystem health.

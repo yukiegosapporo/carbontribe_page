@@ -50,7 +50,22 @@
             <!-- Iframes Section on the Right -->
             <div class="col-12 col-md-4">
                 <!-- Project Developer Section -->
-                <h3 class="fs-1 fw-bold text-primary pb-3">Standard Developer</h3>
+
+                <div class="row d-flex align-items-center">
+                    <h3 class="fs-1 fw-bold text-primary pb-3 me-2">
+                        Developed by
+                        <span class="info-container">
+                            <i class="fas fa-circle-info"></i>
+                            <div class="info-popup">
+                                Who is the primary developer of the standard and methodology
+                            </div>
+                        </span>
+                    </h3>
+                </div>
+
+
+
+
                 <div class="developer-info mt-5 d-flex align-items-center">
                     <!-- Developer Logo on the Left -->
                     <div class="developer-logo">
@@ -72,7 +87,13 @@
                 <br>
 
                 <div class="project-status mt-4">
-                    <h3 class="fs-1 fw-bold text-primary pb-3">Status</h3>
+                    <h3 class="fs-1 fw-bold text-primary pb-3">Status <span class="info-container">
+                            <i class="fas fa-circle-info"></i>
+                            <div class="info-popup">
+                                We follow a continuous improvement approach, ensuring our methodologies evolve through
+                                ongoing reviews and refinements.
+                            </div>
+                        </span></h3>
                     {{ $succeeStatus := slice "published" "peer reviewed" "community reviewed"}}
                     <span class="badge 
                         {{ if in $succeeStatus .Params.status }}bg-secondary {{ else if eq .Params.status " review"
@@ -86,6 +107,7 @@
 
                 <div class="hashtags mt-4">
                     <h3 class="fs-1 fw-bold text-primary pb-3">Tags</h3>
+
                     <ul class="list-inline">
                         {{- range .Params.hashtags -}}
                         <li class="list-inline-item">
@@ -113,7 +135,13 @@
                 <!-- Apply Section with Apply Trigger -->
                 <div class="apply-link mt-4">
                     {{- if .Params.application_form_url -}}
-                    <h3 class="fs-1 fw-bold text-primary pb-3">Apply</h3>
+                    <h3 class="fs-1 fw-bold text-primary pb-3">Apply <span class="info-container">
+                            <i class="fas fa-circle-info"></i>
+                            <div class="info-popup">
+                                Simply fill out the form to begin your credit journey, and we'll get back to you as soon
+                                as possible.
+                            </div>
+                        </span></h3>
                     <button id="openApply" class="btn btn-secondary text-white">
                         Complete the form
                     </button>

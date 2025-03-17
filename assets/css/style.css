@@ -584,3 +584,62 @@ textarea {
     background-color: #94b884;
     transform: scale(1.2);
 }
+
+.info-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.info-icon {
+    font-size: 16px;
+    color: #007bff;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.info-popup {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    color: #264653;
+    /* Darker green for better readability */
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+    font-size: 15px;
+    font-weight: 500;
+    width: 320px;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Smooth hover effect */
+.info-container:hover .info-popup {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+/* Add a subtle arrow at the top */
+.info-popup::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+
+.info-container:hover .info-popup {
+    display: block;
+}

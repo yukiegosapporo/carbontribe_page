@@ -2,20 +2,23 @@ enabled: true
 id: "brands"
 
 content:
-  title: "We are saving the earth together with "
+  title: "Our Partners"
   items:
     - "images/brands-google.png"
+    - "images/coe_logo.png"
     - "images/ggg.png"
     # - "images/google.png"
     - "images/tepco.png"
+    - "images/tsp.png"
     - "images/TEPCO Fintech.png"
     - "images/ECOTA.png"
     - "images/INATBA.png"
     - "images/Nature Tech Collective (MRV collective).png"
-    - "images/PositiveBlockchain-logo.png"
+    # - "images/PositiveBlockchain-logo.png"
     - "images/TechFounder_Logo_greyscale_pos_150dpi.png"
-    - "images/TechFounder_Logo_Web_neg_300.png"
-    - "images/tsp.png"
+    # - "images/TechFounder_Logo_Web_neg_300.png"
+    
+    - "images/earthood.png"
     #
     # - "images/brands-spotify.png"
     # - "images/brands-dropbox.png"

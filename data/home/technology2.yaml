@@ -34,8 +34,8 @@ content:
     title: "Web3-based data management"
     text: "We stores all the related data on the blockchain, ensuring tamper-proof records and scientific reproducibility. This process creates a new form of carbon credit, carbon removal digital assets, free from greenwashing"
     buttons: 
-      - label: "See demo CARDAT (CArbon Removal Digital AsseT)"
-        url: "https://testnets.opensea.io/assets/base-sepolia/0xf62ec313596a563879bdf537c7fa96a2a3994066/1"
+      - label: "See our credits"
+        url: "https://carbontribe.me/projects/"
 
       # - label: "Read more (coming soon)"
       #   url: "#"

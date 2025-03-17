@@ -49,7 +49,13 @@
             <!-- Iframes Section on the Right -->
             <div class="col-12 col-md-4">
                 <!-- Proponent Section -->
-                <h3 class="fs-1 fw-bold text-center text-primary pb-3">Proponents</h3>
+                <h3 class="fs-1 fw-bold text-center text-primary pb-3">Proponents <span class="info-container">
+                        <i class="fas fa-circle-info"></i>
+                        <div class="info-popup">
+                            Individuals, organizations, or entities responsible for initiating, developing, and managing
+                            the project
+                        </div>
+                    </span></h3>
                 <div class="developer-info mt-5 d-flex align-items-center">
                     <!-- Developer Logo on the Left -->
                     <div class="developer-logo">
@@ -89,7 +95,12 @@
                         <div class="custom-card w-100">
                             <div class="project-stats">
                                 <div class="stat-item">
-                                    <h3>Issued</h3>
+                                    <h3>Issued <span class="info-container">
+                                            <i class="fas fa-circle-info"></i>
+                                            <div class="info-popup">
+                                                The total number of credits issued and currently available for sale
+                                            </div>
+                                        </span></h3>
                                     {{if gt .Params.nft_issued 0}}
                                     <p><strong>{{.Params.nft_issued}}</strong> {{.Params.project_stats_unit}}</p>
                                     {{else}}
@@ -97,7 +108,13 @@
                                     {{end}}
                                 </div>
                                 <div class="stat-item">
-                                    <h3>Estimated</h3>
+                                    <h3>Estimated <span class="info-container">
+                                            <i class="fas fa-circle-info"></i>
+                                            <div class="info-popup">
+                                                The total estimated number of credits based on the current volume and
+                                                project duration
+                                            </div>
+                                        </span></h3>
                                     {{if gt .Params.nft_available 0}}
                                     <p><strong>{{.Params.nft_available}}</strong> {{.Params.project_stats_unit}}</p>
                                     {{else}}
@@ -105,11 +122,24 @@
                                     {{end}}
                                 </div>
                                 <div class="stat-item">
-                                    <h3>Retired</h3>
+                                    <h3>Retired <span class="info-container">
+                                            <i class="fas fa-circle-info"></i>
+                                            <div class="info-popup">
+                                                The total number of credits issued and subsequently retired. This is the
+                                                portion of credits that have been permanently removed from circulation.
+                                                Once retired, these credits can no longer be traded or resold
+                                            </div>
+                                        </span></h3>
                                     <p><strong>{{.Params.nft_retired}}</strong> {{.Params.project_stats_unit}}</p>
                                 </div>
                                 <div class="stat-item">
-                                    <h3>Price</h3>
+                                    <h3>Price <span class="info-container">
+                                            <i class="fas fa-circle-info"></i>
+                                            <div class="info-popup">
+                                                Premiums are added if proponents meet additional quality standards,
+                                                based on a weighted global average within the same domain.
+                                            </div>
+                                        </span></h3>
                                     <p><strong>{{.Params.price}}</strong> {{.Params.price_unit}}</p>
                                 </div>
                             </div>

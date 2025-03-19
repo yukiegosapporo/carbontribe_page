@@ -10,7 +10,7 @@ summaryLength: 20
 
 params:
   title: "Carbontribe"
-  description: "Carbon removal digital assets, free from greenwashing"
+  description: "Next-Gen Carbon Finance AI-Powered, Data-Driven & Verified"
   images: 
     - "images/main_company_logo.png"
 
@@ -51,9 +51,23 @@ menus:
       url: "/aboutus"
       weight: 4
   
+    - name: "Collaborate"
+      weight: 5
+      identifier: "our-process"  # Unique ID for dropdown
+
+    - name: "as a partner"
+      url: "/book/introduction"
+      parent: "our-process"
+      weight: 1
+
+    - name: "as a buyer"
+      url: "/book/introduction"
+      parent: "our-process"
+      weight: 2
+
     - name: "News"
       url: "/blog"
-      weight: 5
+      weight: 6
 
   # buttons:
     # - name: "Read our lightpaper"

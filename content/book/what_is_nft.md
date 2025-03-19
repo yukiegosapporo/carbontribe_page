@@ -2,7 +2,7 @@
 author = "Carbontribe"
 layout = "book_single"
 title = "What is an NFT and why does Carbontribe issue NFT credits?"
-weight = 5
+weight = 6
 +++
 
 # What is an NFT and why does Carbontribe issue NFT credits?

@@ -2,7 +2,8 @@
 author = "Carbontribe"
 layout = "book_single"
 title = "How to buy our credits?"
-weight = 6
+weight = 1
+parent = "for_buyers"
 +++
 
 # How to buy our credits?  

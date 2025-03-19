@@ -1,12 +1,12 @@
 +++
 author = "Carbontribe"
 layout = "book_single"
-title = "Where does my money go?"
-weight = 8
-
+title = "Financial flow"
+weight = 3
+parent = "solutions"
 +++
 
-# Where does my money go?  
+# Financial flow 
 
 
 ![alt text](/images/where_does_my_money_go.png "where_does_my_money_go")

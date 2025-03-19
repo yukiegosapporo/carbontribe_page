@@ -1,9 +1,10 @@
 +++
 author = "Carbontribe"
 layout = "book_single"
-title = "You'll get Social Good Certificate too!"
+title = "Social Good Certificate"
 date = "2025-02-21"
-weight = 5
+weight = 1
+parent = "methodologies"
 +++
 
 # Social Good Certificate 🤝

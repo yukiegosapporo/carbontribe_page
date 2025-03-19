@@ -8,14 +8,34 @@
       aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
         {{ range .Site.Menus.main }}
-        <li class="nav-item text-center" id="header-item">
+        {{ if .HasChildren }}
+        <!-- Dropdown Parent -->
+        <li class="nav-item dropdown position-relative hover-dropdown" id="header-item">
+          <a class="nav-link dropdown-toggle text-primary px-4" href="#" id="dropdown{{ .Identifier }}" role="button">
+            {{ .Name }}
+          </a>
+          <ul class="dropdown-menu border-0 bg-transparent text-center" aria-labelledby="dropdown{{ .Identifier }}">
+            {{ range .Children }}
+            <li>
+              <a class="dropdown-item text-primary" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+          </ul>
+        </li>
+        {{ else }}
+        <!-- Regular Menu Item -->
+        <li class="nav-item" id="header-item">
           <a class="nav-link text-primary px-4" href="{{ .URL }}">{{ .Name }}</a>
         </li>
         {{ end }}
+        {{ end }}
       </ul>
+
+      <!-- Buttons Section -->
       <ul class="navbar-nav ms-xl-3 mb-2 mb-xl-0">
         {{ range .Site.Menus.buttons }}
         <li class="nav-item">
@@ -26,3 +46,36 @@
     </div>
   </div>
 </nav>
+
+<!-- JavaScript for Hover Dropdown -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll(".hover-dropdown");
+
+    dropdowns.forEach((dropdown) => {
+      dropdown.addEventListener("mouseenter", function () {
+        let menu = this.querySelector(".dropdown-menu");
+        menu.classList.add("show");
+      });
+
+      dropdown.addEventListener("mouseleave", function () {
+        let menu = this.querySelector(".dropdown-menu");
+        menu.classList.remove("show");
+      });
+    });
+  });
+</script>
+
+<!-- CSS for Smooth Hover Effect -->
+<style>
+  .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .hover-dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+  }
+</style>

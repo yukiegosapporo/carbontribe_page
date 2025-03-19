@@ -1,8 +1,9 @@
 +++
 author = "Carbontribe"
 layout = "book_single"
-title = "Carbontribe’s Technology"
-weight = 3
+title = "Technology"
+weight = 2
+parent = "solutions"
 +++
 
 # Carbontribe’s Technology

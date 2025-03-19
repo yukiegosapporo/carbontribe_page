@@ -1,8 +1,9 @@
 +++
 author = "Carbontribe"
 layout = "book_single"
-title = "Carbontribe Core Values"
-weight = 2
+title = "Core Values"
+weight = 1
+parent = "solutions"
 +++
 
 # Carbontribe Core Values

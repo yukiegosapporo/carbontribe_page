@@ -56,12 +56,12 @@ menus:
       identifier: "our-process"  # Unique ID for dropdown
 
     - name: "as a partner"
-      url: "/book/introduction"
+      url: "/book/how_to_apply"
       parent: "our-process"
       weight: 1
 
     - name: "as a buyer"
-      url: "/book/introduction"
+      url: "/book/how_to_buy/"
       parent: "our-process"
       weight: 2
 

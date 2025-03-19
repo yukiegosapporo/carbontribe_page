@@ -631,10 +631,10 @@ textarea {
 .info-popup::before {
     content: "";
     position: absolute;
-    top: -10px;
-    left: 50%;
+    top: -50px;
+    left: 20%;
     transform: translateX(-50%);
-    border-width: 5px;
+    border-width: 1px;
     border-style: solid;
     border-color: transparent transparent #fff transparent;
 }
@@ -642,4 +642,31 @@ textarea {
 
 .info-container:hover .info-popup {
     display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 5px 0;
+    /* Reduce vertical padding in dropdown */
+}
+
+.hover-dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+.dropdown-item {
+    padding: 5px 10px !important;
+    /* Reduce spacing between items */
+    font-size: 0.9rem;
+    /* Optional: Adjust text size */
+    line-height: 1.2;
+    /* Reduce line height */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    /* Optional: Improve hover effect */
 }

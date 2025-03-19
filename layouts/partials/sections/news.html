@@ -5,10 +5,25 @@
         {{ end }}
         {{ .Content }}
         <div class="row no-gutters">
-            {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+            {{ $pages := where site.RegularPages "Section" "post" }}
+            <!-- {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }} -->
             {{ range sort $pages "PublishDate" "desc" | first 3}}
             <div class="col-16 col-xl-4">
                 <div class="card">
+
+                    {{ with .Params.image }}
+                    {{ $image := resources.Get . }}
+                    {{ if $image }}
+                    {{ $image.Fill "400x300" }}
+                    {{ else }}
+                    {{ errorf "⚠️ Image not found for post: %s | Expected path: %s" .Title . }}
+                    {{ end }}
+                    {{ else }}
+                    {{ errorf "⚠️ No image parameter found for post: %s" .Title }}
+                    {{ end }}
+
+
+
                     {{ $image := resources.Get .Params.featured_image }}
                     <img src="{{ ($image.Fill " 400x320 q100 Center").RelPermalink }}" class="card-img-top" alt="...">
                     <div class="card-body">

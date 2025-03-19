@@ -2,7 +2,8 @@
 author = "Carbontribe"
 layout = "book_single"
 title = "How to receive our credits?"
-weight = 7
+weight = 2
+parent = "for_buyers"
 +++
 
 # How to receive our credits?  

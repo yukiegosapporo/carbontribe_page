@@ -6,15 +6,39 @@
             <aside class="col-12 col-md-3 sidebar">
                 <h4 class="fw-bold text-primary">Chapters</h4>
                 <ul class="toc-list">
-                    {{ range where .Site.RegularPages "Section" "book" }}
-                    <li>
-                        <a href="{{ .Permalink }}" class="{{ if eq .Permalink $.Permalink }} active-link{{ end }}">
+                    {{ $currentPage := . }}
+                    {{ range sort (where .Site.RegularPages "Section" "book") "Weight" }}
+                    {{ if not .Params.parent }}
+                    <li class="parent-item">
+                        <a href="{{ .Permalink }}"
+                            class="{{ if eq .Permalink $currentPage.Permalink }} active-link{{ end }}">
                             {{ .Title }}
                         </a>
+
+                        <!-- Find Child Pages -->
+                        {{ $children := where $.Site.RegularPages "Params.parent" .File.BaseFileName }}
+                        {{ if $children }}
+                        <ul class="nested-toc">
+                            {{ range sort $children "Weight" }}
+                            <li>
+                                <a href="{{ .Permalink }}"
+                                    class="{{ if eq .Permalink $currentPage.Permalink }} active-link{{ end }}">
+                                    {{ .Title }}
+                                </a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                        {{ end }}
+
                     </li>
+                    {{ end }}
                     {{ end }}
                 </ul>
             </aside>
+
+
+
+
             <div class="col-12 col-md-1"></div>
 
             <!-- Right Content Area -->
@@ -31,4 +55,18 @@
         </div>
     </div>
 </section>
+<script>
+    function toggleTOC(element) {
+        var nestedList = element.nextElementSibling.nextElementSibling;
+
+        if (nestedList.style.display === "none" || nestedList.style.display === "") {
+            nestedList.style.display = "block";
+            element.textContent = "➖"; // Change to minus when expanded
+        } else {
+            nestedList.style.display = "none";
+            element.textContent = "➕"; // Change back to plus when collapsed
+        }
+    }
+</script>
+
 {{ end }}

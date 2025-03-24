@@ -23,7 +23,13 @@ status="review"
 review_method="Third party review"
 
 methodology_url="https://carbontribe.me/"
-
+application_form_url="https://airtable.com/embed/appLDP225PpbVDZbe/pag0Qxc2reFHsRL3u/form"
+status_data = [
+  {text = "Initiated", date = "03/2024"},
+  {text = "Peer reviewed", date = "10/2024"},
+  {text = "Expert reviewed", date = "03/2025"},
+  # {text = "Published", date = "12/2004"},
+]
 +++
 Since the 1980s, global mangrove ecosystems have experienced significant declines, primarily driven by human activities such as deforestation, the expansion of aquaculture, and the extraction of soil for coastal development. These activities have resulted in substantial loss of mangrove areas, reducing their ability to serve as vital carbon sinks. Efforts to restore these coastal wetlands, including mangrove revegetation, offer a promising avenue to counteract these losses. The success of such restoration initiatives, however, depends on the re-establishment of the original environmental conditions necessary for mangrove growth.
 

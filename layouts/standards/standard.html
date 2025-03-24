@@ -95,12 +95,37 @@
                             </div>
                         </span></h3>
                     {{ $succeeStatus := slice "published" "peer reviewed" "community reviewed"}}
-                    <span class="badge 
+                    <!-- <span class="badge 
                         {{ if in $succeeStatus .Params.status }}bg-secondary {{ else if eq .Params.status " review"
                         }}bg-secondary {{ else if eq .Params.status "planned" }}bg-secondary {{ else }}bg-secondary {{
                         end }}" style="font-size: 1.1rem; padding: 12px 20px; border-radius: 10px;">
                         {{ .Params.status | title }}
-                    </span>
+                    </span> -->
+
+                    <!-- Timeline Container -->
+                    <div class="document-history">
+
+                        {{ with .Params.status_data }}
+                        <div class="timeline">
+                            {{ $total := len . }}
+                            {{ range $index, $item := . }}
+                            <div class="timeline-entry">
+                                <div class="circle-wrapper">
+                                    <div class="circle"></div>
+                                    {{ if lt (add $index 1) $total }}
+                                    <div class="line"></div>
+                                    {{ end }}
+                                </div>
+                                <div class="content">
+                                    <p class="text">{{ $item.text | markdownify }} <span class="date">{{ $item.date
+                                            }}</span></p>
+                                </div>
+                            </div>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+
                 </div>
                 <hr>
                 <br>
@@ -198,6 +223,71 @@
         right: 15px;
         font-size: 24px;
         cursor: pointer;
+    }
+
+    .document-history {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 0 20px;
+        font-family: sans-serif;
+    }
+
+    .document-history h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .timeline-entry {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        margin-bottom: 16px;
+        /* ↓ smaller gap between items */
+    }
+
+    .circle-wrapper {
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2px;
+        margin-right: 12px;
+        /* slightly tighter horizontally */
+    }
+
+    .circle {
+        width: 14px;
+        height: 14px;
+        background-color: #4CAF50;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+
+    .content {
+        flex: 1;
+    }
+
+    .text {
+        margin: 0;
+        color: #333;
+        font-size: 1rem;
+    }
+
+    .date {
+        font-weight: normal;
+        color: #777;
+        font-size: 0.9rem;
+        margin-left: 10px;
+    }
+
+    .text a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+    .text a:hover {
+        text-decoration: underline;
     }
 </style>
 

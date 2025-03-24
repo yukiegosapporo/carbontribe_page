@@ -22,6 +22,13 @@ status="review"
 # published, planned
 review_method="Third party review"
 methodology_url="https://carbontribe.me/"
+# application_form_url="https://airtable.com/embed/appLDP225PpbVDZbe/pagIY9wvRnc9342II/form"
+status_data = [
+  {text = "Initiated", date = "03/2024"},
+  {text = "Peer reviewed", date = "10/2024"},
+  {text = "Expert reviewed", date = "03/2025"},
+  # {text = "Published", date = "12/2004"},
+]
 
 +++
 Nitrogen-based fertilizers are vital for modern agriculture but pose significant environmental challenges, particularly through the emission of nitrous oxide (N₂O), a greenhouse gas with a global warming potential 300 times that of carbon dioxide over a century. Overuse of these fertilizers not only exacerbates N₂O emissions but also degrades soil health and disrupts ecosystems. Reducing their application presents a critical opportunity to mitigate climate change while fostering sustainable agricultural practices.

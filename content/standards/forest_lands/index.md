@@ -23,7 +23,13 @@ review_method="Third party review"
 # published, planned
 
 methodology_url="https://carbontribe.me/"
-
+application_form_url="https://airtable.com/embed/appLDP225PpbVDZbe/pagY9xHETLtkBA0Qv/form"
+status_data = [
+  {text = "Initiated", date = "03/2024"},
+  {text = "Peer reviewed", date = "10/2024"},
+  {text = "Expert reviewed", date = "03/2025"},
+  # {text = "Published", date = "12/2004"},
+]
 +++
 Since the mid-20th century, global forests have faced significant declines due to deforestation, land-use changes, and other human-driven activities. These disturbances have resulted in the loss of vast forested areas, diminishing their ability to act as natural carbon sinks and exacerbating the challenges of climate change. Efforts to reverse these trends, particularly through afforestation, reforestation, and revegetation (ARR), offer a practical and impactful strategy for restoring degraded ecosystems and enhancing their carbon sequestration potential. However, the success of ARR projects depends on the careful selection of species, restoration techniques, and the re-establishment of ecological conditions conducive to forest growth.
 

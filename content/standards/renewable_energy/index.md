@@ -22,7 +22,12 @@ status="review"
 # published, planned
 
 methodology_url="https://carbontribe.me/"
-
+status_data = [
+  {text = "Initiated", date = "03/2024"},
+  {text = "Peer reviewed", date = "10/2024"},
+  # {text = "Expert reviewed", date = "03/2025"},
+  # {text = "Published", date = "12/2004"},
+]
 +++
 Renewable energy is a cornerstone of global efforts to combat climate change and transition to a sustainable future. By replacing fossil fuel-based power generation, renewable energy sources such as solar, wind, and hydroelectric power dramatically reduce greenhouse gas emissions, particularly carbon dioxide (CO₂), which is the leading driver of global warming. In addition to mitigating climate impacts, renewable energy enhances energy security and fosters economic growth by creating resilient, decentralized energy systems.
 

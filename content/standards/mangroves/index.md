@@ -17,7 +17,7 @@ image_data = [
 developer_name = "Carbontribe Labs OÜ"
 developer_image = "/images/standards/mangroves/logo.png"
 
-hashtags = ["Afforestation", "Mangrove", "Remote sensing", "Computer vision", "Satellite data"]
+hashtags = ["Afforestation", "Mangrove", "Remote sensing", "Computer vision", "Satellite data", "IPCC compliant"]
 status="review"
 # published, planned
 review_method="Third party review"

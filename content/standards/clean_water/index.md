@@ -1,6 +1,6 @@
 +++
 author = "Carbontribe"
-title = "Clean water"
+title = "Clean Water"
 date = "2024-12-27"
 category="Clean Water"
 layout = "standard"

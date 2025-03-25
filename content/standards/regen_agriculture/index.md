@@ -17,7 +17,7 @@ image_data = [
 developer_name = "Carbontribe Labs OÜ"
 developer_image = "/images/standards/regen_agriculture/logo.png"
 
-hashtags = ["Regenerative Agriculture", "Object detection", "Computer vision"]
+hashtags = ["Regenerative Agriculture", "Object detection", "Computer vision", "IPCC compliant"]
 status="review"
 # published, planned
 review_method="Third party review"

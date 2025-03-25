@@ -17,7 +17,7 @@ image_data = [
 developer_name = "Carbontribe Labs OÜ"
 developer_image = "/images/standards/forest_lands/logo.png"
 
-hashtags = ["Afforestation", "Forest lands", "Remote sensing", "Computer vision", "Satellite data"]
+hashtags = ["Afforestation", "Forest lands", "Remote sensing", "Computer vision", "Satellite data", "IPCC compliant"]
 status="review"
 review_method="Third party review"
 # published, planned

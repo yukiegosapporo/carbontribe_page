@@ -3,38 +3,41 @@
         {{ with .content.title }}
         <h3 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h3>
         {{ end }}
+
         {{ .Content }}
+
         <div class="row no-gutters">
-            {{ $pages := where site.RegularPages "Section" "post" }}
-            <!-- {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }} -->
-            {{ range sort $pages "PublishDate" "desc" | first 3}}
+            {{ $count := 0 }}
+            {{ range sort site.RegularPages "PublishDate" "desc" }}
+            {{ if and (lt $count 3) (strings.HasPrefix .File.Path "post/") }}
             <div class="col-16 col-xl-4">
                 <div class="card">
 
-                    {{ with .Params.image }}
+                    {{ $imgPath := or .Params.featured_image .Params.image }}
+                    {{ with $imgPath }}
                     {{ $image := resources.Get . }}
-                    {{ if $image }}
-                    {{ $image.Fill "400x300" }}
+                    {{ with $image }}
+                    <img src="{{ ($image.Fill " 400x320 q100 Center").RelPermalink }}" class="card-img-top"
+                        alt="{{ $.Title }}">
                     {{ else }}
-                    {{ errorf "⚠️ Image not found for post: %s | Expected path: %s" .Title . }}
+                    {{ warnf "⚠️ Image not found at path: %s for post: %s" . $.Title }}
                     {{ end }}
                     {{ else }}
-                    {{ errorf "⚠️ No image parameter found for post: %s" .Title }}
+                    {{ warnf "⚠️ No image defined for post: %s" .Title }}
                     {{ end }}
 
-
-
-                    {{ $image := resources.Get .Params.featured_image }}
-                    <img src="{{ ($image.Fill " 400x320 q100 Center").RelPermalink }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p>
-                            <a href="{{.Permalink}}">{{.Title}} </a>
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
                         </p>
                     </div>
                 </div>
             </div>
-            {{end}}
+            {{ $count = add $count 1 }}
+            {{ end }}
+            {{ end }}
         </div>
+
         <div class="row justify-content-center">
             <br>
             <div class="col-12 col-xl-6 text-center">
@@ -45,5 +48,4 @@
             </div>
         </div>
     </div>
-
 </section>

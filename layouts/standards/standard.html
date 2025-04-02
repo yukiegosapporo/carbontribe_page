@@ -136,8 +136,7 @@
                     <ul class="list-inline">
                         {{- range .Params.hashtags -}}
                         <li class="list-inline-item">
-                            <a href="/tags/{{ . | urlize }}"
-                                class="badge bg-secondary text-decoration-none text-white">#{{ . }}</a>
+                            <a class="badge bg-secondary text-decoration-none text-white">#{{ . }}</a>
                         </li>
                         {{- end -}}
                     </ul>

@@ -7,7 +7,7 @@ layout = "project"
 description = "Marine Debris Collection & Sustainable Recycling, Kagawa"
 featured_image = "images/projects/clean_ocean_ensemble_recycle/noaa-eSSu1xTHQso-unsplash.png"
 tags = [
-    "Clean water",
+    "Clean Water",
     "Carbontribe",
 ]
 

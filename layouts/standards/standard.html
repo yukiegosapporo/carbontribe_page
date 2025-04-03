@@ -6,47 +6,52 @@
     <div class="container">
 
         <!-- Title and Description Section -->
-        <div class="row justify-content-center pb-5">
-            <div class="col-12">
-                {{ with .Title }}
-                <h2 class="display-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
-                {{ end }}
+        <div class="aos-scope">
+            <div data-aos="fade-up">
+                <div class="row justify-content-center pb-5">
+                    <div class="col-12">
+                        {{ with .Title }}
+                        <h2 class="display-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
+                        {{ end }}
 
+                    </div>
+                </div>
             </div>
         </div>
-
         <!-- Two-Column Layout for Text, Table on the Left and Iframes on the Right -->
         <div class="row pb-5">
             <div class="col-12 col-md-8">
 
-                <!-- Full-width Image at the very top -->
+                <!-- Full-width Image inside text column -->
                 {{ if .Params.image_data }}
-                <div class="row">
-                    {{ $firstImage := true }} <!-- Flag to detect the first image -->
-                    {{ range .Params.image_data }}
-                    <!-- Full-width first image -->
-                    {{ if $firstImage }}
-                    <div class="col-12">
-                        <div class="image-card"
-                            style="display: flex; justify-content: center; align-items: center; width: 100%; max-width: 100%; height: auto; max-height: 80vh;">
-                            <img src="{{ .image | relURL }}" class="img-fluid w-100 mb-3" alt="Wide project image"
-                                style="width: 95vw; max-width: 95%; height: auto; aspect-ratio: 5 / 2.8">
+                <div class="aos-scope">
+                    <div data-aos="fade-up">
+                        {{ $firstImage := true }}
+                        {{ range .Params.image_data }}
+                        {{ if $firstImage }}
+                        <div class="image-card mb-4"
+                            style="display: flex; justify-content: center; align-items: center; width: 100%; height: auto; max-height: 80vh;">
+                            <img src="{{ .image | relURL }}" class="img-fluid" alt="Wide project image"
+                                style="width: 100%; height: auto; aspect-ratio: 5 / 2.8">
                         </div>
+                        {{ $firstImage = false }}
+                        {{ end }}
+                        {{ end }}
                     </div>
-                    {{ $firstImage = false }} <!-- Set the flag to false after the first image -->
-                    {{ end }}
-                    {{ end }}
                 </div>
                 {{ end }}
 
 
                 <!-- Text and Table Section on the Left -->
-                <div class="blog-content fs-5">
-                    {{ .Content }}
+                <div class="aos-scope">
+                    <div data-aos="fade-up">
+                        <div class="blog-content fs-4" style="max-width: 98%; margin: 0 auto;">
+                            {{ .Content }}
+                        </div>
+                    </div>
                 </div>
 
             </div>
-
             <!-- Iframes Section on the Right -->
             <div class="col-12 col-md-4">
                 <!-- Project Developer Section -->

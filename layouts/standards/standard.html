@@ -156,6 +156,19 @@
                 </div>
                 <hr>
                 <br>
+                <div class="price-link mt-4">
+                    <h3 class="fs-1 fw-bold text-primary pb-3">Pricing</h3>
+                    {{- if .Params.price_url -}}
+                    <a href="{{ .Params.price_url }}" class="btn btn-secondary text-white" target="_blank"
+                        rel="noopener noreferrer">
+                        View Pricing
+                    </a>
+                    {{- else -}}
+                    <p class="text-muted">Available soon</p>
+                    {{- end -}}
+                </div>
+                <hr>
+                <br>
                 <!-- Apply Section with Apply Trigger -->
                 <div class="apply-link mt-4">
                     {{- if .Params.application_form_url -}}

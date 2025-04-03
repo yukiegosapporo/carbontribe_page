@@ -691,7 +691,7 @@ textarea {
 
 /* Fade-up animation */
 .aos-scope [data-aos="fade-up"] {
-    transform: translateY(20px);
+    transform: translateY(50px);
 }
 
 .aos-scope [data-aos="fade-up"].aos-animate {
@@ -701,7 +701,7 @@ textarea {
 /* Zoom-in-up */
 [data-aos="zoom-in-up"] {
     opacity: 0;
-    transform: scale(0.8) translateY(50px);
+    transform: scale(0.8) translateY(40px);
     transition: opacity 1.4s ease, transform 1.4s ease;
 }
 

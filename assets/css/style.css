@@ -1,3 +1,13 @@
+body {
+    background-color: #FFFFFF;
+    background-image: radial-gradient(#cde2c2 0.5px, #FFFFFF 0.5px);
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    /* Optional: makes background stay still on scroll */
+}
+
+
 /* General Image Styling */
 .post-image img {
     max-width: 100%;

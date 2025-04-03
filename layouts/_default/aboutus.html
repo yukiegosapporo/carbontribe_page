@@ -5,37 +5,56 @@
             <div class="row justify-content-center pb-5">
 
                 <div class="col-12 col-xl-6">
-                    <h2 class="fs-1 fw-bold text-center text-primary pb-3">Our Mission</h2>
-                    <p>At Carbontribe, we are driven by a profound commitment to preserving and enhancing what truly
-                        matters.
-                        Our mission is to build a more sustainable world where every action is transparent, equitable,
-                        and impactful.
-                        We strive to make participation in carbon reduction projects accessible to everyone—individuals,
-                        companies, and project initiatives alike.</p>
+                    <div class="aos-scope">
+                        <div data-aos="fade-up">
+                            <h2 class="fs-1 fw-bold text-center text-primary pb-3">Our Mission</h2>
+                            <p>At Carbontribe, we are driven by a profound commitment to preserving and enhancing what
+                                truly
+                                matters.
+                                Our mission is to build a more sustainable world where every action is transparent,
+                                equitable,
+                                and impactful.
+                                We strive to make participation in carbon reduction projects accessible to
+                                everyone—individuals,
+                                companies, and project initiatives alike.</p>
 
-                    <p>Founded by two passionate professionals with years of experience, Carbontribe was born from a
-                        shared vision to transform the way we tackle carbon sequestration and emissions reduction by
-                        leveraging innovative technologies.</p>
+                            <p>Founded by two passionate professionals with years of experience, Carbontribe was born
+                                from a
+                                shared vision to transform the way we tackle carbon sequestration and emissions
+                                reduction by
+                                leveraging innovative technologies.</p>
 
-                    <blockquote>
-                        <p><em>"Participating in carbon reduction and compensation is a complex process, especially for
-                                smaller businesses that are often eager to contribute. Our main goal is to make it
-                                accessible
-                                for everyone."</em></p>
-                        <p class="quote-author">- Yuki Katoh, CTO Carbontribe</p>
-                    </blockquote>
+                            <blockquote>
+                                <p><em>"Participating in carbon reduction and compensation is a complex process,
+                                        especially for
+                                        smaller businesses that are often eager to contribute. Our main goal is to make
+                                        it
+                                        accessible
+                                        for everyone."</em></p>
+                                <p class="quote-author">- Yuki Katoh, CTO Carbontribe</p>
+                            </blockquote>
 
-                    <p>Our core values of sustainability, innovation, and community guide us in everything we do. We
-                        are committed to continuous development—both within our company and the broader environmental
-                        movement. By embracing cutting-edge technologies and methodologies, we ensure our efforts evolve
-                        to meet the pressing challenges of our changing world. At Carbontribe, we work collaboratively
-                        and inspire others to join us in creating a cleaner, more sustainable future for all.</p>
+                            <p>Our core values of sustainability, innovation, and community guide us in everything we
+                                do. We
+                                are committed to continuous development—both within our company and the broader
+                                environmental
+                                movement. By embracing cutting-edge technologies and methodologies, we ensure our
+                                efforts evolve
+                                to meet the pressing challenges of our changing world. At Carbontribe, we work
+                                collaboratively
+                                and inspire others to join us in creating a cleaner, more sustainable future for all.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            {{ with .Site.Data.home.services }}{{ partial "sections/services.html" . }}{{ end }}
-            <div class="row pb-5">
-                {{ template "_internal/pagination.html" . }}
+            <div class="aos-scope">
+                <div data-aos="fade-up">
+                    {{ with .Site.Data.home.services }}{{ partial "sections/services.html" . }}{{ end }}
+                    <div class="row pb-5">
+                        {{ template "_internal/pagination.html" . }}
+                    </div>
+                </div>
             </div>
         </div>
     </div>

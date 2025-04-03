@@ -1,15 +1,17 @@
 <section class="section issue py-5">
     <div class="container">
-
-        <div class="col-12  d-flex flex-column justify-content-center">
-            {{ with .content.title }}
-            <h5 class="hero-title  display-1 text-primary text-center text-l-start pb-4">{{ . | markdownify
-                }}</h5>
-            {{ end }}
-            {{ with .content.text }}
-            <p class="text-center text-black-61 text-xl-start pb-4">{{ . | markdownify }}</p>
-            {{ end }}
-
+        <div class="aos-scope">
+            <div data-aos="fade-up">
+                <div class="col-12  d-flex flex-column justify-content-center">
+                    {{ with .content.title }}
+                    <h5 class="hero-title  display-1 text-primary text-center text-l-start pb-4">{{ . | markdownify
+                        }}</h5>
+                    {{ end }}
+                    {{ with .content.text }}
+                    <p class="text-center text-black-61 text-xl-start pb-4">{{ . | markdownify }}</p>
+                    {{ end }}
+                </div>
+            </div>
         </div>
     </div>
 </section>

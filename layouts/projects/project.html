@@ -7,40 +7,51 @@
 
         <!-- Full-width Image at the very top -->
         {{ if .Params.image_data }}
-        <div class="row">
-            {{ $firstImage := true }} <!-- Flag to detect the first image -->
-            {{ range .Params.image_data }}
-            <!-- Full-width first image -->
-            {{ if $firstImage }}
-            <div class="col-12">
-                <div class="image-card"
-                    style="display: flex; justify-content: center; align-items: center; width: 100%; max-width: 100%; height: auto; max-height: 80vh;">
-                    <img src="{{ .image | relURL }}" class="img-fluid w-100 mb-3" alt="Wide project image"
-                        style="width: 90%; aspect-ratio: 5 / 2.5; object-fit: cover; max-width: 90%;">
+        <div class="aos-scope">
+            <div data-aos="fade-up">
+                <div class="row">
+                    {{ $firstImage := true }} <!-- Flag to detect the first image -->
+                    {{ range .Params.image_data }}
+                    <!-- Full-width first image -->
+                    {{ if $firstImage }}
+                    <div class="col-12">
+                        <div class="image-card"
+                            style="display: flex; justify-content: center; align-items: center; width: 100%; max-width: 100%; height: auto; max-height: 80vh;">
+                            <img src="{{ .image | relURL }}" class="img-fluid w-100 mb-3" alt="Wide project image"
+                                style="width: 90%; aspect-ratio: 5 / 2.5; object-fit: cover; max-width: 90%;">
+                        </div>
+                    </div>
+                    {{ $firstImage = false }} <!-- Set the flag to false after the first image -->
+                    {{ end }}
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        <!-- Title and Description Section -->
+        <div class="aos-scope">
+            <div data-aos="fade-up">
+                <div class="row justify-content-center pb-5">
+                    <div class="col-12">
+                        {{ with .Title }}
+                        <h2 class="display-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
+                        {{ end }}
+
+                    </div>
                 </div>
             </div>
-            {{ $firstImage = false }} <!-- Set the flag to false after the first image -->
-            {{ end }}
-            {{ end }}
         </div>
-        {{ end }}
-
-        <!-- Title and Description Section -->
-        <div class="row justify-content-center pb-5">
-            <div class="col-12">
-                {{ with .Title }}
-                <h2 class="display-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
-                {{ end }}
-
-            </div>
-        </div>
-
         <!-- Two-Column Layout for Text, Table on the Left and Iframes on the Right -->
+
         <div class="row justify-content-center pb-5">
             <div class="col-10 col-md-6">
                 <!-- Text and Table Section on the Left -->
                 <div class="blog-content fs-5">
-                    {{ .Content }}
+                    <div class="aos-scope">
+                        <div data-aos="fade-up">
+                            {{ .Content }}
+                        </div>
+                    </div>
                 </div>
 
 
@@ -88,97 +99,108 @@
 
                 <!-- Add a Table with NFT Names and Links -->
                 {{ if .Params.nfts }}
-                <hr>
-                <div class="py-5">
-                    <h4 class="fs-1 fw-bold text-center text-primary pb-3">Credits</h4>
-                    <div class="row">
-                        <div class="custom-card w-100">
-                            <div class="project-stats">
-                                <div class="stat-item">
-                                    <h3>Issued <span class="info-container">
-                                            <i class="fas fa-circle-info"></i>
-                                            <div class="info-popup">
-                                                The total number of credits issued and currently available for sale
-                                            </div>
-                                        </span></h3>
-                                    {{if gt .Params.nft_issued 0}}
-                                    <p><strong>{{.Params.nft_issued}}</strong> {{.Params.project_stats_unit}}</p>
-                                    {{else}}
-                                    <p><strong>Preparing</strong></p>
-                                    {{end}}
+                <div class="aos-scope">
+                    <div data-aos="fade-up">
+                        <hr>
+                        <div class="py-5">
+                            <h4 class="fs-1 fw-bold text-center text-primary pb-3">Credits</h4>
+                            <div class="row">
+                                <div class="custom-card w-100">
+                                    <div class="project-stats">
+                                        <div class="stat-item">
+                                            <h3>Issued <span class="info-container">
+                                                    <i class="fas fa-circle-info"></i>
+                                                    <div class="info-popup">
+                                                        The total number of credits issued and currently available for
+                                                        sale
+                                                    </div>
+                                                </span></h3>
+                                            {{if gt .Params.nft_issued 0}}
+                                            <p><strong>{{.Params.nft_issued}}</strong> {{.Params.project_stats_unit}}
+                                            </p>
+                                            {{else}}
+                                            <p><strong>Preparing</strong></p>
+                                            {{end}}
+                                        </div>
+                                        <div class="stat-item">
+                                            <h3>Estimated <span class="info-container">
+                                                    <i class="fas fa-circle-info"></i>
+                                                    <div class="info-popup">
+                                                        The total estimated number of credits based on the current
+                                                        volume and
+                                                        project duration
+                                                    </div>
+                                                </span></h3>
+                                            {{if gt .Params.nft_available 0}}
+                                            <p><strong>{{.Params.nft_available}}</strong> {{.Params.project_stats_unit}}
+                                            </p>
+                                            {{else}}
+                                            <p><strong>Preparing</strong></p>
+                                            {{end}}
+                                        </div>
+                                        <div class="stat-item">
+                                            <h3>Retired <span class="info-container">
+                                                    <i class="fas fa-circle-info"></i>
+                                                    <div class="info-popup">
+                                                        The total number of credits issued and subsequently retired.
+                                                        This is the
+                                                        portion of credits that have been permanently removed from
+                                                        circulation.
+                                                        Once retired, these credits can no longer be traded or resold
+                                                    </div>
+                                                </span></h3>
+                                            <p><strong>{{.Params.nft_retired}}</strong> {{.Params.project_stats_unit}}
+                                            </p>
+                                        </div>
+                                        <div class="stat-item">
+                                            <h3>Price <span class="info-container">
+                                                    <i class="fas fa-circle-info"></i>
+                                                    <div class="info-popup">
+                                                        Premiums are added if proponents meet additional quality
+                                                        standards,
+                                                        based on a weighted global average within the same domain.
+                                                    </div>
+                                                </span></h3>
+                                            <p><strong>{{.Params.price}}</strong> {{.Params.price_unit}}</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="stat-item">
-                                    <h3>Estimated <span class="info-container">
-                                            <i class="fas fa-circle-info"></i>
-                                            <div class="info-popup">
-                                                The total estimated number of credits based on the current volume and
-                                                project duration
-                                            </div>
-                                        </span></h3>
-                                    {{if gt .Params.nft_available 0}}
-                                    <p><strong>{{.Params.nft_available}}</strong> {{.Params.project_stats_unit}}</p>
-                                    {{else}}
-                                    <p><strong>Preparing</strong></p>
-                                    {{end}}
-                                </div>
-                                <div class="stat-item">
-                                    <h3>Retired <span class="info-container">
-                                            <i class="fas fa-circle-info"></i>
-                                            <div class="info-popup">
-                                                The total number of credits issued and subsequently retired. This is the
-                                                portion of credits that have been permanently removed from circulation.
-                                                Once retired, these credits can no longer be traded or resold
-                                            </div>
-                                        </span></h3>
-                                    <p><strong>{{.Params.nft_retired}}</strong> {{.Params.project_stats_unit}}</p>
-                                </div>
-                                <div class="stat-item">
-                                    <h3>Price <span class="info-container">
-                                            <i class="fas fa-circle-info"></i>
-                                            <div class="info-popup">
-                                                Premiums are added if proponents meet additional quality standards,
-                                                based on a weighted global average within the same domain.
-                                            </div>
-                                        </span></h3>
-                                    <p><strong>{{.Params.price}}</strong> {{.Params.price_unit}}</p>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="table-container">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Year</th>
+                                                <th scope="col">Type</th>
+                                                <th scope="col">Link</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Loop through the nfts array in Params -->
+                                            {{ range .Params.nfts }}
+                                            <tr>
+                                                <td>{{ .year }}</td>
+                                                <td>{{ .type }}</td>
+                                                {{if .link}}
+                                                <td><a href="{{ .link }}" target="_blank">View</a></td>
+                                                {{else}}
+                                                <td>Coming soon</td>
+                                                {{end}}
+                                            </tr>
+                                            {{ end }}
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
+                            {{ end }}
+
                         </div>
 
-
                     </div>
-                    <div class="row">
-                        <div class="table-container">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Year</th>
-                                        <th scope="col">Type</th>
-                                        <th scope="col">Link</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- Loop through the nfts array in Params -->
-                                    {{ range .Params.nfts }}
-                                    <tr>
-                                        <td>{{ .year }}</td>
-                                        <td>{{ .type }}</td>
-                                        {{if .link}}
-                                        <td><a href="{{ .link }}" target="_blank">View</a></td>
-                                        {{else}}
-                                        <td>Coming soon</td>
-                                        {{end}}
-                                    </tr>
-                                    {{ end }}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    {{ end }}
-
                 </div>
-
-
 
             </div>
         </div>

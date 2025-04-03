@@ -2,65 +2,71 @@
 
 <section class="section blog-list py-5">
     <div class="container">
-        <section class="impact-section">
-            <div class="impact-content">
-                <h2 class="impact-title">Projects</h2>
-                <p class="impact-subtitle">Discover digitally transformed carbon credits, designed to ensure
-                    transparency and eliminate greenwashing</p>
+        <div class="aos-scope">
+            <div data-aos="fade-up">
+                <section class="impact-section">
+                    <div class="impact-content">
 
-                <div class="impact-badge-container">
-                    <div class="card-impact">
-                        <div class="card-impact-body">
-                            <h1 class="badge-line">GHG Saved </h1>
-                            <div class="badge-big badge-co2">
-                                <span class="badge-line" id="co2Badge">0</span>
+                        <h2 class="impact-title">Projects</h2>
+                        <p class="impact-subtitle">Discover digitally transformed carbon credits, designed to ensure
+                            transparency and eliminate greenwashing</p>
+
+                        <div class="impact-badge-container">
+                            <div class="card-impact">
+                                <div class="card-impact-body">
+                                    <h1 class="badge-line">GHG Saved </h1>
+                                    <div class="badge-big badge-co2">
+                                        <span class="badge-line" id="co2Badge">0</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card-impact">
+                                <div class="card-impact-body">
+                                    <h1 class="badge-line">Waste Collected</h1>
+                                    <div class="badge-big badge-waste">
+                                        <span class="badge-line" id="wasteBadge">0</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="card-impact">
-                        <div class="card-impact-body">
-                            <h1 class="badge-line">Waste Collected</h1>
-                            <div class="badge-big badge-waste">
-                                <span class="badge-line" id="wasteBadge">0</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+        </div>
+
+
+
+</section>
 
 
 
 
-        </section>
 
+<div class="row justify-content-center">
+    <!-- Filter Buttons on the Left -->
+    <div class="col-11 col-md-2">
+        <div class="filter-buttons mb-3">
+            <h3 class="fs-5 fw-bold text-primary pb-3"></h3>
+            <button class="filter-button btn btn-outline-primary w-100 mb-2 active" data-filter="all">All</button>
+            <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="blue">Blue
+                Carbon</button>
+            <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="green">Green
+                Carbon</button>
+            <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="clean_water">Clean
+                Water</button>
+            <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="agri">Regen.
+                Agriculture</button>
+            <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="renewable">Renewable
+                Energy</button>
+        </div>
+    </div>
 
+    <!-- Cards on the Right -->
 
-
-
-        <div class="row justify-content-center">
-            <!-- Filter Buttons on the Left -->
-            <div class="col-11 col-md-2">
-                <div class="filter-buttons mb-3">
-                    <h3 class="fs-5 fw-bold text-primary pb-3"></h3>
-                    <button class="filter-button btn btn-outline-primary w-100 mb-2 active"
-                        data-filter="all">All</button>
-                    <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="blue">Blue
-                        Carbon</button>
-                    <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="green">Green
-                        Carbon</button>
-                    <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="clean_water">Clean
-                        Water</button>
-                    <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="agri">Regen.
-                        Agriculture</button>
-                    <button class="filter-button btn btn-outline-primary w-100 mb-2" data-filter="renewable">Renewable
-                        Energy</button>
-                </div>
-            </div>
-
-            <!-- Cards on the Right -->
-            <div class="col-11 col-md-9">
+    <div class="col-11 col-md-9">
+        <div class="aos-scope">
+            <div data-aos="fade-up">
                 <h2 class="fs-1 fw-bold text-primary pb-3"></h2>
                 <div class="row g-4 pb-5 filter-container">
                     {{ range (.Paginate .RegularPages).Pages }}
@@ -85,14 +91,16 @@
                 </div>
             </div>
         </div>
-
-        <div class="row pb-5">
-            {{ template "_internal/pagination.html" . }}
-        </div>
-
-
-
     </div>
+</div>
+
+<div class="row pb-5">
+    {{ template "_internal/pagination.html" . }}
+</div>
+
+
+
+</div>
 </section>
 
 <script>

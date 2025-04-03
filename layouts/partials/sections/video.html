@@ -1,18 +1,22 @@
 <section class="section issue py-5">
     <div class="container">
-        <div class="row pb-5">
-            <div class="col-12">
-                {{ with .content.title }}
-                <h3 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h3>
-                {{ end }}
+        <div class="aos-scope">
+            <div data-aos="fade-up">
+                <div class="row pb-5">
+                    <div class="col-12">
+                        {{ with .content.title }}
+                        <h3 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h3>
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="col-12  d-flex flex-column justify-content-center">
+                    <video controls autoplay loop muted>
+                        <source src="images/Carbontribe.mp4" type="video/mp4">
+                        <!-- <source src="movie.ogg" type="video/ogg"> -->
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
-        </div>
-        <div class="col-12  d-flex flex-column justify-content-center">
-            <video controls autoplay loop muted>
-                <source src="images/Carbontribe.mp4" type="video/mp4">
-                <!-- <source src="movie.ogg" type="video/ogg"> -->
-                Your browser does not support the video tag.
-            </video>
         </div>
     </div>
 </section>

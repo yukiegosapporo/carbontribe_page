@@ -1,50 +1,54 @@
 <section class="section news py-5">
     <div class="container" role="main">
-        {{ with .content.title }}
-        <h3 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h3>
-        {{ end }}
+        <div class="aos-scope">
+            <div data-aos="fade-up">
+                {{ with .content.title }}
+                <h3 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h3>
+                {{ end }}
 
-        {{ .Content }}
+                {{ .Content }}
 
-        <div class="row no-gutters">
-            {{ $count := 0 }}
-            {{ range sort site.RegularPages "PublishDate" "desc" }}
-            {{ if and (lt $count 3) (strings.HasPrefix .File.Path "post/") }}
-            <div class="col-16 col-xl-4">
-                <div class="card">
+                <div class="row no-gutters">
+                    {{ $count := 0 }}
+                    {{ range sort site.RegularPages "PublishDate" "desc" }}
+                    {{ if and (lt $count 3) (strings.HasPrefix .File.Path "post/") }}
+                    <div class="col-16 col-xl-4">
+                        <div class="card">
 
-                    {{ $imgPath := or .Params.featured_image .Params.image }}
-                    {{ with $imgPath }}
-                    {{ $image := resources.Get . }}
-                    {{ with $image }}
-                    <img src="{{ ($image.Fill " 400x320 q100 Center").RelPermalink }}" class="card-img-top"
-                        alt="{{ $.Title }}">
-                    {{ else }}
-                    {{ warnf "⚠️ Image not found at path: %s for post: %s" . $.Title }}
+                            {{ $imgPath := or .Params.featured_image .Params.image }}
+                            {{ with $imgPath }}
+                            {{ $image := resources.Get . }}
+                            {{ with $image }}
+                            <img src="{{ ($image.Fill " 400x320 q100 Center").RelPermalink }}" class="card-img-top"
+                                alt="{{ $.Title }}">
+                            {{ else }}
+                            {{ warnf "⚠️ Image not found at path: %s for post: %s" . $.Title }}
+                            {{ end }}
+                            {{ else }}
+                            {{ warnf "⚠️ No image defined for post: %s" .Title }}
+                            {{ end }}
+
+                            <div class="card-body">
+                                <p>
+                                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {{ $count = add $count 1 }}
                     {{ end }}
-                    {{ else }}
-                    {{ warnf "⚠️ No image defined for post: %s" .Title }}
                     {{ end }}
+                </div>
 
-                    <div class="card-body">
-                        <p>
-                            <a href="{{ .Permalink }}">{{ .Title }}</a>
-                        </p>
+                <div class="row justify-content-center">
+                    <br>
+                    <div class="col-12 col-xl-6 text-center">
+                        {{ with .content.buttonPrimary }}
+                        <a class="btn btn-outline-primary px-4" href="{{ .Site.BaseURL }}/blog">{{ .label }}<span
+                                class="ms-2"></span></a>
+                        {{ end }}
                     </div>
                 </div>
-            </div>
-            {{ $count = add $count 1 }}
-            {{ end }}
-            {{ end }}
-        </div>
-
-        <div class="row justify-content-center">
-            <br>
-            <div class="col-12 col-xl-6 text-center">
-                {{ with .content.buttonPrimary }}
-                <a class="btn btn-outline-primary px-4" href="{{ .Site.BaseURL }}/blog">{{ .label }}<span
-                        class="ms-2"></span></a>
-                {{ end }}
             </div>
         </div>
     </div>

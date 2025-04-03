@@ -7,7 +7,6 @@ body {
     /* Optional: makes background stay still on scroll */
 }
 
-
 /* General Image Styling */
 .post-image img {
     max-width: 100%;
@@ -679,4 +678,34 @@ textarea {
 .dropdown-item:hover {
     background-color: rgba(0, 0, 0, 0.05);
     /* Optional: Improve hover effect */
+}
+
+.aos-scope [data-aos] {
+    opacity: 0;
+    transition: opacity 1.3s ease, transform 1.3s ease;
+}
+
+.aos-scope [data-aos].aos-animate {
+    opacity: 1;
+}
+
+/* Fade-up animation */
+.aos-scope [data-aos="fade-up"] {
+    transform: translateY(20px);
+}
+
+.aos-scope [data-aos="fade-up"].aos-animate {
+    transform: translateY(0);
+}
+
+/* Zoom-in-up */
+[data-aos="zoom-in-up"] {
+    opacity: 0;
+    transform: scale(0.8) translateY(50px);
+    transition: opacity 1.4s ease, transform 1.4s ease;
+}
+
+[data-aos="zoom-in-up"].aos-animate {
+    opacity: 1;
+    transform: scale(1) translateY(0);
 }

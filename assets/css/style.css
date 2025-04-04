@@ -709,3 +709,9 @@ textarea {
     opacity: 1;
     transform: scale(1) translateY(0);
 }
+
+.nav-link.active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}

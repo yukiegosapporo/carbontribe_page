@@ -29,7 +29,9 @@
         {{ else }}
         <!-- Regular Menu Item -->
         <li class="nav-item" id="header-item">
-          <a class="nav-link text-primary px-4" href="{{ .URL }}">{{ .Name }}</a>
+          <a class="nav-link px-4 {{ if or (eq .URL $.RelPermalink) (and (hasPrefix $.RelPermalink .URL) (ne .URL " /"))
+            }}active fw-bold text-primary{{ else }}text-primary{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+
         </li>
         {{ end }}
         {{ end }}

@@ -2,7 +2,7 @@ enabled: true
 id: "hero"
 
 content:
-  title: '**Carbontribe** Next-Gen Carbon Finance powered by <br><span class="typewriter-text" data-words="[&quot; AI &quot;, &quot;Web3&quot;,  &quot;Science&quot;]"></span>'
+  title: '**Carbontribe** Next-Gen Carbon Finance Powered By <br><span class="typewriter-text" data-words="[&quot; AI &quot;, &quot;Web3&quot;,  &quot;Science&quot;]"></span>'
   text: 
 
   buttonPrimary:

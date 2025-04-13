@@ -22,7 +22,7 @@ status="peer reviewed"
 # published, planned
 
 methodology_url="https://ipfs.io/ipfs/bafybeihmy4b3yxow42oac5c4xnirtzj6z67hysyj7hmoemezru4h7kpcve"
-application_form_url="https://airtable.com/embed/appLDP225PpbVDZbe/pagaAbex9LCtzIY4g/form"
+application_form_url="https://airtable.com/embed/appLDP225PpbVDZbe/pagcnX0qRC7hvPM1P/form"
 status_data = [
   {text = "Initiated", date = "03/2024"},
   {text = "Peer reviewed", date = "10/2024"},

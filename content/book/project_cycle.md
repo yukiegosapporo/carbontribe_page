@@ -24,7 +24,7 @@ Carry out restoration activities, apply monitoring methods, and ensure adherence
 ####  Monitoring & Verification  
 Continuously track project progress, validate carbon sequestration, and ensure compliance with reporting standards.  
 
-####  Carbon Credit Issuance  
+####  Digital asset Issuance  
 Once verified, credits are issued and made available for trading or retirement in carbon markets.  
 
 ####  Ongoing Monitoring  

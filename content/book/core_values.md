@@ -14,13 +14,13 @@ Carbontribe is guided by a set of core values that drive our commitment to creat
 
 ## 🛠️Innovation and Technology 
 Innovation and technology form the backbone of our methodology, driving accuracy and efficiency in every aspect of our projects. By integrating advanced tools such as remote sensing, machine learning, and computer vision models, we ensure precise monitoring and management of our projects. These technologies enable us to gather real-time data, streamline project tracking, and reduce human error.  
-Additionally, we leverage blockchain technology to enhance transparency and security in carbon credit transactions. By employing decentralized ledgers, we create a traceable and tamper-proof record of each credit's lifecycle, from issuance to trade.  
+Additionally, we leverage blockchain technology to enhance transparency and security in digital asset transactions. By employing decentralized ledgers, we create a traceable and tamper-proof record of each credit's lifecycle, from issuance to trade.  
 Our commitment to technological advancement allows us to not only meet but exceed global standards for carbon accounting, supporting scalable solutions that address the complexities of climate change and promote sustainable development in ecosystems.  
 
 
 ## 🔍 Integrity and Transparency 
-The current carbon credit market is often criticized for a lack of transparency, which can lead to inefficiencies and greenwashing. To address these challenges, Carbontribe emphasizes integrity and openness as cornerstones of our methodology. We are committed to setting a higher standard by ensuring that all carbon credits represent verifiable, high-quality emissions reductions or removals.  
-Blockchain technology is central to our approach. By leveraging its secure and immutable ledger, we guarantee that each carbon credit’s issuance, trade, and retirement are traceable and fraud-proof. This transparency mitigates the risk of double-counting and other discrepancies, building confidence in the legitimacy of the credits.  
+The current carbon credit market is often criticized for a lack of transparency, which can lead to inefficiencies and greenwashing. To address these challenges, Carbontribe emphasizes integrity and openness as cornerstones of our methodology. We are committed to setting a higher standard by ensuring that all digital assets represent verifiable, high-quality emissions reductions or removals.  
+Blockchain technology is central to our approach. By leveraging its secure and immutable ledger, we guarantee that each digital asset’s issuance, trade, and retirement are traceable and fraud-proof. This transparency mitigates the risk of double-counting and other discrepancies, building confidence in the legitimacy of the credits.  
 Additionally, we provide stakeholders with clear and accessible data, ensuring that project methodologies, baselines, and monitoring reports are fully transparent. By adopting these practices, Carbontribe fosters trust, combats greenwashing, and drives credibility in the carbon market.  
 
 
@@ -39,6 +39,6 @@ Through thoughtful planning, transparent monitoring, and a commitment to long-te
 Our mission is to drive impactful, measurable change on a global scale. Through our innovative approach, we enable projects of all sizes to participate in carbon markets, ensuring accessibility for smaller-scale initiatives while maintaining the scalability needed for large-scale impact.  
 
 To ensure feasibility across project types, we take a flexible approach that considers key factors such as project size, financial feasibility, and technical requirements. 
-Beyond this, when companies invest in carbon credits, they often trigger a ripple effect: their commitment to carbon offsetting inspires them to improve their broader environmental practices. We strive to enhance this effect, ensuring that carbon credits not only facilitate immediate emissions reductions but also drive lasting, systemic change across industries, ecosystems, and communities.
+Beyond this, when companies invest in carbon credits, they often trigger a ripple effect: their commitment to carbon offsetting inspires them to improve their broader environmental practices. We strive to enhance this effect, ensuring that digital assets not only facilitate immediate emissions reductions but also drive lasting, systemic change across industries, ecosystems, and communities.
 
 

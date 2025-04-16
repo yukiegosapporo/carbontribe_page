@@ -15,11 +15,11 @@ Detailed information on each project type, including eligibility criteria, benef
 
 
 ## Why Partner with Us?  
-Engaging in carbon credits with Carbontribe offers:  
+Engaging in digital assets with Carbontribe offers:  
 **Sustainable Profitability**: Monetize your environmental efforts while contributing to a cleaner planet.  
 **Scalable Participation**: Whether you are an individual landowner or a large-scale investor, our platform is designed to accommodate projects of all sizes, ensuring accessibility and flexibility.  
 **Verified Impact**: Ensure credibility with rigorous monitoring and scientific validation.  
-**Blockchain Security**: Enjoy transparent, immutable records of your carbon credits.  
+**Blockchain Security**: Enjoy transparent, immutable records of your digital assets.  
 **Seamless Process**: From implementation to NFT minting, we simplify participation in the carbon economy.  
 
 ## The Process
@@ -31,9 +31,9 @@ Landowners and innovators adopt carbon sequestration methods, such as reforestat
 **Verification & Monitoring**  
 Our AI-driven technology continuously verifies and quantifies carbon removal efforts using scientific models and remote sensing.  
 **NFT Minting**  
-Verified carbon credits are converted into unique, traceable NFTs, ready for trading on blockchain-enabled marketplaces.  
+Verified digital assets are converted into unique, traceable NFTs, ready for trading on blockchain-enabled marketplaces.  
 
-By partnering with Carbontribe, you contribute to a transparent and efficient carbon credit market while ensuring that your sustainability efforts translate into measurable economic and environmental value.  
+By partnering with Carbontribe, you contribute to a transparent and efficient digital asset market while ensuring that your sustainability efforts translate into measurable economic and environmental value.  
 **Join us in shaping the future of carbon removal.** 🌍  
 
 

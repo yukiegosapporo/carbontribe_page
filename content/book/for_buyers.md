@@ -16,7 +16,7 @@ Each NFT is backed by rigorously monitored and scientifically validated carbon r
 
 
 **Flexible Utility**  
-NFTs can be held as an investment, traded across platforms, or permanently burned for carbon offsetting, giving buyers full control over their carbon credit strategy.  
+NFTs can be held as an investment, traded across platforms, or permanently burned for carbon offsetting, giving buyers full control over their digital asset strategy.  
 
 
 **Blockchain Security & Transparency**  
@@ -34,7 +34,7 @@ Proceeds support a diverse range of sustainability initiatives, including refore
 NFTs can be bought, sold, and traded across multiple platforms, offering liquidity and value to organizations seeking to enhance their carbon accounting.
 
 **Carbon Offsetting**  
-For those looking to offset their carbon footprint, NFTs can be burned to permanently retire the associated carbon credits.  
+For those looking to offset their carbon footprint, NFTs can be burned to permanently retire the associated digital assets.  
 
 **Issuance of Carbon Offset Certificate**  
 Once an NFT is burned, Carbontribe issues a verified Carbon Offset Certificate, providing proof of the retired credits for corporate reporting, regulatory compliance, or sustainability commitments.

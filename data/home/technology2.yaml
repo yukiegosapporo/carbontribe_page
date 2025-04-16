@@ -1,14 +1,15 @@
 enabled: true
 id: "technology2"
-title:
+title: Our Technologies
 
 content:
   
-  - image: "images/cv.png"
+  - image: "images/tech2.png"
     pretitle: ""
-    title: "AI-based dMRV"
-    text: "Our dMRV (MonitoringDigital Monitoring, Reporting and Verification) using satellite & computer vision technology provides both real-time and historical analysis of land usages and green indices from anywhere on the planet"
-    text2: ""
+    title: "AI, Science and Web3 powered patent-pending software"
+    text: "Credit AI: Satellite data, computer vision, third-party audited methodologies"
+    text2: "LLM AI: Understands and processes project information"
+    text3: "Credit: Tamper-proof Digital asset on web3 with transparent data"
     
     # buttons: 
     #   - label: "See live"
@@ -17,25 +18,25 @@ content:
     #   - label: "Read more"
     #     url: "#"
 
-  - image: "images/ghg.png"
-    pretitle: ""
-    title: "Science-based standards"
-    text: "Our standards areverified through third-party audit. Here is our lineups"
-    text2: "CO₂: ARR (Afforestation, Reforestation, & Revegetation) standards for forests and mangroves"
-    text3: "CH₄: Methane emission reduction extending the irrigation period in paddy fields"
-    text4: "N₂O: Reducing the use of nitrogen-based fertilizers"
+  # - image: "images/ghg.png"
+  #   pretitle: ""
+  #   title: "Science-based standards"
+  #   text: "Our standards areverified through third-party audit. Here is our lineups"
+  #   text2: "CO₂: ARR (Afforestation, Reforestation, & Revegetation) standards for forests and mangroves"
+  #   text3: "CH₄: Methane emission reduction extending the irrigation period in paddy fields"
+  #   text4: "N₂O: Reducing the use of nitrogen-based fertilizers"
 
     # buttons: 
     #   - label: "Read more (coming soon)"
     #     url: "#"
 
-  - image: "images/nft_demo.png"
-    pretitle: ""
-    title: "Web3-based data management"
-    text: "We stores all the related data on the blockchain, ensuring tamper-proof records and scientific reproducibility. This process creates a new form of carbon credit, Next-Gen Carbon Finance AI-Powered, Data-Driven & Verified"
-    buttons: 
-      - label: "See our credits"
-        url: "https://carbontribe.me/projects/"
+  # - image: "images/nft_demo.png"
+  #   pretitle: ""
+  #   title: "Web3-based data management"
+  #   text: "We stores all the related data on the blockchain, ensuring tamper-proof records and scientific reproducibility. This process creates a new form of carbon credit, Next-Gen Carbon Finance AI-Powered, Data-Driven & Verified"
+  #   buttons: 
+  #     - label: "See our credits"
+  #       url: "https://carbontribe.me/projects/"
 
       # - label: "Read more (coming soon)"
       #   url: "#"

@@ -4,5 +4,5 @@ title = "Projects"
 author = "Hugo Authors"
 layout = "projects"
 tags = ["projects"]
-description = "Discover digitally transformed carbon credits, designed to ensure transparency and eliminate greenwashing"
+description = "Discover digitally transformed digital assets, designed to ensure transparency and eliminate greenwashing"
 +++

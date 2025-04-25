@@ -1,0 +1,41 @@
+<section class="section assessed_with py-5">
+  <div class="aos-scope">
+    <div data-aos="fade-up">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-xl-6">
+            {{ with .content.title }}
+            <div class="col-12">
+              <h3 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h3>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        <div class="row g-4 align-items-center justify-content-center">
+          {{ range .content.items }}
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-3 my-2 text-center">
+            <div class="brand-image-container">
+              {{ partial "utilities/image-half.html" . }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .brand-image-container img {
+    width: 100%;
+    /* Ensures image scales within its container */
+    height: 100px;
+    /* Set a fixed height for uniformity */
+    object-fit: contain;
+    /* Ensures images fit without distortion */
+    display: block;
+    /* Removes extra space under images */
+    max-width: 100%;
+    /* Prevents images from exceeding container */
+  }
+</style>

@@ -29,13 +29,13 @@ nfts = [
   { year = "2024", type="Plastic", link = "https://testnets.opensea.io/assets/base_sepolia/0xe18ecdb92e0736b7d1aef706c2f956f640fdc946/11" },
 ]
 
-project_stats_unit = "kg"
+project_stats_unit = "credit"
 nft_issued = 0
-nft_available = 553.4
+nft_available = 55
 nft_retired = 0
 
-price=0.8
-price_unit="USD/ton"
+price=5
+price_unit="USD/credit"
 +++
 
 Clean Ocean Ensemble is a Japanese nonprofit organization. They develops collection technologies and uses AI-powered tools. By recording data on collected debris through a smartphone app and web maps,  Clean Ocean Ensemble visualizes and quantifies cleanup efforts on web maps, improving efficiency and promoting recycling. One of their key activities is the collection of marine debris along the picturesque Tao coast of Shodoshima, located in Kagawa Prefecture, Japan. This region, known for its natural beauty, has faced increasing challenges due to the accumulation of marine litter, a pressing global issue that threatens both marine ecosystems and coastal livelihoods.

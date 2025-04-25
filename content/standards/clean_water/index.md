@@ -21,7 +21,7 @@ hashtags = ["Clean Water", "Object detection", "Computer vision"]
 status="peer reviewed"
 # published, planned
 
-methodology_url="https://ipfs.io/ipfs/bafybeihmy4b3yxow42oac5c4xnirtzj6z67hysyj7hmoemezru4h7kpcve"
+methodology_urls=[{v = "v2025-03-01", link = "https://ipfs.io/ipfs/bafybeihmy4b3yxow42oac5c4xnirtzj6z67hysyj7hmoemezru4h7kpcve"}]
 application_form_url="https://airtable.com/embed/appLDP225PpbVDZbe/pagcnX0qRC7hvPM1P/form"
 status_data = [
   {text = "Initiated", date = "03/2024"},

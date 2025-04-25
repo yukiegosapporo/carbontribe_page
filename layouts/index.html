@@ -17,6 +17,8 @@
 <hr class="my-5">
 {{ with .Site.Data.home.brands }}{{ partial "sections/brands.html" . }}{{ end }}
 <hr class="my-5">
+{{ with .Site.Data.home.assessed_with }}{{ partial "sections/assessed_with.html" . }}{{ end }}
+<hr class="my-5">
 {{ with .Site.Data.home.news }}{{ partial "sections/news.html" . }}{{ end }}
 <!-- {{ with .Site.Data.home.contact }}{{ partial "sections/contact.html" . }}{{ end }} -->
 {{ end }}

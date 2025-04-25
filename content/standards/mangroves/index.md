@@ -22,7 +22,10 @@ status="review"
 # published, planned
 review_method="Third party review"
 
-methodology_url="https://carbontribe.me/"
+methodology_urls=[{v = "v2025-04-01", link = "https://ipfs.io/ipfs/bafybeiflefmljmp3sllzusui2r5iwxpmmwtyifrltmzmcstmyz4o3ejpvm"}]
+acreditor_image = "/images/earthood.png"
+acreditor_name = "Earthood"
+acreditor_url = "https://www.earthood.com/"
 application_form_url="https://airtable.com/embed/appLDP225PpbVDZbe/pag0Qxc2reFHsRL3u/form"
 status_data = [
   {text = "Initiated", date = "03/2024"},

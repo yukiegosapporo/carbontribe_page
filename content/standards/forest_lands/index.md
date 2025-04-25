@@ -16,13 +16,19 @@ image_data = [
 ]
 developer_name = "Carbontribe Labs OÜ"
 developer_image = "/images/standards/forest_lands/logo.png"
+developer_url = "https://carbontribe.me/"
 
 hashtags = ["Afforestation", "Forest lands", "Remote sensing", "Computer vision", "Satellite data", "IPCC compliant"]
 status="review"
 review_method="Third party review"
 # published, planned
 
-methodology_url="https://carbontribe.me/"
+methodology_urls=[{v = "v2025-04-01", link = "https://ipfs.io/ipfs/bafybeibaixgadh3u5rj56yqtnykjhjwdisdmzjqicfzni3eohw3emuesgy"}]
+acreditor_image = "/images/earthood.png"
+acreditor_name = "Earthood"
+acreditor_url = "https://www.earthood.com/"
+
+compatible=[]
 application_form_url="https://airtable.com/embed/appLDP225PpbVDZbe/pag0MbK9AbmNohBfF/form"
 status_data = [
   {text = "Initiated", date = "03/2024"},

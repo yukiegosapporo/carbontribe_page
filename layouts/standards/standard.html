@@ -68,9 +68,6 @@
                     </h3>
                 </div>
 
-
-
-
                 <div class="developer-info mt-5 d-flex align-items-center">
                     <!-- Developer Logo on the Left -->
                     <div class="developer-logo">
@@ -90,6 +87,41 @@
                 </div>
                 <hr>
                 <br>
+                {{- with .Params.acreditor_name }}
+                <div class="row d-flex align-items-center">
+                    <h3 class="fs-1 fw-bold text-primary pb-3 me-2">
+                        Acredited by
+                        <span class="info-container">
+                            <i class="fas fa-circle-info"></i>
+                            <div class="info-popup">
+                                Who is the primary acreditor of standard and methodology
+                            </div>
+                        </span>
+                    </h3>
+                </div>
+
+                <div class="acreditor-info mt-5 d-flex align-items-center">
+                    <!-- acreditor Logo on the Left -->
+                    <div class="developer-logo">
+                        <img src="{{ $.Params.acreditor_image | relURL }}" class="rounded-circle mb-3" width="100px"
+                            alt="Acreditor Logo">
+                    </div>
+
+                    <!-- acreditor Name and Bio on the Right -->
+                    <div class="developer-details ms-3">
+                        <p><strong>{{ $.Params.acreditor_name }}</strong></p>
+                        <p>{{ $.Params.developer_bio }}</p>
+                        <p>
+                            <a href="{{ $.Params.acreditor_url }}" class="btn btn-secondary text-white" target="_blank">
+                                Visit Acreditor's Project
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <br>
+                {{- end }}
+
 
                 <div class="project-status mt-4">
                     <h3 class="fs-1 fw-bold text-primary pb-3">Status <span class="info-container">
@@ -150,14 +182,17 @@
                 <br>
                 <div class="methodology-link mt-4">
                     <h3 class="fs-1 fw-bold text-primary pb-3">Methodology</h3>
-                    {{- if .Params.methodology_url -}}
-                    <a href="{{ .Params.methodology_url }}" class="btn btn-secondary text-white" target="_blank"
+                    {{- with .Params.methodology_urls }}
+                    {{- range . }}
+                    <a href="{{ .link }}" class="btn btn-secondary text-white me-2 mb-2" target="_blank"
                         rel="noopener noreferrer">
-                        View Methodology
+                        {{ .v }}
                     </a>
-                    {{- else -}}
+                    {{- end }}
+                    {{- else }}
                     <p class="text-muted">Available soon</p>
-                    {{- end -}}
+                    {{- end }}
+
                 </div>
                 <hr>
                 <br>

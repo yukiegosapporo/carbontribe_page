@@ -28,6 +28,8 @@ acreditor_image = "/images/earthood.png"
 acreditor_name = "Earthood"
 acreditor_url = "https://www.earthood.com/"
 
+assessed_with = [{image = "/images/un_certified.png", link = "https://sdgs.un.org/2030agenda"}, {image = "/images/ipcc_certified.png", link = "https://www.ipcc-nggip.iges.or.jp/public"}, {image = "/images/earthood_certified.png", link = "https://www.earthood.com/"}, {image = "/images/icvcm_certified.png", link = "https://icvcm.org/core-carbon-principles/"}]
+
 compatible=[]
 application_form_url="https://airtable.com/embed/appLDP225PpbVDZbe/pag0MbK9AbmNohBfF/form"
 status_data = [

@@ -25,6 +25,9 @@ methodology_urls=[{v = "v2025-04-01", link = "https://ipfs.io/ipfs/bafybeif6mb6m
 acreditor_image = "/images/earthood.png"
 acreditor_name = "Earthood"
 acreditor_url = "https://www.earthood.com/"
+
+assessed_with = [{image = "/images/un_certified.png", link = "https://sdgs.un.org/2030agenda"}, {image = "/images/ipcc_certified.png", link = "https://www.ipcc-nggip.iges.or.jp/public"}, {image = "/images/earthood_certified.png", link = "https://www.earthood.com/"}, {image = "/images/icvcm_certified.png", link = "https://icvcm.org/core-carbon-principles/"}]
+
 # application_form_url="https://airtable.com/embed/appLDP225PpbVDZbe/pagIY9wvRnc9342II/form"
 status_data = [
   {text = "Initiated", date = "03/2024"},

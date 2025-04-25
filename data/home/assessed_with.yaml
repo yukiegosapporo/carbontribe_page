@@ -1,0 +1,11 @@
+enabled: true
+id: "assessed_with"
+
+content:
+  title: "Assessed with"
+  items:
+    - "images/un_certified.png"
+    - "images/ipcc_certified.png"
+    - "images/earthood_certified.png"
+    - "images/icvcm_certified.png"
+

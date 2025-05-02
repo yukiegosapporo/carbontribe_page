@@ -16,7 +16,7 @@
 
 body {
     background-color: var(--white);
-    background-image: radial-gradient(var(--primary-light) 0.3px, var(--white) 0.3px);
+    background-image: radial-gradient(rgba(112, 148, 106, 0.4) 0.5px, var(--white) 0.5px);
     background-size: 12px 12px;
     background-repeat: repeat;
     background-attachment: fixed;
@@ -606,6 +606,7 @@ body {
 body {
     padding-top: 60px;
     /* Adjust based on header height to prevent overlap */
+    background-blend-mode: overlay;
 }
 
 

@@ -9,8 +9,9 @@
                     <div class="projects-hero-overlay"></div>
                     <div class="projects-hero-content text-center">
                         <h1 class="display-3 fw-bold text-white mb-4">Impact Projects</h1>
-                        <p class="lead text-white mb-5">Discover verified climate impact projects with transparent and measurable outcomes</p>
-                        
+                        <p class="lead text-white mb-5">Discover verified climate impact projects with transparent and
+                            measurable outcomes</p>
+
                         <!-- Animated Stats Counter Cards -->
                         <div class="stats-counter-container">
                             <div class="stats-counter-card" data-type="co2">
@@ -22,7 +23,7 @@
                                     <p class="stats-counter-label">tCO₂ Sequestered</p>
                                 </div>
                             </div>
-                            
+
                             <div class="stats-counter-card" data-type="waste">
                                 <div class="stats-icon">
                                     <i class="fas fa-recycle"></i>
@@ -48,7 +49,8 @@
                         <button class="filter-button btn w-100 mb-2" data-filter="blue">Blue Carbon</button>
                         <button class="filter-button btn w-100 mb-2" data-filter="green">Green Carbon</button>
                         <button class="filter-button btn w-100 mb-2" data-filter="clean_water">Clean Water</button>
-                        <button class="filter-button btn w-100 mb-2" data-filter="agri">Regenerative Agriculture</button>
+                        <button class="filter-button btn w-100 mb-2" data-filter="agri">Regenerative
+                            Agriculture</button>
                         <button class="filter-button btn w-100 mb-2" data-filter="renewable">Renewable Energy</button>
                     </div>
                 </div>
@@ -65,7 +67,8 @@
                                     <div class="project-card-img">
                                         {{- $image := resources.Get .Params.featured_image -}}
                                         {{- if $image -}}
-                                        <img src="{{ ($image.Fill " 400x320 q100 Center").RelPermalink }}" alt="{{ .Title }}">
+                                        <img src="{{ ($image.Fill " 400x320 q100 Center").RelPermalink }}"
+                                            alt="{{ .Title }}">
                                         {{- else -}}
                                         <div class="project-card-placeholder"></div>
                                         {{- end -}}
@@ -77,7 +80,8 @@
                                         <p class="project-card-text">{{ .Summary | plainify | truncate 100 }}</p>
                                         <div class="project-card-footer">
                                             <span class="project-card-location">
-                                                <i class="fas fa-map-marker-alt"></i> {{ .Params.location | default "Location" }}
+                                                <i class="fas fa-map-marker-alt"></i> {{ .Params.location | default
+                                                "Visit Project" }}
                                             </span>
                                             <span class="project-card-arrow">
                                                 <i class="fas fa-arrow-right"></i>
@@ -218,7 +222,7 @@
         padding: 12px 15px;
     }
 
-    .filter-button:hover, 
+    .filter-button:hover,
     .filter-button.active {
         background-color: #AECE9D;
         color: white;

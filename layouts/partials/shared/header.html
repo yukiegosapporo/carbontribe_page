@@ -1,10 +1,10 @@
-<nav id="site-header" class="navbar navbar-expand-xl navbar-light bg-light py-4">
+<nav id="site-header" class="navbar navbar-expand-xl navbar-light bg-white py-3 shadow-sm">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="{{ .Site.BaseURL }}">
       {{ partial "utilities/image-double.html" "images/logo.png" }}
-      <span class="fs-3 fw-semibold text-uppercase text-primary">{{ .Site.Title }}</span>
+      <span class="fs-3 fw-bold text-uppercase text-primary ms-2">{{ .Site.Title }}</span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
       aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -15,13 +15,13 @@
         {{ if .HasChildren }}
         <!-- Dropdown Parent -->
         <li class="nav-item dropdown position-relative hover-dropdown" id="header-item">
-          <a class="nav-link dropdown-toggle text-primary px-4" href="#" id="dropdown{{ .Identifier }}" role="button">
+          <a class="nav-link dropdown-toggle text-primary px-4 fw-medium" href="#" id="dropdown{{ .Identifier }}" role="button">
             {{ .Name }}
           </a>
-          <ul class="dropdown-menu border-0 bg-transparent text-center" aria-labelledby="dropdown{{ .Identifier }}">
+          <ul class="dropdown-menu border-0 shadow-sm text-center rounded-3" aria-labelledby="dropdown{{ .Identifier }}">
             {{ range .Children }}
             <li>
-              <a class="dropdown-item text-primary" href="{{ .URL }}">{{ .Name }}</a>
+              <a class="dropdown-item text-primary py-2" href="{{ .URL }}">{{ .Name }}</a>
             </li>
             {{ end }}
           </ul>
@@ -29,9 +29,8 @@
         {{ else }}
         <!-- Regular Menu Item -->
         <li class="nav-item" id="header-item">
-          <a class="nav-link px-4 {{ if or (eq .URL $.RelPermalink) (and (hasPrefix $.RelPermalink .URL) (ne .URL " /"))
+          <a class="nav-link px-4 fw-medium {{ if or (eq .URL $.RelPermalink) (and (hasPrefix $.RelPermalink .URL) (ne .URL " /"))
             }}active fw-bold text-primary{{ else }}text-primary{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
-
         </li>
         {{ end }}
         {{ end }}
@@ -41,7 +40,7 @@
       <ul class="navbar-nav ms-xl-3 mb-2 mb-xl-0">
         {{ range .Site.Menus.buttons }}
         <li class="nav-item">
-          <a class="nav-link btn btn-primary text-light px-4" href="{{ .URL }}">{{ .Name }}</a>
+          <a class="nav-link btn btn-primary text-light px-4 rounded-pill fw-medium" href="{{ .URL }}">{{ .Name }}</a>
         </li>
         {{ end }}
       </ul>
@@ -73,11 +72,67 @@
   .dropdown-menu {
     display: none;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem !important;
   }
 
   .hover-dropdown:hover .dropdown-menu {
     display: block;
     opacity: 1;
+    transform: translateY(5px);
+  }
+  
+  #site-header {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #site-header.scrolled {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08) !important;
+  }
+  
+  #header-item {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  #header-item:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #94b884;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  #header-item:hover:after {
+    width: 70%;
+  }
+  
+  #header-item:hover {
+    transform: translateY(-3px);
   }
 </style>
+
+<!-- Header Scroll Effect -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const header = document.getElementById('site-header');
+    
+    if (header) {
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+    }
+  });
+</script>

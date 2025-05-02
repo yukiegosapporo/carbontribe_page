@@ -1,63 +1,133 @@
-<footer class="shared footer bg-green py-5">
-  <div class="container">
+<footer class="shared footer bg-light py-5 mt-4 border-top">
+  <div class="container py-4">
     <div class="row pb-5">
       <div class="col-12 col-xl-4 text-center text-xl-start pb-4">
-        <h4 class="fs-4 fw-semibold text-uppercase text-primary">{{ .Site.Title }}</h4>
-        <p class="small text-black-61">{{ .Site.Params.description }}</p>
+        <div class="footer-brand mb-4">
+          <img src="/images/logo.png" alt="{{ .Site.Title }}" class="footer-logo mb-3" style="max-height: 60px;">
+          <h4 class="fs-4 fw-bold text-uppercase text-primary">{{ .Site.Title }}</h4>
+        </div>
+        <p class="text-black-61 mb-4">{{ .Site.Params.description }}</p>
         {{ with .Site.Params.social }}
         <ul class="d-flex justify-content-center justify-content-xl-start list-unstyled">
-          {{ with .dribbble }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a
-              class="d-flex align-items-center justify-content-center size-16" href="{{ . }}">{{ partial
+          {{ with .dribbble }}<li class="rounded-circle bg-primary bg-opacity-10 me-3 p-2 social-icon"><a
+              class="d-flex align-items-center justify-content-center size-16" href="{{ . }}" target="_blank" aria-label="Dribbble">{{ partial
               "icons/dribbble.html" }}</a></li>{{ end }}
-          <!-- {{ with .instagram }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a
-              class="d-flex align-items-center justify-content-center size-16" href="{{ . }}">{{ partial
-              "icons/instagram.html" }}</a></li>{{ end }}
-          {{ with .facebook }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a
-              class="d-flex align-items-center justify-content-center size-16" href="{{ . }}">{{ partial
-              "icons/facebook.html" }}</a></li>{{ end }}
-          {{ with .twitter }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a
-              class="d-flex align-items-center justify-content-center size-16" href="{{ . }}">{{ partial
-              "icons/twitter.html" }}</a></li>{{ end }} -->
-          {{ with .linkedin }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a
-              class="d-flex align-items-center justify-content-center size-16" href="{{ . }}">{{ partial
+          {{ with .linkedin }}<li class="rounded-circle bg-primary bg-opacity-10 me-3 p-2 social-icon"><a
+              class="d-flex align-items-center justify-content-center size-16" href="{{ . }}" target="_blank" aria-label="LinkedIn">{{ partial
               "icons/linkedin.html" }}</a></li>{{ end }}
         </ul>
         {{ end }}
       </div>
-      <div class="col-12 col-xl-2 text-center text-xl-start pb-4">
-        <h5 class="fs-6 fw-semibold text-primary">Menu</h5>
-        <ul class="list-unstyled">
+      <div class="col-12 col-md-4 col-xl-2 text-center text-xl-start pb-4">
+        <h5 class="fs-6 fw-bold text-primary mb-4 footer-heading">Menu</h5>
+        <ul class="list-unstyled footer-links">
           {{ range .Site.Menus.footer }}
-          <li class="">
-            <a class="small text-black-61 text-decoration-none" href="{{ .URL }}">{{ .Name }}</a>
+          <li class="mb-2">
+            <a class="text-black-61 text-decoration-none footer-link" href="{{ .URL }}">{{ .Name }}</a>
           </li>
           {{ end }}
         </ul>
       </div>
-      <div class="col-12 col-xl-3 text-center text-xl-start pb-4">
-        <h5 class="fs-6 fw-semibold text-primary">Location</h5>
-        <ul class="list-unstyled">
+      <div class="col-12 col-md-4 col-xl-3 text-center text-xl-start pb-4">
+        <h5 class="fs-6 fw-bold text-primary mb-4 footer-heading">Location</h5>
+        <ul class="list-unstyled footer-location">
           {{ range .Site.Params.location }}
-          <li class="d-flex justify-content-center justify-content-xl-start mb-2">
+          <li class="d-flex justify-content-center justify-content-xl-start mb-3">
             <div class="d-flex align-items-center text-primary">{{ partial "icons/geo-alt.html" }}</div>
-            <p class="small text-black-61 m-0 ps-2">{{ . }}</p>
+            <p class="text-black-61 m-0 ps-2">{{ . }}</p>
           </li>
           {{ end }}
         </ul>
       </div>
-      <div class="col-12 col-xl-3 text-center text-xl-start pb-4">
-        <h5 class="fs-6 fw-semibold text-primary">Contact us</h5>
+      <div class="col-12 col-md-4 col-xl-3 text-center text-xl-start pb-4">
+        <h5 class="fs-6 fw-bold text-primary mb-4 footer-heading">Contact us</h5>
         {{ range .Site.Params.contact }}
-        <p class="small text-black-61 mb-1">{{ . }}</p>
+        <p class="text-black-61 mb-3 contact-info">{{ . }}</p>
         {{ end }}
       </div>
     </div>
     <div class="row">
       <div class="col-12">
+        <hr class="footer-divider my-4 opacity-25">
         {{ with .Site.Params.copyright }}
-        <p class="small text-black-61 text-center">{{ . }}</p>
+        <p class="text-black-61 text-center mb-0">{{ . }}</p>
         {{ end }}
       </div>
     </div>
   </div>
 </footer>
+
+<style>
+  .footer {
+    background-color: #f8f9fa;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .footer-brand {
+    position: relative;
+  }
+  
+  .footer-heading {
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .footer-heading:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    width: 30px;
+    background-color: #94b884;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+  }
+  
+  @media (min-width: 1200px) {
+    .footer-heading:after {
+      left: 0;
+      transform: none;
+    }
+  }
+  
+  .footer-heading:hover:after {
+    width: 50px;
+  }
+  
+  .footer-link {
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 2px 0;
+  }
+  
+  .footer-link:hover {
+    color: #94b884 !important;
+    transform: translateX(5px);
+  }
+  
+  .footer-divider {
+    border-color: #94b884;
+  }
+  
+  .social-icon {
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: translateY(-3px);
+    background-color: rgba(148, 184, 132, 0.3) !important;
+  }
+  
+  .contact-info {
+    transition: all 0.3s ease;
+  }
+  
+  .footer-location li {
+    transition: all 0.3s ease;
+  }
+  
+  .footer-location li:hover {
+    transform: translateY(-2px);
+  }
+</style>

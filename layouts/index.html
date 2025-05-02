@@ -1,24 +1,135 @@
 {{ define "main" }}
-{{ with .Site.Data.home.hero }}{{ partial "sections/hero.html" . }}{{ end }}
-{{ with .Site.Data.home.issue }}{{ partial "sections/issue.html" . }}{{ end }}
-<hr class="my-5">
-{{ with .Site.Data.home.video }}{{ partial "sections/video.html" . }}{{ end }}
-<hr class="my-5">
-<!-- {{ with .Site.Data.home.technology }}{{ partial "sections/technology.html" . }}{{ end }} -->
-{{ with .Site.Data.home.technology2 }}{{ partial "sections/technology2.html" . }}{{ end }}
-<hr class="my-5">
-{{ with .Site.Data.home.products }}{{ partial "sections/products.html" . }}{{ end }}
-<!-- {{ with .Site.Data.home.process }}{{ partial "sections/process.html" . }}{{ end }} -->
+<!-- Hero Section -->
+<section class="section-wrapper section-hero">
+  {{ with .Site.Data.home.hero }}{{ partial "sections/hero.html" . }}{{ end }}
+</section>
 
-<!-- {{ with .Site.Data.home.testimonials }}{{ partial "sections/testimonials.html" . }}{{ end }} -->
-<!-- {{ with .Site.Data.home.standards }}{{ partial "sections/standards.html" . }}{{ end }} -->
-<!-- {{ with .Site.Data.home.cta }}{{ partial "sections/cta.html" . }}{{ end }} -->
-<!-- {{ with .Site.Data.home.services }}{{ partial "sections/services.html" . }}{{ end }} -->
-<hr class="my-5">
-{{ with .Site.Data.home.brands }}{{ partial "sections/brands.html" . }}{{ end }}
+<!-- Issue Section -->
+<section class="section-wrapper section-issue bg-light">
+  <div class="container py-5">
+    <div class="section-divider"></div>
+    {{ with .Site.Data.home.issue }}{{ partial "sections/issue.html" . }}{{ end }}
+  </div>
+</section>
 
-{{ with .Site.Data.home.assessed_with }}{{ partial "sections/assessed_with.html" . }}{{ end }}
-<hr class="my-5">
-{{ with .Site.Data.home.news }}{{ partial "sections/news.html" . }}{{ end }}
-<!-- {{ with .Site.Data.home.contact }}{{ partial "sections/contact.html" . }}{{ end }} -->
+<!-- Video Section -->
+<section class="section-wrapper section-video">
+  <div class="container py-5">
+    <div class="section-divider"></div>
+    {{ with .Site.Data.home.video }}{{ partial "sections/video.html" . }}{{ end }}
+  </div>
+</section>
+
+<!-- Technology Section -->
+<section class="section-wrapper section-technology bg-light">
+  <div class="container py-5">
+    <div class="section-divider"></div>
+    {{ with .Site.Data.home.technology2 }}{{ partial "sections/technology2.html" . }}{{ end }}
+  </div>
+</section>
+
+<!-- Products Section -->
+<section class="section-wrapper section-products">
+  <div class="container py-5">
+    <div class="section-divider"></div>
+    {{ with .Site.Data.home.products }}{{ partial "sections/products.html" . }}{{ end }}
+  </div>
+</section>
+
+<!-- Brands Section -->
+<section class="section-wrapper section-brands bg-light">
+  <div class="container py-5">
+    <div class="section-divider"></div>
+    {{ with .Site.Data.home.brands }}{{ partial "sections/brands.html" . }}{{ end }}
+  </div>
+</section>
+
+<!-- Assessment Partners Section -->
+<section class="section-wrapper section-assessed">
+  <div class="container py-5">
+    <div class="section-divider"></div>
+    {{ with .Site.Data.home.assessed_with }}{{ partial "sections/assessed_with.html" . }}{{ end }}
+  </div>
+</section>
+
+<!-- News Section -->
+<section class="section-wrapper section-news bg-light">
+  <div class="container py-5">
+    <div class="section-divider"></div>
+    {{ with .Site.Data.home.news }}{{ partial "sections/news.html" . }}{{ end }}
+  </div>
+</section>
+
+<!-- Inline styles for section layout -->
+<style>
+  .section-wrapper {
+    position: relative;
+    padding: 4rem 0;
+    overflow: hidden;
+  }
+  
+  .section-hero {
+    padding: 0;
+  }
+  
+  .section-divider {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    margin: 0 auto 3rem;
+    border-radius: 2px;
+  }
+  
+  .bg-light {
+    background-color: var(--gray-100);
+    position: relative;
+  }
+  
+  .bg-light::before, 
+  .bg-light::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: var(--gray-100);
+    z-index: -1;
+  }
+  
+  .bg-light::before {
+    top: -25px;
+    left: 0;
+    transform: skewY(1deg);
+  }
+  
+  .bg-light::after {
+    bottom: -25px;
+    left: 0;
+    transform: skewY(-1deg);
+  }
+  
+  @media (max-width: 768px) {
+    .section-wrapper {
+      padding: 3rem 0;
+    }
+    
+    .section-divider {
+      width: 70px;
+      height: 3px;
+      margin-bottom: 2rem;
+    }
+  }
+</style>
+
+<!-- AOS Animation Library -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out',
+      once: true
+    });
+  });
+</script>
 {{ end }}

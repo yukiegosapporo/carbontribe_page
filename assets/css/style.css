@@ -88,6 +88,29 @@ body {
     text-align: left;
 }
 
+/* Custom List Group Styling for Standards */
+.list-group-item {
+    border-radius: 8px !important;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.list-group-item img {
+    transition: transform 0.3s ease;
+}
+
+.list-group-item:hover img {
+    transform: scale(1.1);
+}
+
 /* Card Impact Styling */
 .card-impact {
     background-color: transparent;

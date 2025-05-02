@@ -1,210 +1,624 @@
 {{ define "main" }}
 
-
 <section class="section blog-single py-5">
-
     <div class="container">
-
-        <!-- Full-width Image at the very top -->
+        <!-- Full-width Hero Image at the very top -->
         {{ if .Params.image_data }}
         <div class="aos-scope">
             <div data-aos="fade-up">
-                <div class="row">
-                    {{ $firstImage := true }} <!-- Flag to detect the first image -->
+                <div class="project-hero-image">
+                    {{ $firstImage := true }}
                     {{ range .Params.image_data }}
-                    <!-- Full-width first image -->
                     {{ if $firstImage }}
-                    <div class="col-12">
-                        <div class="image-card"
-                            style="display: flex; justify-content: center; align-items: center; width: 100%; max-width: 100%; height: auto; max-height: 80vh;">
-                            <img src="{{ .image | relURL }}" class="img-fluid w-100 mb-3" alt="Wide project image"
-                                style="width: 90%; aspect-ratio: 5 / 2.5; object-fit: cover; max-width: 90%;">
+                    <img src="{{ .image | relURL }}" alt="{{ $.Title }}" class="img-fluid">
+                    <div class="project-hero-overlay"></div>
+                    <div class="project-hero-content">
+                        <h1 class="display-3 fw-bold text-white">{{ $.Title }}</h1>
+                        <div class="project-categories">
+                            <span class="badge bg-success">{{ $.Params.category }}</span>
+                            <span class="badge bg-info">{{ $.Params.location }}</span>
                         </div>
                     </div>
-                    {{ $firstImage = false }} <!-- Set the flag to false after the first image -->
+                    {{ $firstImage = false }}
                     {{ end }}
                     {{ end }}
                 </div>
-                {{ end }}
             </div>
         </div>
-        <!-- Title and Description Section -->
-        <div class="aos-scope">
-            <div data-aos="fade-up">
-                <div class="row justify-content-center pb-5">
-                    <div class="col-12">
-                        {{ with .Title }}
-                        <h2 class="display-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
-                        {{ end }}
+        {{ end }}
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Two-Column Layout for Text, Table on the Left and Iframes on the Right -->
-
-        <div class="row justify-content-center pb-5">
-            <div class="col-10 col-md-6">
-                <!-- Text and Table Section on the Left -->
-                <div class="blog-content fs-5">
+        <!-- Project Content Section -->
+        <div class="row justify-content-center py-5">
+            <div class="col-11 col-md-6">
+                <!-- Text Content Section on the Left -->
+                <div class="project-content">
                     <div class="aos-scope">
                         <div data-aos="fade-up">
                             {{ .Content }}
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
-            <!-- Iframes Section on the Right -->
-            <div class="col-12 col-md-4">
-                <!-- Proponent Section -->
-                <h3 class="fs-1 fw-bold text-center text-primary pb-3">Proponents <span class="info-container">
-                        <i class="fas fa-circle-info"></i>
-                        <div class="info-popup">
-                            Individuals, organizations, or entities responsible for initiating, developing, and managing
-                            the project
+            <!-- Info Section on the Right -->
+            <div class="col-11 col-md-5 offset-md-1">
+                <!-- Proponent Card -->
+                <div class="project-info-card mb-4">
+                    <div class="project-info-header">
+                        <h3>
+                            <i class="fas fa-users"></i> Proponents
+                            <span class="info-container">
+                                <i class="fas fa-info-circle"></i>
+                                <div class="info-popup">
+                                    Organizations responsible for initiating, developing, and managing this project
+                                </div>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="project-info-body">
+                        <div class="developer-info d-flex">
+                            <div class="developer-logo">
+                                <img src="{{ .Params.developer_image | relURL }}" class="rounded-circle" alt="Developer Logo">
+                            </div>
+                            <div class="developer-details">
+                                <h4>{{ .Params.developer_name }}</h4>
+                                <p>{{ .Params.developer_bio }}</p>
+                                <a href="{{ .Params.developer_url }}" class="btn btn-outline-primary btn-sm" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Visit Website
+                                </a>
+                            </div>
                         </div>
-                    </span></h3>
-                <div class="developer-info mt-5 d-flex align-items-center">
-                    <!-- Developer Logo on the Left -->
-                    <div class="developer-logo">
-                        <img src="{{ .Params.developer_image | relURL }}" class="rounded-circle mb-3" width="100px"
-                            alt="Developer Logo">
-                    </div>
-
-                    <!-- Developer Name and Bio on the Right -->
-                    <div class="developer-details ms-3">
-                        <p><strong>{{ .Params.developer_name }}</strong></p>
-                        <p>{{ .Params.developer_bio }}</p>
-                        <p><a href="{{ .Params.developer_url }}" class="btn btn-secondary" target="_blank">Visit
-                                Proponent's Project</a></p>
-                        </p>
                     </div>
                 </div>
-
-                <hr>
-                <br>
-                <div class="iframe-container mb-3">
-                    <!-- First iframe -->
-                    <h3 class="fs-1 fw-bold text-center text-primary pb-3">Location</h3>
-                    <iframe src="{{ .Params.iframe1 }}" width="100%" height="300px" frameborder="0"></iframe>
+                
+                <!-- Location Card -->
+                <div class="project-info-card mb-4">
+                    <div class="project-info-header">
+                        <h3>
+                            <i class="fas fa-map-marker-alt"></i> Location
+                        </h3>
+                    </div>
+                    <div class="project-info-body">
+                        <div class="map-container">
+                            <iframe src="{{ .Params.iframe1 }}" frameborder="0"></iframe>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
-        <div class="row justify-content-center pb-5">
-            <div class="col-10">
 
-                <!-- Add a Table with NFT Names and Links -->
-                {{ if .Params.nfts }}
-                <div class="aos-scope">
-                    <div data-aos="fade-up">
-                        <hr>
-                        <div class="py-5">
-                            <h4 class="fs-1 fw-bold text-center text-primary pb-3">Credits</h4>
-                            <div class="row">
-                                <div class="custom-card w-100">
-                                    <div class="project-stats">
-                                        <div class="stat-item">
-                                            <h3>Issued <span class="info-container">
-                                                    <i class="fas fa-circle-info"></i>
-                                                    <div class="info-popup">
-                                                        The total number of credits issued and currently available for
-                                                        sale
-                                                    </div>
-                                                </span></h3>
-                                            {{if gt .Params.nft_issued 0}}
-                                            <p><strong>{{.Params.nft_issued}}</strong> {{.Params.project_stats_unit}}
-                                            </p>
-                                            {{else}}
-                                            <p><strong>Preparing</strong></p>
-                                            {{end}}
-                                        </div>
-                                        <div class="stat-item">
-                                            <h3>Estimated <span class="info-container">
-                                                    <i class="fas fa-circle-info"></i>
-                                                    <div class="info-popup">
-                                                        The total estimated number of credits based on the current
-                                                        volume and
-                                                        project duration
-                                                    </div>
-                                                </span></h3>
-                                            {{if gt .Params.nft_available 0}}
-                                            <p><strong>{{.Params.nft_available}}</strong> {{.Params.project_stats_unit}}
-                                            </p>
-                                            {{else}}
-                                            <p><strong>Preparing</strong></p>
-                                            {{end}}
-                                        </div>
-                                        <div class="stat-item">
-                                            <h3>Retired <span class="info-container">
-                                                    <i class="fas fa-circle-info"></i>
-                                                    <div class="info-popup">
-                                                        The total number of credits issued and subsequently retired.
-                                                        This is the
-                                                        portion of credits that have been permanently removed from
-                                                        circulation.
-                                                        Once retired, these credits can no longer be traded or resold
-                                                    </div>
-                                                </span></h3>
-                                            <p><strong>{{.Params.nft_retired}}</strong> {{.Params.project_stats_unit}}
-                                            </p>
-                                        </div>
-                                        <div class="stat-item">
-                                            <h3>Price <span class="info-container">
-                                                    <i class="fas fa-circle-info"></i>
-                                                    <div class="info-popup">
-                                                        Premiums are added if proponents meet additional quality
-                                                        standards,
-                                                        based on a weighted global average within the same domain.
-                                                    </div>
-                                                </span></h3>
-                                            <p><strong>{{.Params.price}}</strong> {{.Params.price_unit}}</p>
-                                        </div>
+        <!-- Project Metrics Section -->
+        {{ if .Params.nfts }}
+        <div class="project-metrics-section">
+            <div class="aos-scope">
+                <div data-aos="fade-up">
+                    <h2 class="text-center mb-5">
+                        <span class="highlight-text">Project</span> Credits
+                    </h2>
+                    
+                    <!-- Enhanced Metric Cards -->
+                    <div class="metric-cards-container">
+                        <div class="metric-card" data-metric="issued">
+                            <div class="metric-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="metric-content">
+                                <h3>Credits Issued</h3>
+                                <div class="metric-value">
+                                    {{if gt .Params.nft_issued 0}}
+                                    <span class="counter">{{.Params.nft_issued}}</span>
+                                    <span class="metric-unit">{{.Params.project_stats_unit}}</span>
+                                    {{else}}
+                                    <span class="metric-status">Preparing</span>
+                                    {{end}}
+                                </div>
+                                <div class="metric-info">
+                                    <i class="fas fa-info-circle"></i>
+                                    <div class="metric-tooltip">
+                                        The total number of credits issued and currently available for sale
                                     </div>
                                 </div>
-
-
                             </div>
-                            <div class="row">
-                                <div class="table-container">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Year</th>
-                                                <th scope="col">Type</th>
-                                                <th scope="col">Link</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <!-- Loop through the nfts array in Params -->
-                                            {{ range .Params.nfts }}
-                                            <tr>
-                                                <td>{{ .year }}</td>
-                                                <td>{{ .type }}</td>
-                                                {{if .link}}
-                                                <td><a href="{{ .link }}" target="_blank">View</a></td>
-                                                {{else}}
-                                                <td>Coming soon</td>
-                                                {{end}}
-                                            </tr>
-                                            {{ end }}
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            {{ end }}
-
                         </div>
 
+                        <div class="metric-card" data-metric="estimated">
+                            <div class="metric-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="metric-content">
+                                <h3>Estimated Total</h3>
+                                <div class="metric-value">
+                                    {{if gt .Params.nft_available 0}}
+                                    <span class="counter">{{.Params.nft_available}}</span>
+                                    <span class="metric-unit">{{.Params.project_stats_unit}}</span>
+                                    {{else}}
+                                    <span class="metric-status">Preparing</span>
+                                    {{end}}
+                                </div>
+                                <div class="metric-info">
+                                    <i class="fas fa-info-circle"></i>
+                                    <div class="metric-tooltip">
+                                        The total estimated number of credits based on current volume and project duration
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card" data-metric="retired">
+                            <div class="metric-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="metric-content">
+                                <h3>Credits Retired</h3>
+                                <div class="metric-value">
+                                    <span class="counter">{{.Params.nft_retired}}</span>
+                                    <span class="metric-unit">{{.Params.project_stats_unit}}</span>
+                                </div>
+                                <div class="metric-info">
+                                    <i class="fas fa-info-circle"></i>
+                                    <div class="metric-tooltip">
+                                        Credits permanently removed from circulation that can no longer be traded
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card" data-metric="price">
+                            <div class="metric-icon">
+                                <i class="fas fa-tag"></i>
+                            </div>
+                            <div class="metric-content">
+                                <h3>Credit Price</h3>
+                                <div class="metric-value">
+                                    <span class="counter">{{.Params.price}}</span>
+                                    <span class="metric-unit">{{.Params.price_unit}}</span>
+                                </div>
+                                <div class="metric-info">
+                                    <i class="fas fa-info-circle"></i>
+                                    <div class="metric-tooltip">
+                                        Premiums are added if proponents meet additional quality standards
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Credits Table -->
+                    <div class="credits-table-container">
+                        <table class="credits-table">
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Type</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{ range .Params.nfts }}
+                                <tr>
+                                    <td>{{ .year }}</td>
+                                    <td>{{ .type }}</td>
+                                    <td>
+                                        {{if .link}}
+                                        <a href="{{ .link }}" class="btn btn-sm btn-outline-secondary" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> View Credit
+                                        </a>
+                                        {{else}}
+                                        <span class="badge bg-warning text-dark">Coming Soon</span>
+                                        {{end}}
+                                    </td>
+                                </tr>
+                                {{ end }}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-
             </div>
         </div>
-
-
+        {{ end }}
+    </div>
 </section>
+
+<!-- Add custom CSS for the redesigned elements -->
+<style>
+    /* Project Hero Section */
+    .project-hero-image {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        height: 500px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .project-hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .project-hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
+    }
+    
+    .project-hero-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px;
+        color: white;
+    }
+    
+    .project-categories {
+        margin-top: 15px;
+    }
+    
+    .project-categories .badge {
+        font-size: 14px;
+        padding: 8px 15px;
+        margin-right: 10px;
+        border-radius: 30px;
+    }
+    
+    /* Project Content Section */
+    .project-content {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #2c3e50;
+    }
+    
+    .project-content p {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Project Info Cards */
+    .project-info-card {
+        background-color: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .project-info-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    
+    .project-info-header {
+        background-color: #f8f9fa;
+        padding: 15px 20px;
+        border-bottom: 1px solid #e9ecef;
+    }
+    
+    .project-info-header h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+        color: #2c3e50;
+        display: flex;
+        align-items: center;
+    }
+    
+    .project-info-header h3 i {
+        margin-right: 10px;
+        color: #AECE9D;
+    }
+    
+    .project-info-body {
+        padding: 20px;
+    }
+    
+    /* Developer Info */
+    .developer-info {
+        align-items: center;
+    }
+    
+    .developer-logo {
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+    
+    .developer-logo img {
+        width: 80px;
+        height: 80px;
+        border: 3px solid #f8f9fa;
+    }
+    
+    .developer-details {
+        flex-grow: 1;
+    }
+    
+    .developer-details h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #2c3e50;
+    }
+    
+    .developer-details p {
+        font-size: 14px;
+        color: #6c757d;
+        margin-bottom: 10px;
+    }
+    
+    /* Map Container */
+    .map-container {
+        border-radius: 8px;
+        overflow: hidden;
+        height: 300px;
+    }
+    
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    
+    /* Project Metrics Section */
+    .project-metrics-section {
+        padding: 60px 0;
+        background-color: #f8f9fa;
+        border-radius: 16px;
+        margin-bottom: 40px;
+    }
+    
+    .highlight-text {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .highlight-text::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #AECE9D;
+        border-radius: 3px;
+    }
+    
+    /* Metric Cards */
+    .metric-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .metric-card {
+        flex: 1;
+        min-width: 200px;
+        max-width: 260px;
+        background-color: white;
+        border-radius: 12px;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .metric-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    
+    .metric-card[data-metric="issued"] {
+        border-top: 4px solid #4CAF50;
+    }
+    
+    .metric-card[data-metric="estimated"] {
+        border-top: 4px solid #2196F3;
+    }
+    
+    .metric-card[data-metric="retired"] {
+        border-top: 4px solid #FF9800;
+    }
+    
+    .metric-card[data-metric="price"] {
+        border-top: 4px solid #9C27B0;
+    }
+    
+    .metric-icon {
+        background-color: #f8f9fa;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    
+    .metric-card[data-metric="issued"] .metric-icon {
+        color: #4CAF50;
+    }
+    
+    .metric-card[data-metric="estimated"] .metric-icon {
+        color: #2196F3;
+    }
+    
+    .metric-card[data-metric="retired"] .metric-icon {
+        color: #FF9800;
+    }
+    
+    .metric-card[data-metric="price"] .metric-icon {
+        color: #9C27B0;
+    }
+    
+    .metric-content {
+        flex-grow: 1;
+    }
+    
+    .metric-content h3 {
+        font-size: 14px;
+        color: #6c757d;
+        margin-bottom: 5px;
+    }
+    
+    .metric-value {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 5px;
+    }
+    
+    .counter {
+        font-size: 24px;
+        font-weight: 700;
+        color: #2c3e50;
+    }
+    
+    .metric-unit {
+        font-size: 14px;
+        color: #6c757d;
+        margin-left: 5px;
+    }
+    
+    .metric-status {
+        font-size: 18px;
+        font-weight: 600;
+        color: #ff9800;
+    }
+    
+    .metric-info {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .metric-info i {
+        color: #6c757d;
+        cursor: pointer;
+    }
+    
+    .metric-tooltip {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-size: 12px;
+        width: 200px;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+        z-index: 10;
+    }
+    
+    .metric-tooltip::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 5px;
+        border-style: solid;
+        border-color: #333 transparent transparent transparent;
+    }
+    
+    .metric-info:hover .metric-tooltip {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /* Credits Table */
+    .credits-table-container {
+        overflow-x: auto;
+        margin: 0 auto;
+        max-width: 90%;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    
+    .credits-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+    }
+    
+    .credits-table th, 
+    .credits-table td {
+        padding: 15px 20px;
+        text-align: left;
+        border-bottom: 1px solid #e9ecef;
+    }
+    
+    .credits-table th {
+        background-color: #f8f9fa;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+    
+    .credits-table tbody tr:hover {
+        background-color: #f8f9fa;
+    }
+    
+    .credits-table tbody tr:last-child td {
+        border-bottom: none;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .project-hero-image {
+            height: 300px;
+        }
+        
+        .project-hero-content {
+            padding: 20px;
+        }
+        
+        .metric-cards-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .metric-card {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+</style>
+
+<script>
+    // Tooltip functionality
+    document.addEventListener("DOMContentLoaded", function() {
+        // Counter animation
+        function animateCounter(element, target, duration = 2000) {
+            if (!element) return;
+            
+            let start = 0;
+            const increment = target / (duration / 16); // Update every ~16ms for 60fps
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    clearInterval(timer);
+                    element.textContent = Math.floor(target).toLocaleString();
+                } else {
+                    element.textContent = Math.floor(start).toLocaleString();
+                }
+            }, 16);
+        }
+        
+        // Animate all counters
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+            const target = parseFloat(counter.textContent);
+            animateCounter(counter, target);
+        });
+    });
+</script>
+
 {{ end }}

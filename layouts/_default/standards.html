@@ -4,7 +4,6 @@
         <div class="aos-scope">
             <div data-aos="fade-up">
                 <div class="row justify-content-center pb-5">
-
                     <div class="col-12 col-xl-6">
                         {{ with .Title }}
                         <h2 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
@@ -18,35 +17,30 @@
         </div>
         <div class="aos-scope">
             <div data-aos="fade-up">
-                <div class="row g-4 pb-5">
-                    {{ range (.Paginate .RegularPages).Pages }}
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a class="card text-decoration-none h-100" href="{{ .Permalink }}">
-                            <div class="aspect-ratio-62-5">
-
-                                {{- $image := resources.Get .Params.featured_image -}}
-                                {{ warnf "Found image: %s for page: %s" $image.Permalink .Title }}
-                                <img src="{{ ($image.Fill " 400x320 q100 Center").RelPermalink }}" alt="{{ .Title }}">
-
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title fw-semibold">{{ .Title }}</h5>
-
-                                <!-- Display Hashtags Inside the Card Body -->
-                                <div class="hashtags mt-2">
+                <div class="row pb-5">
+                    <div class="col-12">
+                        <div class="list-group">
+                            {{ range (.Paginate .RegularPages).Pages }}
+                            <a href="{{ .Permalink }}" class="list-group-item list-group-item-action d-flex align-items-center py-3 mb-3">
+                                <div class="flex-shrink-0 me-3">
+                                    {{- $image := resources.Get .Params.featured_image -}}
+                                    <img src="{{ ($image.Fill "100x100 q100 Center").RelPermalink }}" alt="{{ .Title }}" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover;">
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h5 class="mb-1 fw-semibold">{{ .Title }}</h5>
                                     {{ with .Params.hashtags }}
-                                    <p>
+                                    <small class="text-muted">
                                         {{ range . }}#{{ . }} {{ end }}
-                                    </p>
-                                    {{ else }}
-                                    <p class="text-muted">No hashtags available</p>
+                                    </small>
                                     {{ end }}
                                 </div>
-
-                            </div>
-                        </a>
+                                <div class="ms-auto">
+                                    <i class="fa fa-chevron-right text-muted"></i>
+                                </div>
+                            </a>
+                            {{ end }}
+                        </div>
                     </div>
-                    {{ end }}
                 </div>
             </div>
         </div>

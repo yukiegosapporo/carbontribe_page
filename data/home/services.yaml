@@ -19,16 +19,16 @@ content:
         label: "Learn more"
         url: "#"
 
-    - image: "images/sachiko.png"
-      title: "Sachiko Miyake, BizDev Manager"
-      text: "Ex Itochu Corporation, handled international finance and trade of forestry resource products in the US, China and APAC. Berlin School of Economics and Law MBA"
+    - image: "images/julia.png"
+      title: "Julia Sluis, Sustainability Strategist"
+      text: "Passionate about sustainable systems and development economics, with a multidisciplinary, hands-on background in the Netherlands and Spain. Holds MSc's in Environment & Resource Management and International Development."
       button:
         label: "Learn more"
         url: "#"
 
-    - image: "images/julia.png"
-      title: "Julia Sluis, Sustainability Strategist"
-      text: "Passionate about sustainable systems and development economics, with a multidisciplinary, hands-on background in the Netherlands and Spain. Holds MSc’s in Environment & Resource Management and International Development."
+    - image: "images/sachiko.png"
+      title: "Sachiko Miyake, BizDev Manager"
+      text: "Ex Itochu Corporation, handled international finance and trade of forestry resource products in the US, China and APAC. Berlin School of Economics and Law MBA"
       button:
         label: "Learn more"
         url: "#"

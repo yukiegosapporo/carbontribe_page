@@ -4,50 +4,20 @@
 {{ partial "head/head.html" . }}
 {{ $styles := resources.Get "css/style.css" | minify }}
 <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 
 <body>
   {{- partial "shared/header.html" . -}}
-  {{- block "main" . -}}{{- end -}}
+  <main data-aos="fade-in" data-aos-duration="800">
+    {{- block "main" . -}}{{- end -}}
+  </main>
   {{- partial "shared/contact-button.html" . -}}
   {{- partial "shared/footer.html" . -}}
+  
+  <!-- JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
+  {{ $animations := resources.Get "js/animations.js" }}
+  <script src="{{ $animations.Permalink }}"></script>
 </body>
 
 </html>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const el = document.querySelector(".typewriter-text");
-    if (!el) return;
-
-    const words = JSON.parse(el.getAttribute("data-words"));
-    let i = 0, j = 0, currentWord = "", isDeleting = false;
-
-    function type() {
-      currentWord = words[i];
-
-      if (isDeleting) {
-        el.textContent = currentWord.substring(0, j--);
-      } else {
-        el.textContent = currentWord.substring(0, j++);
-      }
-
-      if (!isDeleting && j === currentWord.length + 1) {
-        isDeleting = true;
-        setTimeout(type, 1000);
-      } else if (isDeleting && j === 0) {
-        isDeleting = false;
-        i = (i + 1) % words.length;
-        setTimeout(type, 300);
-      } else {
-        setTimeout(type, isDeleting ? 50 : 100);
-      }
-    }
-
-    type();
-  });
-</script>

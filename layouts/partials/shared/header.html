@@ -52,17 +52,44 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const dropdowns = document.querySelectorAll(".hover-dropdown");
+    let timeout;
 
     dropdowns.forEach((dropdown) => {
+      // Show dropdown on hover
       dropdown.addEventListener("mouseenter", function () {
+        clearTimeout(timeout);
         let menu = this.querySelector(".dropdown-menu");
         menu.classList.add("show");
       });
 
+      // Add delay before hiding to allow moving to submenu
       dropdown.addEventListener("mouseleave", function () {
         let menu = this.querySelector(".dropdown-menu");
-        menu.classList.remove("show");
+        timeout = setTimeout(() => {
+          menu.classList.remove("show");
+        }, 300); // 300ms delay to allow cursor movement to submenu
       });
+
+      // Show dropdown on click (for mobile and alternative interaction)
+      dropdown.querySelector('.dropdown-toggle').addEventListener("click", function (e) {
+        e.preventDefault();
+        let menu = dropdown.querySelector(".dropdown-menu");
+        menu.classList.toggle("show");
+      });
+
+      // Prevent dropdown from closing when interacting with its content
+      dropdown.querySelector('.dropdown-menu').addEventListener("mouseenter", function() {
+        clearTimeout(timeout);
+      });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest('.hover-dropdown')) {
+        document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+          menu.classList.remove('show');
+        });
+      }
     });
   });
 </script>
@@ -70,18 +97,21 @@
 <!-- CSS for Smooth Hover Effect -->
 <style>
   .dropdown-menu {
-    display: none;
+    display: block;
     opacity: 0;
+    visibility: hidden;
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     margin-top: 0.5rem !important;
+    pointer-events: none;
   }
 
-  .hover-dropdown:hover .dropdown-menu {
-    display: block;
+  .dropdown-menu.show {
     opacity: 1;
+    visibility: visible;
     transform: translateY(5px);
+    pointer-events: auto;
   }
   
   #site-header {

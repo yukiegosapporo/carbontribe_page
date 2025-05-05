@@ -1,4 +1,4 @@
-+++
+<!-- +++
 author = "Carbontribe"
 layout = "book_single"
 title = "Social Good Certificate"
@@ -22,4 +22,4 @@ We track the money flow, and upon a successful transfer, we issue a Social Good 
 
 As a buyer, you receive both the original Carbontribe credit and the Social Good Certificate, verifying your contribution to environmental and social impact.
 
-![alt text](/images/sgcert3.png "sgcert1")
+![alt text](/images/sgcert3.png "sgcert1") -->

@@ -21,17 +21,17 @@ developer_url = "https://cleanoceanensemble.com/en"
 post_image = "/images/projects/brian-yurasits-PzQNdXw2a6g-unsplash.png"
 iframe1 = "https://www.openstreetmap.org/export/embed.html?bbox=133.96865844726565%2C34.27480789279758%2C134.54063415527347%2C34.71791112677537&amp;layer=mapnik&amp;marker=34.49665386781626%2C134.25464630126953"
 iframe3 = "https://mol.org/regions/region/species?regiontype=region&region_id=15c2ed3a-16f4-474c-8fc3-8764eeb7c302"
-impact_kpi = 553.4
-# 55.34 * 10, 55.34 is recycled plastic in 2024
+impact_kpi = 418
+# 41.8 * 10, 418 is recycled PP in 2024
 impact_kpi_type = "waste"
 
 nfts = [
   { year = "2024", type="Metal", link = "" },
-  { year = "2024", type="Plastic", link = "https://testnets.opensea.io/assets/base_sepolia/0xe18ecdb92e0736b7d1aef706c2f956f640fdc946/11" },
+  { year = "2024", type="Plastic", link = "https://opensea.io/item/base/0xe40e6018303f871dec8a6160c26407bb25d9ff47/1" },
 ]
 project_stats_unit = "credit"
-nft_issued = 5
-nft_available = 55
+nft_issued = 4
+nft_available = 4
 nft_retired = 0
 
 price=6.75

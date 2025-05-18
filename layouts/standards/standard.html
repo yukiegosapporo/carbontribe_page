@@ -87,35 +87,46 @@
                 </div>
                 <hr>
                 <br>
-                {{- with .Params.acreditor_name }}
+                {{- with .Params.accreditor_name }}
                 <div class="row d-flex align-items-center">
                     <h3 class="fs-1 fw-bold text-primary pb-3 me-2">
-                        Acredited by
+                        Accredited by
                         <span class="info-container">
                             <i class="fas fa-circle-info"></i>
                             <div class="info-popup">
-                                Who is the primary acreditor of standard and methodology
+                                Who is the primary accreditor of standard and methodology
                             </div>
                         </span>
                     </h3>
                 </div>
 
-                <div class="acreditor-info mt-5 d-flex align-items-center">
-                    <!-- acreditor Logo on the Left -->
+                <div class="accreditor-info mt-5 d-flex align-items-center">
+                    <!-- accreditor Logo on the Left -->
                     <div class="developer-logo">
-                        <img src="{{ $.Params.acreditor_image | relURL }}" class="rounded-circle mb-3" width="100px"
-                            alt="Acreditor Logo">
+                        <img src="{{ $.Params.accreditor_image | relURL }}" class="rounded-circle mb-3" width="100px"
+                            alt="accreditor Logo">
                     </div>
 
-                    <!-- acreditor Name and Bio on the Right -->
+                    <!-- accreditor Name and Bio on the Right -->
                     <div class="developer-details ms-3">
-                        <p><strong>{{ $.Params.acreditor_name }}</strong></p>
+                        <p><strong>{{ $.Params.accreditor_name }}</strong></p>
                         <p>{{ $.Params.developer_bio }}</p>
                         <p>
-                            <a href="{{ $.Params.acreditor_url }}" class="btn btn-secondary text-white" target="_blank">
-                                Visit Acreditor's Project
+                            <a href="{{ $.Params.accreditor_url }}" class="btn btn-secondary text-white"
+                                target="_blank">
+                                Visit accreditor's Project
                             </a>
                         </p>
+
+                        {{ with $.Params.accreditation_report_url }}
+                        <p>
+                            <a href="{{ . }}" class="btn btn-secondary text-white" target="_blank">
+                                View accreditation report
+                            </a>
+                        </p>
+                        {{ end }}
+
+
                     </div>
                 </div>
                 <hr>
@@ -129,7 +140,7 @@
                         <span class="info-container">
                             <i class="fas fa-circle-info"></i>
                             <div class="info-popup">
-                                Primary tools and references independent acreditors used for assessment
+                                Primary tools and references independent accreditors used for assessment
                             </div>
                         </span>
                     </h3>

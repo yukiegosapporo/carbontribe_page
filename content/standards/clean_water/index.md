@@ -7,7 +7,7 @@ layout = "standard"
 description = "Clean Water"
 featured_image = "/images/standards/clean_water/clean_water.png"
 tags = [
-    "Blue Carbon",
+    "Clean Water",
     "Carbontribe",
 ]
 

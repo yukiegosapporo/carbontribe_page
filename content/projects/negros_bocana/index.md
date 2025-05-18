@@ -2,12 +2,13 @@
 author = "Carbontribe"
 title = "Mangrove plantation in Bocana, Negros island"
 date = "2024-12-27"
-category="blue"
+category="mangroves"
 layout = "project"
 description = "Mangrove plantation in Bocana, Negros island"
 featured_image = "images/projects/negros_bocana/bocana.png"
 tags = [
     "Blue Carbon",
+    "Mangroves",
     "Philippines",
     "Negros",
     "Carbontribe",

@@ -23,9 +23,10 @@ status="review"
 review_method="Third party review"
 
 methodology_urls=[{v = "v2025-04-01", link = "https://ipfs.io/ipfs/bafybeiflefmljmp3sllzusui2r5iwxpmmwtyifrltmzmcstmyz4o3ejpvm"}]
-acreditor_image = "/images/earthood.png"
-acreditor_name = "Earthood"
-acreditor_url = "https://www.earthood.com/"
+accreditor_image = "/images/earthood.png"
+accreditor_name = "Earthood"
+accreditor_url = "https://www.earthood.com/"
+accreditation_report_url = "https://ipfs.io/ipfs/bafybeig5pprikqdigc3jjilcdo4kqqixoapldcz7bfamcogvhv3kpig6by"
 
 assessed_with = [{image = "/images/un_certified.png", link = "https://sdgs.un.org/2030agenda"}, {image = "/images/ipcc_certified.png", link = "https://www.ipcc-nggip.iges.or.jp/public"}, {image = "/images/earthood_certified.png", link = "https://www.earthood.com/"}, {image = "/images/icvcm_certified.png", link = "https://icvcm.org/core-carbon-principles/"}]
 

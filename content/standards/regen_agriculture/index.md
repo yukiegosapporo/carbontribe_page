@@ -21,11 +21,11 @@ hashtags = ["Regenerative Agriculture", "Object detection", "Computer vision", "
 status="review"
 # published, planned
 review_method="Third party review"
-methodology_urls=[{v = "v2025-04-01", link = "https://ipfs.io/ipfs/bafybeif6mb6mvlciaf26xtl563xemjwvszvrxnevxt463wmf26xwwmwz4q"}]
+methodology_urls=[{v = "v2025-04-01", link = "/files/methodologies/regen_agriculture.pdf"}]
 accreditor_image = "/images/earthood.png"
 accreditor_name = "Earthood"
 accreditor_url = "https://www.earthood.com/"
-accreditation_report_url = "https://ipfs.io/ipfs/bafybeig5pprikqdigc3jjilcdo4kqqixoapldcz7bfamcogvhv3kpig6by"
+accreditation_report_url = "/files/accreditation/report.pdf"
 
 assessed_with = [{image = "/images/un_certified.png", link = "https://sdgs.un.org/2030agenda"}, {image = "/images/ipcc_certified.png", link = "https://www.ipcc-nggip.iges.or.jp/public"}, {image = "/images/earthood_certified.png", link = "https://www.earthood.com/"}, {image = "/images/icvcm_certified.png", link = "https://icvcm.org/core-carbon-principles/"}]
 

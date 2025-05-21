@@ -23,11 +23,11 @@ status="review"
 review_method="Third party review"
 # published, planned
 
-methodology_urls=[{v = "v2025-04-01", link = "https://ipfs.io/ipfs/bafybeibaixgadh3u5rj56yqtnykjhjwdisdmzjqicfzni3eohw3emuesgy"}]
+methodology_urls=[{v = "v2025-04-01", link = "/files/methodologies/forest_lands.pdf"}]
 accreditor_image = "/images/earthood.png"
 accreditor_name = "Earthood"
 accreditor_url = "https://www.earthood.com/"
-accreditation_report_url = "https://ipfs.io/ipfs/bafybeig5pprikqdigc3jjilcdo4kqqixoapldcz7bfamcogvhv3kpig6by"
+accreditation_report_url = "/files/accreditation/report.pdf"
 
 assessed_with = [{image = "/images/un_certified.png", link = "https://sdgs.un.org/2030agenda"}, {image = "/images/ipcc_certified.png", link = "https://www.ipcc-nggip.iges.or.jp/public"}, {image = "/images/earthood_certified.png", link = "https://www.earthood.com/"}, {image = "/images/icvcm_certified.png", link = "https://icvcm.org/core-carbon-principles/"}]
 
@@ -39,7 +39,7 @@ status_data = [
   {text = "Expert reviewed", date = "03/2025"},
   # {text = "Published", date = "12/2004"},
 ]
-price_url="https://ipfs.io/ipfs/bafybeibqwed7wjymee5jefoc6ws7fdyxct2uksyz4qe5ojlazzikg5okey"
+price_url="/files/pricing/forest_lands.pdf"
 +++
 Since the mid-20th century, global forests have faced significant declines due to deforestation, land-use changes, and other human-driven activities. These disturbances have resulted in the loss of vast forested areas, diminishing their ability to act as natural carbon sinks and exacerbating the challenges of climate change. Efforts to reverse these trends, particularly through afforestation, reforestation, and revegetation (ARR), offer a practical and impactful strategy for restoring degraded ecosystems and enhancing their carbon sequestration potential. However, the success of ARR projects depends on the careful selection of species, restoration techniques, and the re-establishment of ecological conditions conducive to forest growth.
 

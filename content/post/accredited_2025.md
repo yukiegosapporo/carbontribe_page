@@ -3,7 +3,7 @@ author = "Julia"
 title = "We’re Officially Earthood Certified!"
 date = "2025-05-23"
 description = ""
-featured_image = "images/techstars-2024.png"
+featured_image = "images/earthood_report.png"
 tags = [
     "Earthood",
     "Carbontribe",

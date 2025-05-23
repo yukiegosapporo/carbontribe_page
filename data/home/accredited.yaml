@@ -1,0 +1,56 @@
+enabled: true
+id: "accredited"
+title: Our Certificates
+
+content:
+  
+  - image: "images/earthood_report.png"
+    pretitle: ""
+    title: "Our methodologies have been officially certified by Earthood"
+    text: "This certification validates the scientific rigor and real-world impact of our work across:"
+    text2: "- 🌱 Green forest restoration"
+    text3: "- 🌊 Mangrove regeneration"
+    text4: "- 🌾 Agricultural emissions reduction"
+    buttons: 
+      - label: "See accreditation report"
+        url: "/files/accreditation/report.pdf"
+
+    # buttons: 
+    #   - label: "See live"
+    #     url: "#"
+
+    #   - label: "Read more"
+    #     url: "#"
+
+  # - image: "images/ghg.png"
+  #   pretitle: ""
+  #   title: "Science-based standards"
+  #   text: "Our standards areverified through third-party audit. Here is our lineups"
+  #   text2: "CO₂: ARR (Afforestation, Reforestation, & Revegetation) standards for forests and mangroves"
+  #   text3: "CH₄: Methane emission reduction extending the irrigation period in paddy fields"
+  #   text4: "N₂O: Reducing the use of nitrogen-based fertilizers"
+
+    # buttons: 
+    #   - label: "Read more (coming soon)"
+    #     url: "#"
+
+  # - image: "images/nft_demo.png"
+  #   pretitle: ""
+  #   title: "Web3-based data management"
+  #   text: "We stores all the related data on the blockchain, ensuring tamper-proof records and scientific reproducibility. This process creates a new form of carbon credit, Next-Gen Carbon Finance AI-Powered, Data-Driven & Verified"
+  #   buttons: 
+  #     - label: "See our credits"
+  #       url: "https://carbontribe.me/projects/"
+
+      # - label: "Read more (coming soon)"
+      #   url: "#"
+
+
+    # buttons: 
+    #   - label: "See live"
+    #     url: "#"
+
+    #   - label: "Read more"
+    #     url: "#"
+
+

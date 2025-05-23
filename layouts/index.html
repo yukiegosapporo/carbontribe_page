@@ -36,6 +36,14 @@
   </div>
 </section>
 
+<!-- Accredited Section -->
+<section class="section-wrapper section-products">
+  <div class="container py-5">
+    <div class="section-divider"></div>
+    {{ with .Site.Data.home.accredited }}{{ partial "sections/technology2.html" . }}{{ end }}
+  </div>
+</section>
+
 <!-- Brands Section -->
 <section class="section-wrapper section-brands bg-light">
   <div class="container py-5">
@@ -67,11 +75,11 @@
     padding: 4rem 0;
     overflow: hidden;
   }
-  
+
   .section-hero {
     padding: 0;
   }
-  
+
   .section-divider {
     width: 100px;
     height: 4px;
@@ -79,13 +87,13 @@
     margin: 0 auto 3rem;
     border-radius: 2px;
   }
-  
+
   .bg-light {
     background-color: var(--gray-100);
     position: relative;
   }
-  
-  .bg-light::before, 
+
+  .bg-light::before,
   .bg-light::after {
     content: '';
     position: absolute;
@@ -94,24 +102,24 @@
     background-color: var(--gray-100);
     z-index: -1;
   }
-  
+
   .bg-light::before {
     top: -25px;
     left: 0;
     transform: skewY(1deg);
   }
-  
+
   .bg-light::after {
     bottom: -25px;
     left: 0;
     transform: skewY(-1deg);
   }
-  
+
   @media (max-width: 768px) {
     .section-wrapper {
       padding: 3rem 0;
     }
-    
+
     .section-divider {
       width: 70px;
       height: 3px;
@@ -124,7 +132,7 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     AOS.init({
       duration: 800,
       easing: 'ease-out',

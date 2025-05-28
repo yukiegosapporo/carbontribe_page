@@ -1,6 +1,10 @@
 <!-- Load Shared SCSS -->
 {{- $sharedSCSS := resources.Get "scss/shared/shared.scss" -}}
-{{- $sharedSCSS := $sharedSCSS | css.Sass (dict "outputStyle" "compressed" "includePaths" (slice "assets")) -}}
+{{- if ge hugo.Version "0.128.0" -}}
+  {{- $sharedSCSS = $sharedSCSS | css.Sass (dict "outputStyle" "compressed" "includePaths" (slice "assets")) -}}
+{{- else -}}
+  {{- $sharedSCSS = $sharedSCSS | resources.ToCSS (dict "outputStyle" "compressed" "includePaths" (slice "assets")) -}}
+{{- end -}}
 {{- $sharedSCSS := $sharedSCSS | resources.ExecuteAsTemplate "main.scss" . -}}
 
 <!-- Load Shared JS -->

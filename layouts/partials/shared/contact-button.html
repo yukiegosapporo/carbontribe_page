@@ -5,21 +5,9 @@
 <div id="contactPopup" class="popup">
     <div class="popup-content">
         <span id="closePopup" class="close">&times;</span>
-        <form class="popup-form" action="https://formspree.io/f/xqazrdbb" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="company">Company & Role:</label>
-            <input type="text" id="company" name="company">
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
+        <h2 style="text-align: center; margin-bottom: 20px;">Contact Us</h2>
+        <p style="text-align: center; margin-bottom: 25px;">Click the button below to open our contact form in a new window.</p>
+        <button id="openZapierForm" style="background-color: #AECE9D; color: white; border: none; padding: 15px 30px; width: 100%; border-radius: 5px; cursor: pointer; font-size: 18px; font-weight: bold;">Open Contact Form</button>
     </div>
 </div>
 
@@ -76,39 +64,6 @@
         border-top: 20px solid white;
     }
 
-    .popup-form label {
-        font-weight: bold;
-        display: block;
-        margin-top: 10px;
-        color: #555;
-    }
-
-    .popup-form input,
-    .popup-form textarea {
-        width: 100%;
-        padding: 12px;
-        margin-top: 5px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 15px;
-    }
-
-    .popup-form button {
-        background-color: #AECE9D;
-        color: white;
-        border: none;
-        padding: 12px;
-        width: 100%;
-        margin-top: 15px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    .popup-form button:hover {
-        background-color: #94b884;
-    }
 
     .close {
         position: absolute;
@@ -158,5 +113,15 @@
             popup.style.display = "none";
             overlay.style.display = "none";
         });
+
+        // Open Zapier form in new window
+        var zapierBtn = document.getElementById("openZapierForm");
+        if (zapierBtn) {
+            zapierBtn.addEventListener("click", function () {
+                window.open("https://carbontribe-sales-216b48.zapier.app/", "_blank", "width=600,height=700");
+                popup.style.display = "none";
+                overlay.style.display = "none";
+            });
+        }
     });
 </script>

@@ -1,7 +1,7 @@
 +++
 author = "Kay"
 title = "Carbontribe as one of top 50 blockchain companies for good"
-date = "2023-11-31"
+date = "2023-11-30"
 description = "Carbontribe as one of top 50 blockchain companies for good"
 featured_image = "images/berlin-top-blockchain-companies-for-good-2023.png"
 tags = [

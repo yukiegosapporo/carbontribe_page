@@ -11,14 +11,26 @@
             {{ end }}
           </div>
         </div>
-        <div class="row g-4 align-items-center justify-content-center">
-          {{ range .content.items }}
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-3 my-2 text-center">
-            <div class="brand-image-container">
-              {{ partial "utilities/image-half.html" . }}
+
+        <!-- Scrolling container -->
+        <div class="brand-carousel-wrapper overflow-hidden">
+          <div class="brand-carousel d-flex">
+            {{ range .content.items }}
+            <div class="brand-carousel-item px-5">
+              <div class="brand-image-container">
+                {{ partial "utilities/image-half.html" . }}
+              </div>
             </div>
+            {{ end }}
+            <!-- Duplicate items for seamless looping -->
+            {{ range .content.items }}
+            <div class="brand-carousel-item px-5">
+              <div class="brand-image-container">
+                {{ partial "utilities/image-half.html" . }}
+              </div>
+            </div>
+            {{ end }}
           </div>
-          {{ end }}
         </div>
       </div>
     </div>
@@ -26,16 +38,43 @@
 </section>
 
 <style>
-  .brand-image-container img {
+  .brand-carousel-wrapper {
+    position: relative;
     width: 100%;
-    /* Ensures image scales within its container */
+    overflow: hidden;
+  }
+
+  .brand-carousel {
+    display: flex;
+    width: max-content;
+    /* Allows container to expand with content */
+    animation: scrollLeft 30s linear infinite;
+  }
+
+
+  .brand-carousel-item {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    /* Adjust based on logo size */
+  }
+
+  .brand-image-container img {
     height: 100px;
-    /* Set a fixed height for uniformity */
     object-fit: contain;
-    /* Ensures images fit without distortion */
     display: block;
-    /* Removes extra space under images */
     max-width: 100%;
-    /* Prevents images from exceeding container */
+  }
+
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
   }
 </style>

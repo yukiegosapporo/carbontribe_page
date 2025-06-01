@@ -17,12 +17,12 @@ tags = [
 image_data = [
   { image = "/images/projects/negros_bocana/bocana.png", text = "This is the first piece of text between the images." },
 ]
-developer_name = "Marine debris NGO"
-developer_bio = "Awesome organization doing awesome things awesomely"
-developer_image = "/images/projects/negros_bocana/seal-logo-template-for-your-company-vector-33952832.png"
-developer_url = "https://carbontribe.me/"
+developer_name = "Ikaw ako "
+developer_bio = "IKAW-AKO Japan-Negros Partnership for Environmental Protection"
+developer_image = "/images/ikawako_logo.png"
+developer_url = "http://ikawako.com/"
 post_image = "/images/projects/brian-yurasits-PzQNdXw2a6g-unsplash.png"
-iframe1 = "https://www.openstreetmap.org/export/embed.html?bbox=122.7196338355774,10.01372648685217&amp;layer=mapnik&amp;marker=122.7196338355774,10.01372648685217"
+iframe1 = "https://www.openstreetmap.org/export/embed.html?bbox=122.71046161651613%2C10.005452127175657%2C122.72878646850587%2C10.021997534665651&amp;layer=mapnik"
 iframe3 = "https://mol.org/regions/region/species?regiontype=region&region_id=15c2ed3a-16f4-474c-8fc3-8764eeb7c302"
 impact_kpi = 382.48
 impact_kpi_type = "co2"

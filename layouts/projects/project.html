@@ -58,7 +58,7 @@
                     <div class="project-info-body">
                         <div class="developer-info d-flex">
                             <div class="developer-logo">
-                                <img src="{{ .Params.developer_image | relURL }}" class="rounded-circle" alt="Developer Logo">
+                                <img src="{{ .Params.developer_image | relURL }}" alt="Developer Logo">
                             </div>
                             <div class="developer-details">
                                 <h4>{{ .Params.developer_name }}</h4>
@@ -326,9 +326,14 @@
     }
     
     .developer-logo img {
-        width: 80px;
-        height: 80px;
-        border: 3px solid #f8f9fa;
+        max-width: 120px;
+        max-height: 80px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
     }
     
     .developer-details {

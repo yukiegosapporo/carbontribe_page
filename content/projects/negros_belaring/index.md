@@ -17,12 +17,12 @@ tags = [
 image_data = [
   { image = "/images/projects/negros_belaring/belaring.png", text = "This is the first piece of text between the images." },
 ]
-developer_name = "Marine debris NGO"
-developer_bio = "Awesome organization doing awesome things awesomely"
-developer_image = "/images/projects/negros_belaring/seal-logo-template-for-your-company-vector-33952832.png"
-developer_url = "https://carbontribe.me/"
+developer_name = "Ikaw ako "
+developer_bio = "IKAW-AKO Japan-Negros Partnership for Environmental Protection"
+developer_image = "/images/ikawako_logo.png"
+developer_url = "http://ikawako.com/"
 post_image = "/images/projects/brian-yurasits-PzQNdXw2a6g-unsplash.png"
-iframe1 = "https://www.openstreetmap.org/export/embed.html?bbox=122.9499314650539,10.82272537664132&amp;layer=mapnik&amp;marker=122.9499314650539,10.82272537664132"
+iframe1 = "https://www.openstreetmap.org/export/embed.html?bbox=122.94076681137085%2C10.81446411145607%2C122.95909166336061%2C10.83096662098562&amp;layer=mapnik"
 iframe3 = "https://mol.org/regions/region/species?regiontype=region&region_id=15c2ed3a-16f4-474c-8fc3-8764eeb7c302"
 impact_kpi = 547.09
 impact_kpi_type = "co2"

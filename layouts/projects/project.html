@@ -63,14 +63,15 @@
                             <div class="developer-details">
                                 <h4>{{ .Params.developer_name }}</h4>
                                 <p>{{ .Params.developer_bio }}</p>
-                                <a href="{{ .Params.developer_url }}" class="btn btn-outline-primary btn-sm" target="_blank">
+                                <a href="{{ .Params.developer_url }}" class="btn btn-outline-primary btn-sm"
+                                    target="_blank">
                                     <i class="fas fa-external-link-alt"></i> Visit Website
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Location Card -->
                 <div class="project-info-card mb-4">
                     <div class="project-info-header">
@@ -95,7 +96,7 @@
                     <h2 class="text-center mb-5">
                         <span class="highlight-text">Project</span> Credits
                     </h2>
-                    
+
                     <!-- Enhanced Metric Cards -->
                     <div class="metric-cards-container">
                         <div class="metric-card" data-metric="issued">
@@ -138,7 +139,8 @@
                                 <div class="metric-info">
                                     <i class="fas fa-info-circle"></i>
                                     <div class="metric-tooltip">
-                                        The total estimated number of credits based on current volume and project duration
+                                        The total estimated number of credits based on current volume and project
+                                        duration
                                     </div>
                                 </div>
                             </div>
@@ -182,7 +184,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Credits Table -->
                     <div class="credits-table-container">
                         <table class="credits-table">
@@ -190,7 +192,8 @@
                                 <tr>
                                     <th>Year</th>
                                     <th>Type</th>
-                                    <th>Details</th>
+                                    <th>Buy digital assets</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -199,13 +202,42 @@
                                     <td>{{ .year }}</td>
                                     <td>{{ .type }}</td>
                                     <td>
-                                        {{if .link}}
-                                        <a href="{{ .link }}" class="btn btn-sm btn-outline-secondary" target="_blank">
-                                            <i class="fas fa-external-link-alt"></i> View Credit
+
+                                        {{ if and .link $.Params.firestore_item_id }}
+                                        <a href="https://cbt-platform.web.app/?item={{ $.Params.firestore_item_id }}"
+                                            class="btn btn-sm btn-outline-primary" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> as PDF (recommended)
+                                            <div class="metric-info">
+                                                <i class="fas fa-info-circle"></i>
+                                                <div class="metric-tooltip">
+                                                    Offset Mode (Burn-to-Certificate): You can purchase a NFT powered
+                                                    digital asset. In return, we issue a
+                                                    PDF-based digital certificate that includes the blockchain hash of
+                                                    the burned NFT and relevant environmental data.
+                                                </div>
+                                            </div>
                                         </a>
+
                                         {{else}}
                                         <span class="badge bg-warning text-dark">Coming Soon</span>
                                         {{end}}
+                                        {{if .link}}
+                                        <a href="{{ .link }}" class="btn btn-sm btn-outline-primary" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> as NFT (advanced)
+                                            <div class="metric-info">
+                                                <i class="fas fa-info-circle"></i>
+                                                <div class="metric-tooltip">
+                                                    Hold Mode (Buy-and-Hold NFT): You can purchase and hold the NFT in a
+                                                    web3 wallet. The NFT remains transferable and contains project
+                                                    metadata, but does not constitute an offset unless you burn it on
+                                                    your own
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        {{end}}
+
+
                                     </td>
                                 </tr>
                                 {{ end }}
@@ -228,24 +260,24 @@
         overflow: hidden;
         height: 500px;
         margin-bottom: 30px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     }
-    
+
     .project-hero-image img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    
+
     .project-hero-overlay {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%);
     }
-    
+
     .project-hero-content {
         position: absolute;
         bottom: 0;
@@ -254,49 +286,49 @@
         padding: 40px;
         color: white;
     }
-    
+
     .project-categories {
         margin-top: 15px;
     }
-    
+
     .project-categories .badge {
         font-size: 14px;
         padding: 8px 15px;
         margin-right: 10px;
         border-radius: 30px;
     }
-    
+
     /* Project Content Section */
     .project-content {
         font-size: 1.1rem;
         line-height: 1.7;
         color: #2c3e50;
     }
-    
+
     .project-content p {
         margin-bottom: 1.5rem;
     }
-    
+
     /* Project Info Cards */
     .project-info-card {
         background-color: white;
         border-radius: 12px;
         overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    
+
     .project-info-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     }
-    
+
     .project-info-header {
         background-color: #f8f9fa;
         padding: 15px 20px;
         border-bottom: 1px solid #e9ecef;
     }
-    
+
     .project-info-header h3 {
         margin: 0;
         font-size: 18px;
@@ -305,26 +337,26 @@
         display: flex;
         align-items: center;
     }
-    
+
     .project-info-header h3 i {
         margin-right: 10px;
         color: #AECE9D;
     }
-    
+
     .project-info-body {
         padding: 20px;
     }
-    
+
     /* Developer Info */
     .developer-info {
         align-items: center;
     }
-    
+
     .developer-logo {
         margin-right: 15px;
         flex-shrink: 0;
     }
-    
+
     .developer-logo img {
         max-width: 120px;
         max-height: 80px;
@@ -335,37 +367,37 @@
         background-color: #f8f9fa;
         border-radius: 8px;
     }
-    
+
     .developer-details {
         flex-grow: 1;
     }
-    
+
     .developer-details h4 {
         font-size: 18px;
         font-weight: 600;
         margin-bottom: 5px;
         color: #2c3e50;
     }
-    
+
     .developer-details p {
         font-size: 14px;
         color: #6c757d;
         margin-bottom: 10px;
     }
-    
+
     /* Map Container */
     .map-container {
         border-radius: 8px;
         overflow: hidden;
         height: 300px;
     }
-    
+
     .map-container iframe {
         width: 100%;
         height: 100%;
         border: none;
     }
-    
+
     /* Project Metrics Section */
     .project-metrics-section {
         padding: 60px 0;
@@ -373,12 +405,12 @@
         border-radius: 16px;
         margin-bottom: 40px;
     }
-    
+
     .highlight-text {
         position: relative;
         display: inline-block;
     }
-    
+
     .highlight-text::after {
         content: '';
         position: absolute;
@@ -389,7 +421,7 @@
         background-color: #AECE9D;
         border-radius: 3px;
     }
-    
+
     /* Metric Cards */
     .metric-cards-container {
         display: flex;
@@ -398,7 +430,7 @@
         gap: 20px;
         margin-bottom: 40px;
     }
-    
+
     .metric-card {
         flex: 1;
         min-width: 200px;
@@ -408,31 +440,31 @@
         padding: 25px;
         display: flex;
         align-items: center;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    
+
     .metric-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     }
-    
+
     .metric-card[data-metric="issued"] {
         border-top: 4px solid #4CAF50;
     }
-    
+
     .metric-card[data-metric="estimated"] {
         border-top: 4px solid #2196F3;
     }
-    
+
     .metric-card[data-metric="retired"] {
         border-top: 4px solid #FF9800;
     }
-    
+
     .metric-card[data-metric="price"] {
         border-top: 4px solid #9C27B0;
     }
-    
+
     .metric-icon {
         background-color: #f8f9fa;
         height: 50px;
@@ -444,67 +476,67 @@
         margin-right: 15px;
         font-size: 20px;
     }
-    
+
     .metric-card[data-metric="issued"] .metric-icon {
         color: #4CAF50;
     }
-    
+
     .metric-card[data-metric="estimated"] .metric-icon {
         color: #2196F3;
     }
-    
+
     .metric-card[data-metric="retired"] .metric-icon {
         color: #FF9800;
     }
-    
+
     .metric-card[data-metric="price"] .metric-icon {
         color: #9C27B0;
     }
-    
+
     .metric-content {
         flex-grow: 1;
     }
-    
+
     .metric-content h3 {
         font-size: 14px;
         color: #6c757d;
         margin-bottom: 5px;
     }
-    
+
     .metric-value {
         display: flex;
         align-items: baseline;
         margin-bottom: 5px;
     }
-    
+
     .counter {
         font-size: 24px;
         font-weight: 700;
         color: #2c3e50;
     }
-    
+
     .metric-unit {
         font-size: 14px;
         color: #6c757d;
         margin-left: 5px;
     }
-    
+
     .metric-status {
         font-size: 18px;
         font-weight: 600;
         color: #ff9800;
     }
-    
+
     .metric-info {
         position: relative;
         display: inline-block;
     }
-    
+
     .metric-info i {
         color: #6c757d;
         cursor: pointer;
     }
-    
+
     .metric-tooltip {
         position: absolute;
         bottom: 100%;
@@ -512,17 +544,22 @@
         transform: translateX(-50%);
         background-color: #333;
         color: white;
-        padding: 8px 12px;
+        padding: 10px 15px;
         border-radius: 6px;
-        font-size: 12px;
-        width: 200px;
+        font-size: 13px;
+        min-width: 200px;
+        max-width: 400px;
+        width: max-content;
         text-align: center;
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s, visibility 0.3s;
         z-index: 10;
+        white-space: normal;
+        word-wrap: break-word;
+        line-height: 1.4;
     }
-    
+
     .metric-tooltip::after {
         content: '';
         position: absolute;
@@ -533,77 +570,99 @@
         border-style: solid;
         border-color: #333 transparent transparent transparent;
     }
-    
+
     .metric-info:hover .metric-tooltip {
         opacity: 1;
         visibility: visible;
     }
-    
+
     /* Credits Table */
     .credits-table-container {
         overflow-x: auto;
         margin: 0 auto;
         max-width: 90%;
         border-radius: 12px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     }
-    
+
     .credits-table {
         width: 100%;
         border-collapse: collapse;
         background-color: white;
     }
-    
-    .credits-table th, 
+
+    .credits-table th,
     .credits-table td {
         padding: 15px 20px;
         text-align: left;
         border-bottom: 1px solid #e9ecef;
     }
-    
+
     .credits-table th {
         background-color: #f8f9fa;
         font-weight: 600;
         color: #2c3e50;
     }
-    
+
     .credits-table tbody tr:hover {
         background-color: #f8f9fa;
     }
-    
+
     .credits-table tbody tr:last-child td {
         border-bottom: none;
     }
-    
+
+    /* Button spacing in credits table */
+    .credits-table td a.btn {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    /* Tooltips in table cells */
+    .credits-table .metric-tooltip {
+        max-width: 350px;
+    }
+
+    /* Ensure tooltip doesn't overflow on smaller viewports */
+    .metric-info {
+        position: relative;
+        display: inline-block;
+    }
+
     /* Responsive Adjustments */
     @media (max-width: 768px) {
         .project-hero-image {
             height: 300px;
         }
-        
+
         .project-hero-content {
             padding: 20px;
         }
-        
+
         .metric-cards-container {
             flex-direction: column;
             align-items: center;
         }
-        
+
         .metric-card {
             width: 100%;
             max-width: 300px;
+        }
+
+        .metric-tooltip {
+            max-width: 250px;
+            font-size: 12px;
         }
     }
 </style>
 
 <script>
     // Tooltip functionality
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         // Counter animation
         function animateCounter(element, target, duration = 2000) {
             if (!element) return;
-            
+
             let start = 0;
             const increment = target / (duration / 16); // Update every ~16ms for 60fps
             const timer = setInterval(() => {
@@ -616,7 +675,7 @@
                 }
             }, 16);
         }
-        
+
         // Animate all counters
         const counters = document.querySelectorAll('.counter');
         counters.forEach(counter => {

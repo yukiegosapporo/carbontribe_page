@@ -35,6 +35,8 @@ nft_retired = 0
 
 price=50
 price_unit="USD/ton"
+
+firestore_item_id="kJTVGcA4eN77APq90zST"
 +++
 At the start of the year, intense storms brought record-breaking rainfall and severe flooding to a region in Western Europe, with one major city experiencing its worst flooding in decades. Entire communities were affected as rivers overflowed and infrastructure faced significant challenges.
 

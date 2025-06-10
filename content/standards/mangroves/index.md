@@ -35,6 +35,7 @@ status_data = [
   {text = "Initiated", date = "03/2024"},
   {text = "Peer reviewed", date = "10/2024"},
   {text = "Expert reviewed", date = "03/2025"},
+  {text = "Acredited", date = "05/2025"},
   # {text = "Published", date = "12/2004"},
 ]
 +++

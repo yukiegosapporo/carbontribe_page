@@ -36,6 +36,8 @@ nft_retired = 0
 
 price=6.75
 price_unit="USD/credit"
+
+firestore_item_id="Yi431NFJFcyqGtWFqQI9"
 +++
 
 Clean Ocean Ensemble is a Japanese nonprofit organization. They develops collection technologies and uses AI-powered tools. By recording data on collected debris through a smartphone app and web maps,  Clean Ocean Ensemble visualizes and quantifies cleanup efforts on web maps, improving efficiency and promoting recycling. One of their key activities is the collection of marine debris along the picturesque Tao coast of Shodoshima, located in Kagawa Prefecture, Japan. This region, known for its natural beauty, has faced increasing challenges due to the accumulation of marine litter, a pressing global issue that threatens both marine ecosystems and coastal livelihoods.

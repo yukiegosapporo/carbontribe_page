@@ -23,7 +23,7 @@ status="review"
 review_method="Third party review"
 # published, planned
 
-methodology_urls=[{v = "v2025-04-01", link = "/files/methodologies/forest_lands.pdf"}]
+methodology_urls=[{v = "v2025-04-01", link = "/files/methodologies/forest_lands_v2.pdf"}]
 accreditor_image = "/images/earthood.png"
 accreditor_name = "Earthood"
 accreditor_url = "https://www.earthood.com/"
@@ -37,6 +37,8 @@ status_data = [
   {text = "Initiated", date = "03/2024"},
   {text = "Peer reviewed", date = "10/2024"},
   {text = "Expert reviewed", date = "03/2025"},
+  {text = "Acredited", date = "05/2025"},
+  {text = "Updated v2", date = "06/2025"},
   # {text = "Published", date = "12/2004"},
 ]
 price_url="/files/pricing/forest_lands.pdf"

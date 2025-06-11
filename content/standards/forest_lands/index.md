@@ -23,7 +23,7 @@ status="review"
 review_method="Third party review"
 # published, planned
 
-methodology_urls=[{v = "v2025-04-01", link = "/files/methodologies/forest_lands_v2.pdf"}]
+methodology_urls=[{v = "v2025-06-11", link = "/files/methodologies/forest_lands_v2.pdf"}]
 accreditor_image = "/images/earthood.png"
 accreditor_name = "Earthood"
 accreditor_url = "https://www.earthood.com/"

@@ -39,6 +39,7 @@ status_data = [
   {text = "Expert reviewed", date = "03/2025"},
   {text = "Acredited", date = "05/2025"},
   {text = "Updated v2", date = "06/2025"},
+  {text = "Updated v3", date = "06/2025"},
   # {text = "Published", date = "12/2004"},
 ]
 price_url="/files/pricing/forest_lands.pdf"

@@ -1,4 +1,23 @@
 {{ define "main" }}
+
+<head>
+  <meta charset="utf-8">
+  <title>carbontribe.me</title>
+
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Carbontribe - Next-Gen Carbon Finance Powered By AI">
+  <meta property="og:description" content="Carbontribe - AI-powered carbon finance platform for sustainable projects">
+  <meta property="og:image" content="https://carbontribe.me/preview.png">
+  <meta property="og:url" content="https://carbontribe.me">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Carbontribe - Next-Gen Carbon Finance Powered By AI">
+  <meta name="twitter:description" content="Carbontribe - AI-powered carbon finance platform for sustainable projects">
+  <meta name="twitter:image" content="https://carbontribe.me/preview.png">
+</head>
+
 <!-- Hero Section -->
 <section class="section-wrapper section-hero">
   {{ with .Site.Data.home.hero }}{{ partial "sections/hero.html" . }}{{ end }}

@@ -1,7 +1,64 @@
 {{- with .Site.Params.googleAnalytics -}}
-  {{ template "_internal/google_analytics.html" $ }}
+{{ template "_internal/google_analytics.html" $ }}
 {{- end -}}
 
-{{ template "_internal/twitter_cards.html" . }}
-{{ template "_internal/schema.html" . }}
+{{- $title := .Title -}}
+{{- if .IsHome -}}
+  {{- $title = .Site.Params.title -}}
+{{- else if not .Title -}}
+  {{- $title = .Site.Params.title -}}
+{{- end -}}
 
+{{- $description := .Site.Params.description -}}
+{{- if .Description -}}
+  {{- $description = .Description -}}
+{{- else if .Summary -}}
+  {{- $description = .Summary -}}
+{{- end -}}
+
+{{- $image := "" -}}
+{{- if .Params.image -}}
+  {{- $image = .Params.image | absURL -}}
+{{- else if .Params.featured_image -}}
+  {{- $image = .Params.featured_image | absURL -}}
+{{- else if .Site.Params.images -}}
+  {{- $image = index .Site.Params.images 0 | absURL -}}
+{{- else -}}
+  {{- $image = "images/preview.png" | absURL -}}
+{{- end -}}
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:site_name" content="{{ .Site.Params.title }}">
+<meta property="og:locale" content="{{ .Site.LanguageCode }}">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ .Permalink }}">
+<meta property="twitter:title" content="{{ $title }}">
+<meta property="twitter:description" content="{{ $description }}">
+<meta property="twitter:image" content="{{ $image }}">
+
+<!-- Article specific -->
+{{- if .IsPage }}
+{{- if not .PublishDate.IsZero }}
+<meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" }}">
+{{- end }}
+{{- if not .Lastmod.IsZero }}
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}">
+{{- end }}
+{{- with .Params.author }}
+<meta property="article:author" content="{{ . }}">
+{{- end }}
+{{- with .Params.tags }}
+  {{- range . }}
+<meta property="article:tag" content="{{ . }}">
+  {{- end }}
+{{- end }}
+{{- end }}
+
+{{ template "_internal/schema.html" . }}

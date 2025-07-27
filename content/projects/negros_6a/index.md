@@ -46,5 +46,7 @@ price=50
 price_unit="USD/ton"
 
 firestore_item_id="hDCLcnZIfWr9evW8gscW"
+coordinates = [10.908198057374797, 123.05487871170044]
+
 +++
 Mangrove plantations are among the most effective nature-based solutions for carbon dioxide (CO₂) sequestration, playing a crucial role in mitigating climate change. These coastal ecosystems store vast amounts of "blue carbon" in their biomass and waterlogged soils, sequestering up to three to five times more carbon per hectare than terrestrial forests. Mangroves capture CO₂ through their fast-growing root systems, trunks, and foliage, while their unique water-saturated soils lock carbon for centuries by slowing decomposition. Planting and restoring mangroves not only enhances carbon storage but also protects coastlines from erosion, provides critical habitats for marine biodiversity, and supports local livelihoods. However, mangroves are highly vulnerable to deforestation and land-use change, making their conservation and expansion essential for maximizing their climate mitigation potential. Mangrove plantations represent a powerful and sustainable tool for addressing global warming while delivering significant ecological and economic benefits.

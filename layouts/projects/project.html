@@ -204,9 +204,11 @@
                                     <td>
 
                                         {{ if and .link $.Params.firestore_item_id }}
-                                        <a href="https://marketplace.carbontribe.me?item={{ $.Params.firestore_item_id }}"
-                                            class="btn btn-sm btn-outline-primary" target="_blank">
-                                            <i class="fas fa-external-link-alt"></i> as PDF (recommended)
+                                        <button class="btn btn-sm btn-outline-primary open-contact-form-btn" 
+                                            data-project-title="{{ $.Title }}"
+                                            data-project-year="{{ .year }}"
+                                            data-project-type="{{ .type }}">
+                                            <i class="fas fa-file-pdf"></i> as PDF (recommended)
                                             <div class="metric-info">
                                                 <i class="fas fa-info-circle"></i>
                                                 <div class="metric-tooltip">
@@ -216,7 +218,7 @@
                                                     the burned NFT and relevant environmental data.
                                                 </div>
                                             </div>
-                                        </a>
+                                        </button>
 
                                         {{else}}
                                         <span class="badge bg-warning text-dark">Coming Soon</span>
@@ -613,9 +615,39 @@
     }
 
     /* Button spacing in credits table */
-    .credits-table td a.btn {
+    .credits-table td a.btn,
+    .credits-table td button.btn {
         margin-right: 5px;
         margin-bottom: 5px;
+        vertical-align: middle;
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+    
+    /* Ensure consistent button styling */
+    .credits-table td {
+        vertical-align: middle;
+    }
+    
+    /* Fix button and badge alignment in table cells */
+    .credits-table td .badge {
+        display: inline-flex;
+        align-items: center;
+        vertical-align: middle;
+    }
+    
+    /* Fix metric info inside buttons */
+    .credits-table .btn .metric-info {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+    
+    .credits-table .btn .metric-info i {
+        font-size: 14px;
+        line-height: 1;
     }
 
     /* Tooltips in table cells */
@@ -681,6 +713,35 @@
         counters.forEach(counter => {
             const target = parseFloat(counter.textContent);
             animateCounter(counter, target);
+        });
+
+        // Handle PDF button clicks to open contact form
+        const pdfButtons = document.querySelectorAll('.open-contact-form-btn');
+        pdfButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Get project details from data attributes
+                const projectTitle = this.getAttribute('data-project-title');
+                const projectYear = this.getAttribute('data-project-year');
+                const projectType = this.getAttribute('data-project-type');
+                const pageUrl = window.location.href;
+                
+                // Pre-fill message
+                const prefilledMessage = `Hello,\n\nI am interested in purchasing digital assets for the following project:\n\nProject: ${projectTitle}\nYear: ${projectYear}\nType: ${projectType}\nProject URL: ${pageUrl}\n\nPlease provide me with more information about the purchase process and available options.\n\nThank you!`;
+                
+                // Open contact form popup
+                const contactButton = document.getElementById('openPopup');
+                if (contactButton) {
+                    contactButton.click();
+                    
+                    // Wait for popup to open, then pre-fill message
+                    setTimeout(function() {
+                        const messageField = document.getElementById('message');
+                        if (messageField) {
+                            messageField.value = prefilledMessage;
+                        }
+                    }, 100);
+                }
+            });
         });
     });
 </script>

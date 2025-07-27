@@ -25,19 +25,21 @@ impact_kpi = 600
 impact_kpi_type = "co2"
 
 nfts = [
-  { year = "2023", type="Afforestation, Reforestation, and Revegetation (ARR)", link = "" },
-  { year = "2024", type="Afforestation, Reforestation, and Revegetation (ARR)", link = "" },
+  { year = "2023", type="Afforestation, Reforestation, and Revegetation (ARR)", link = "https://opensea.io/item/base/0xe40e6018303f871dec8a6160c26407bb25d9ff47/3" },
+  { year = "2024", type="Afforestation, Reforestation, and Revegetation (ARR)", link = "https://opensea.io/item/base/0xe40e6018303f871dec8a6160c26407bb25d9ff47/2" },
 ]
 
 project_stats_unit = "credit"
-nft_issued = 0
-nft_available = 60
+nft_issued = 60
+nft_available = 600
 nft_retired = 0
 
 price=30
 price_unit="USD/credit"
 
 firestore_item_id="fNnXkERl0WxGDrUCkLbs"
+coordinates = [34.240847505647174, 135.85380613803866]
+
 +++
 
 Our Moretrees - Nara Prefecture Reforestation Project is a collaborative, community-led initiative focused on restoring native broadleaf forests in Japan's Kii Mountain range. This area was historically shaped by forestry, but is now facing ecological and economic decline due to reduced timber demand, aging populations, and increasing wildlife pressure. Many such plantations have been clear-cut and left without viable plans or funding for regeneration.   

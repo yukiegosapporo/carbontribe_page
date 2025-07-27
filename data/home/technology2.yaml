@@ -7,9 +7,9 @@ content:
   - image: "images/tech2.png"
     pretitle: ""
     title: "AI, Science and Web3 powered patent-pending software"
-    text: "Credit AI: Satellite data, computer vision, third-party audited methodologies"
-    text2: "LLM AI: Understands and processes project information"
-    text3: "Credit: Tamper-proof Digital asset on web3 with transparent data"
+    text: "Impact AI Agent: Satellite data, computer vision, third-party audited methodologies"
+    text2: "LLM AI Agent: Understands and processes project information"
+    text3: "Verified Impact Assets: Tamper-proof Digital asset on web3 with transparent data"
     
     # buttons: 
     #   - label: "See live"

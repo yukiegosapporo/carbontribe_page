@@ -31,8 +31,8 @@ nfts = [
 
 project_stats_unit = "credit"
 nft_issued = 60
-nft_available = 600
-nft_retired = 0
+nft_available = 599
+nft_retired = 1
 
 price=30
 price_unit="USD/credit"

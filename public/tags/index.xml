@@ -4,10 +4,108 @@
     <title>Tags on </title>
     <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Carbontribe</title>
+      <link>http://localhost:1313/tags/carbontribe/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/carbontribe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Forest Land</title>
+      <link>http://localhost:1313/tags/forest-land/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/forest-land/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/tags/projects/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Accreditation</title>
+      <link>http://localhost:1313/tags/accreditation/</link>
+      <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/accreditation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Earthood</title>
+      <link>http://localhost:1313/tags/earthood/</link>
+      <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/earthood/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Index</title>
+      <link>http://localhost:1313/tags/index/</link>
+      <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/index/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Report</title>
+      <link>http://localhost:1313/tags/report/</link>
+      <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/report/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nature Tech for Biodiversity Map</title>
+      <link>http://localhost:1313/tags/nature-tech-for-biodiversity-map/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/nature-tech-for-biodiversity-map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NatureTechCollective</title>
+      <link>http://localhost:1313/tags/naturetechcollective/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/naturetechcollective/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ReFi</title>
+      <link>http://localhost:1313/tags/refi/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/refi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web3</title>
+      <link>http://localhost:1313/tags/web3/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/web3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book</title>
+      <link>http://localhost:1313/tags/book/</link>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/book/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>France</title>
+      <link>http://localhost:1313/tags/france/</link>
+      <pubDate>Wed, 19 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/france/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Renewable Energy</title>
+      <link>http://localhost:1313/tags/renewable-energy/</link>
+      <pubDate>Wed, 19 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/renewable-energy/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Blue Carbon</title>
       <link>http://localhost:1313/tags/blue-carbon/</link>
@@ -16,24 +114,38 @@
       <description></description>
     </item>
     <item>
-      <title>Carbontribe</title>
-      <link>http://localhost:1313/tags/carbontribe/</link>
+      <title>Clean Water</title>
+      <link>http://localhost:1313/tags/clean-water/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/carbontribe/</guid>
+      <guid>http://localhost:1313/tags/clean-water/</guid>
       <description></description>
     </item>
     <item>
-      <title>Marine Debris</title>
-      <link>http://localhost:1313/tags/marine-debris/</link>
+      <title>Complete</title>
+      <link>http://localhost:1313/tags/complete/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/marine-debris/</guid>
+      <guid>http://localhost:1313/tags/complete/</guid>
       <description></description>
     </item>
     <item>
-      <title>Projects</title>
-      <link>http://localhost:1313/tags/projects/</link>
+      <title>Mangroves</title>
+      <link>http://localhost:1313/tags/mangroves/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/projects/</guid>
+      <guid>http://localhost:1313/tags/mangroves/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Negros</title>
+      <link>http://localhost:1313/tags/negros/</link>
+      <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/negros/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Philippines</title>
+      <link>http://localhost:1313/tags/philippines/</link>
+      <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/philippines/</guid>
       <description></description>
     </item>
     <item>
@@ -44,24 +156,10 @@
       <description></description>
     </item>
     <item>
-      <title>Renewable Energy</title>
-      <link>http://localhost:1313/tags/renewable-energy/</link>
-      <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/renewable-energy/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Standards</title>
       <link>http://localhost:1313/tags/standards/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/standards/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Index</title>
-      <link>http://localhost:1313/tags/index/</link>
-      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/index/</guid>
       <description></description>
     </item>
     <item>
@@ -90,20 +188,6 @@
       <link>http://localhost:1313/tags/quantum-commodity-intelligence/</link>
       <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/quantum-commodity-intelligence/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ReFi</title>
-      <link>http://localhost:1313/tags/refi/</link>
-      <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/refi/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web3</title>
-      <link>http://localhost:1313/tags/web3/</link>
-      <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/web3/</guid>
       <description></description>
     </item>
     <item>
@@ -163,6 +247,13 @@
       <description></description>
     </item>
     <item>
+      <title>Positiveblockchain</title>
+      <link>http://localhost:1313/tags/positiveblockchain/</link>
+      <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/positiveblockchain/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Ichibiz Awards</title>
       <link>http://localhost:1313/tags/ichibiz-awards/</link>
       <pubDate>Tue, 07 Nov 2023 00:00:00 +0000</pubDate>
@@ -191,10 +282,17 @@
       <description></description>
     </item>
     <item>
-      <title>Positiveblockchain</title>
-      <link>http://localhost:1313/tags/positiveblockchain/</link>
+      <title>Aboutus</title>
+      <link>http://localhost:1313/tags/aboutus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/positiveblockchain/</guid>
+      <guid>http://localhost:1313/tags/aboutus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Base</title>
+      <link>http://localhost:1313/tags/base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/base/</guid>
       <description></description>
     </item>
   </channel>

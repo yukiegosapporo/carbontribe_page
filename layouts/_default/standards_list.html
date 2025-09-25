@@ -1,0 +1,39 @@
+{{ define "main" }}
+<section class="section blog-list py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Left Sidebar -->
+            <aside class="col-12 col-md-3 sidebar">
+                <h4 class="fw-bold text-primary">Standards</h4>
+                <ul class="toc-list">
+                    <li class="parent-item">
+                        <a href="/standards/complete/" class="{{ if or (eq .RelPermalink "/standards/complete/") (hasPrefix .RelPermalink "/standards/complete/") }}active-link{{ end }}">
+                            Complete
+                        </a>
+                    </li>
+                    <li class="parent-item">
+                        <a href="/standards/base/" class="{{ if or (eq .RelPermalink "/standards/base/") (hasPrefix .RelPermalink "/standards/base/") }}active-link{{ end }}">
+                            Base
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- Right Content Area -->
+            <div class="col-12 col-md-9">
+                <!-- <div class="content-area">
+                    <article class="content-section pb-5">
+                        <div class="content-text-book">
+                            <div class="aos-scope">
+                                <div data-aos="fade-up">
+                                    {{ .Content }}
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

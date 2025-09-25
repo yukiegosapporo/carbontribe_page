@@ -4,7 +4,7 @@
     <title>BC100&#43; on </title>
     <link>http://localhost:1313/tags/bc100&#43;/</link>
     <description>Recent content in BC100&#43; on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Nov 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/bc100+/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/post/bc100&#43;-2023/</link>
       <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/bc100&#43;-2023/</guid>
-      <description>https://bc100plus.org/&#xA;Carbontribe Labs is proud to join the BC100+, a global initiative under the High Patronage of H.E. Csaba Körösi, President of the 77th United Nations General Assembly , that aims to convene the blockchain ecosystem to the broader efforts of UN Agencies and global initiatives in support of the UN Charter values and the sustainable development goals (SDGs) by mapping global Blockchain for Sustainability ecosystems.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://bc100plus.org/&#34;&gt;https://bc100plus.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Carbontribe Labs is proud to join the BC100+, a global initiative under the High Patronage of H.E. Csaba Körösi, President of the 77th United Nations General Assembly , that aims to convene the blockchain ecosystem to the broader efforts of UN Agencies and global initiatives in support of the UN Charter values and the sustainable development goals (SDGs) by mapping global Blockchain for Sustainability ecosystems.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

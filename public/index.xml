@@ -4,72 +4,65 @@
     <title></title>
     <link>http://localhost:1313/</link>
     <description>Recent content on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Social Good Certificate</title>
-      <link>http://localhost:1313/book/social_good_certificate/</link>
-      <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/social_good_certificate/</guid>
-      <description>Social Good Certificate 🤝 When you purchase a Carbontribe credit and complete your payment, a new challenge begins: transparently distributing the funds to project developers and local communities.</description>
-    </item>
     <item>
       <title>Introduction</title>
       <link>http://localhost:1313/book/introduction/</link>
       <pubDate>Wed, 01 Jan 1000 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/introduction/</guid>
-      <description>Introduction The Carbontribe Book is your go-to resource for everything related to our mission. Whether you&amp;rsquo;re seeking in-depth guides, project documentation, or key insights into carbon markets, you&amp;rsquo;ll find all the information structured in a clear and accessible way.</description>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The Carbontribe Book is your go-to resource for everything related to our mission. Whether you&amp;rsquo;re seeking in-depth guides, project documentation, or key insights into carbon markets, you&amp;rsquo;ll find all the information structured in a clear and accessible way.&#xA;Use the sidebar to navigate through the content at your own pace and gain a deeper understanding of how you can participate in sustainable impact. 🌱&lt;/p&gt;</description>
     </item>
     <item>
       <title>Core Values</title>
       <link>http://localhost:1313/book/core_values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/core_values/</guid>
-      <description>Carbontribe Core Values Carbontribe is guided by a set of core values that drive our commitment to creating lasting climate solutions.</description>
+      <description>&lt;h1 id=&#34;carbontribe-core-values&#34;&gt;Carbontribe Core Values&lt;/h1&gt;&#xA;&lt;p&gt;Carbontribe is guided by a set of core values that drive our commitment to creating lasting climate solutions. These core values serve as a compass that directs how we design methodologies, collaborate with stakeholders, and measure success. We believe that by adhering to these values, we can deliver transparent and effective outcomes that contribute to global climate goals. 🌎&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to apply</title>
       <link>http://localhost:1313/book/how_to_apply/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/how_to_apply/</guid>
-      <description>How to apply If you&amp;rsquo;re already running a social impact project, such as tree planting, applying to our credit scheme is quick and easy!</description>
+      <description>&lt;h1 id=&#34;how-to-apply&#34;&gt;How to apply&lt;/h1&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re already running a social impact project, such as tree planting, applying to our credit scheme is quick and easy!&lt;br&gt;&#xA;Simply explore our &lt;a href=&#34;https://carbontribe.me/standards/&#34;&gt;standard libraries&lt;/a&gt;, find the one that best fits your project, and click &amp;ldquo;Apply&amp;rdquo; to get started.&lt;br&gt;&#xA;We can&amp;rsquo;t wait to hear from you and support your journey toward a more sustainable future!&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to buy our credits?</title>
       <link>http://localhost:1313/book/how_to_buy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/how_to_buy/</guid>
-      <description>How to buy our credits? You can purchase Carbontribe credits using fiat or cryptocurrency, with flexible delivery options:&#xA;💰 Cryptocurrency – Receive your NFT digital asset directly in your Web3 wallet.</description>
+      <description>&lt;h1 id=&#34;how-to-buy-our-credits&#34;&gt;How to buy our credits?&lt;/h1&gt;&#xA;&lt;p&gt;You can purchase Carbontribe credits using fiat or cryptocurrency, with flexible delivery options:&lt;br&gt;&#xA;💰 &lt;strong&gt;Cryptocurrency&lt;/strong&gt; – Receive your NFT digital asset directly in your Web3 wallet.&lt;br&gt;&#xA;💳 &lt;strong&gt;Fiat (Traditional Payment)&lt;/strong&gt; – Choose to receive your credits as either:&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Problem</title>
       <link>http://localhost:1313/book/problem/</link>
       <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/problem/</guid>
-      <description>The Environmental Crisis The world is facing an unprecedented environmental crisis. Greenhouse gas emissions, primarily carbon dioxide (CO2), are at an all-time high, leading to rising global temperatures and damage to ecosystems.</description>
+      <description>&lt;h1 id=&#34;the-environmental-crisis&#34;&gt;The Environmental Crisis&lt;/h1&gt;&#xA;&lt;p&gt;The world is facing an unprecedented environmental crisis. Greenhouse gas emissions, primarily carbon dioxide (CO2), are at an all-time high, leading to rising global temperatures and damage to ecosystems. Deforestation, industrial pollution, and unsustainable agricultural practices further exacerbate the problem, pushing our planet to its limits.&lt;br&gt;&#xA;Despite international efforts, emissions continue to rise, and the transition to a low-carbon economy is not happening fast enough. Without immediate, effective, and transparent action, we risk irreversible damage to our planet and the well-being of future generations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to make KML file</title>
       <link>http://localhost:1313/book/kml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/kml/</guid>
-      <description>How to create a KML file As part of our monitoring and reporting process, accurate geographic data is critical. A KML (Keyhole Markup Language) file allows us to define the exact locations and boundaries of project sites, including forest plots, agroforestry areas, or reforested zones, directly on a map.</description>
+      <description>&lt;h1 id=&#34;how-to-create-a-kml-file&#34;&gt;How to create a KML file&lt;/h1&gt;&#xA;&lt;p&gt;As part of our monitoring and reporting process, accurate geographic data is critical. A KML (Keyhole Markup Language) file allows us to define the exact locations and boundaries of project sites, including forest plots, agroforestry areas, or reforested zones, directly on a map.&lt;br&gt;&#xA;With a KML file, we can:&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to receive our credits?</title>
       <link>http://localhost:1313/book/how_to_receive_credit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/how_to_receive_credit/</guid>
-      <description>How to receive our credits? You can choose from two formats, each offering transparency and verifiable impact:&#xA;✅ NFT Credit – A tradeable digital asset that can be sold on marketplaces, allowing others to offset their emissions.</description>
+      <description>&lt;h1 id=&#34;how-to-receive-our-credits&#34;&gt;How to receive our credits?&lt;/h1&gt;&#xA;&lt;p&gt;You can choose from two formats, each offering transparency and verifiable impact:&lt;br&gt;&#xA;✅ &lt;strong&gt;NFT Credit&lt;/strong&gt; – A tradeable digital asset that can be sold on marketplaces, allowing others to offset their emissions. This option provides flexibility and market liquidity.&lt;br&gt;&#xA;✅ &lt;strong&gt;PDF Certificate&lt;/strong&gt; – A non-tradable document that includes the hash of a retired NFT, ensuring your carbon offset is permanently recorded and cannot be resold.&lt;br&gt;&#xA;Both formats guarantee authenticity, security, and full traceability in the carbon market. 🌍🔗&lt;/p&gt;</description>
     </item>
     <item>
       <title>Technology</title>
       <link>http://localhost:1313/book/technologies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/technologies/</guid>
-      <description>Carbontribe’s Technology Carbontribe leverages cutting-edge digital technologies to transform carbon sequestration and emissions reduction. Through the integration of satellite imagery, computer vision, machine learning, and blockchain, we provide precise, scalable, and transparent monitoring, reporting, and verification (MRV) for carbon credits.</description>
+      <description>&lt;h1 id=&#34;carbontribes-technology&#34;&gt;Carbontribe’s Technology&lt;/h1&gt;&#xA;&lt;p&gt;Carbontribe leverages cutting-edge digital technologies to transform carbon sequestration and emissions reduction. Through the integration of satellite imagery, computer vision, machine learning, and blockchain, we provide precise, scalable, and transparent monitoring, reporting, and verification (MRV) for carbon credits. This innovative approach ensures accuracy, scalability, and trust in the measurement and management of carbon removal efforts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Our solutions</title>
@@ -83,14 +76,14 @@
       <link>http://localhost:1313/book/financial_flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/financial_flow/</guid>
-      <description>Financial flow In the traditional carbon credit market, project developers often receive only a small fraction of the funds raised from credit sales.</description>
+      <description>&lt;h1 id=&#34;financial-flow&#34;&gt;Financial flow&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/where_does_my_money_go.png&#34; alt=&#34;alt text&#34; title=&#34;where_does_my_money_go&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In the traditional carbon credit market, project developers often receive only a small fraction of the funds raised from credit sales. This is due to multiple layers of intermediaries, each imposing various fees:&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Carbontribe Project Cycle</title>
       <link>http://localhost:1313/book/project_cycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/project_cycle/</guid>
-      <description>The Carbontribe Project Cycle The Carbontribe Project Cycle provides a structured framework for developing and implementing carbon projects, ensuring transparency, credibility, and measurable impact.</description>
+      <description>&lt;h1 id=&#34;the-carbontribe-project-cycle&#34;&gt;The Carbontribe Project Cycle&lt;/h1&gt;&#xA;&lt;p&gt;The Carbontribe Project Cycle provides a structured framework for developing and implementing carbon projects, ensuring transparency, credibility, and measurable impact. The process includes the following key stages:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Methodologies</title>
@@ -104,189 +97,210 @@
       <link>http://localhost:1313/book/what_is_nft/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/what_is_nft/</guid>
-      <description>What is an NFT and why does Carbontribe issue NFT credits? NFTs (Non-Fungible Tokens) are one-of-a-kind digital assets stored on a blockchain, guaranteeing authenticity, ownership, and transparency.</description>
+      <description>&lt;h1 id=&#34;what-is-an-nft-and-why-does-carbontribe-issue-nft-credits&#34;&gt;What is an NFT and why does Carbontribe issue NFT credits?&lt;/h1&gt;&#xA;&lt;p&gt;NFTs (Non-Fungible Tokens) are one-of-a-kind digital assets stored on a blockchain, guaranteeing authenticity, ownership, and transparency. Unlike traditional carbon credits, NFT-based credits are tamper-proof, ensuring that each carbon offset is unique and verifiable, preventing double-counting. By tokenizing digital assets as NFTs, Carbontribe creates a system where carbon offsets can be traded, verified, and retired with ease, making the entire process more efficient and trustworthy.&#xA;Key benefits of Carbontribe’s NFT model:&lt;/p&gt;</description>
     </item>
     <item>
       <title>For Partners</title>
       <link>http://localhost:1313/book/for_partners/</link>
       <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/for_partners/</guid>
-      <description>For Partners At Carbontribe, we unite sustainable innovators, landowners, and investors to transform environmental impact into valuable Carbon Removal Digital Assets (CRDAs) in the form of NFTs.</description>
+      <description>&lt;h2 id=&#34;for-partners&#34;&gt;For Partners&lt;/h2&gt;&#xA;&lt;p&gt;At Carbontribe, we unite sustainable innovators, landowners, and investors to transform environmental impact into valuable Carbon Removal Digital Assets (CRDAs) in the form of NFTs. By leveraging our patent-pending software—powered by advanced AI, scientific methodologies, and web3 technology—we streamline the creation and verification of these assets through a semi-automated process.&lt;br&gt;&#xA;We specialize in a diverse range of sustainability projects, including reforestation, mangrove restoration, renewable energy, agricultural emission reductions, and clean ocean initiatives. Our flexible approach allows partners to participate at various scales, from small-scale contributions to large-scale environmental impact programs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>For Buyers</title>
       <link>http://localhost:1313/book/for_buyers/</link>
       <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/for_buyers/</guid>
-      <description>For Buyers Carbontribe NFTs represent verified Carbon Removal Digital Assets (CRDAs), allowing buyers to participate in the carbon economy with transparency, flexibility, and security.</description>
+      <description>&lt;h2 id=&#34;for-buyers&#34;&gt;For Buyers&lt;/h2&gt;&#xA;&lt;p&gt;Carbontribe NFTs represent verified Carbon Removal Digital Assets (CRDAs), allowing buyers to participate in the carbon economy with transparency, flexibility, and security. Whether for trading, investment, or carbon offsetting, these NFTs provide a unique and efficient way to engage in sustainable impact 🌳.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Plantation project in Tenkawa Village, Nara</title>
+      <link>http://localhost:1313/projects/more_trees_nara/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/more_trees_nara/</guid>
+      <description>&lt;p&gt;Our Moretrees - Nara Prefecture Reforestation Project is a collaborative, community-led initiative focused on restoring native broadleaf forests in Japan&amp;rsquo;s Kii Mountain range. This area was historically shaped by forestry, but is now facing ecological and economic decline due to reduced timber demand, aging populations, and increasing wildlife pressure. Many such plantations have been clear-cut and left without viable plans or funding for regeneration.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>We’re Officially Earthood Certified!</title>
+      <link>http://localhost:1313/post/accredited_2025/</link>
+      <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/accredited_2025/</guid>
+      <description>&lt;h1 id=&#34;were-officially-earthood-certified&#34;&gt;We’re Officially Earthood Certified!&lt;/h1&gt;&#xA;&lt;p&gt;After an extensive and thorough review process, we’re proud to announce that our methodologies have been officially certified by Earthood, a globally recognized independent verification body.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Part of The global Nature Tech for Biodiversity Sector Map, led by Nature Tech Collective</title>
       <link>http://localhost:1313/post/naturetechcollective2025/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/naturetechcollective2025/</guid>
-      <description>We’re thrilled to share that Carbontribe Labs OÜ (Techstars&#39;24) has been featured on the global Nature Tech for Biodiversity Sector Map, led by Nature Tech Collective and Conservation International.</description>
+      <description>&lt;p&gt;We’re thrilled to share that Carbontribe Labs OÜ (Techstars&#39;24) has been featured on the global Nature Tech for Biodiversity Sector Map, led by Nature Tech Collective and Conservation International.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Solar power energy system in hotel, France</title>
       <link>http://localhost:1313/projects/solar_france/</link>
       <pubDate>Wed, 19 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/solar_france/</guid>
-      <description>At the start of the year, intense storms brought record-breaking rainfall and severe flooding to a region in Western Europe, with one major city experiencing its worst flooding in decades.</description>
+      <description>&lt;p&gt;At the start of the year, intense storms brought record-breaking rainfall and severe flooding to a region in Western Europe, with one major city experiencing its worst flooding in decades. Entire communities were affected as rivers overflowed and infrastructure faced significant challenges.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clean Water</title>
-      <link>http://localhost:1313/standards/clean_water/</link>
+      <link>http://localhost:1313/standards/complete/clean_water/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/standards/clean_water/</guid>
-      <description>Ocean debris poses a significant threat to ecosystems, biodiversity, and human livelihoods. Each year, millions of tons of waste, including plastics, metals, and other materials, enter aquatic environments, disrupting marine and freshwater systems.</description>
+      <guid>http://localhost:1313/standards/complete/clean_water/</guid>
+      <description>&lt;p&gt;Ocean debris poses a significant threat to ecosystems, biodiversity, and human livelihoods. Each year, millions of tons of waste, including plastics, metals, and other materials, enter aquatic environments, disrupting marine and freshwater systems. This debris not only harms wildlife through entanglement and ingestion but also contributes to the degradation of habitats and the contamination of water resources. The persistence of these materials in the environment exacerbates global challenges related to pollution, climate change, and ecosystem health.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Forest lands</title>
-      <link>http://localhost:1313/standards/forest_lands/</link>
+      <link>http://localhost:1313/standards/complete/forest_lands/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/standards/forest_lands/</guid>
-      <description>Since the mid-20th century, global forests have faced significant declines due to deforestation, land-use changes, and other human-driven activities. These disturbances have resulted in the loss of vast forested areas, diminishing their ability to act as natural carbon sinks and exacerbating the challenges of climate change.</description>
+      <guid>http://localhost:1313/standards/complete/forest_lands/</guid>
+      <description>&lt;p&gt;Since the mid-20th century, global forests have faced significant declines due to deforestation, land-use changes, and other human-driven activities. These disturbances have resulted in the loss of vast forested areas, diminishing their ability to act as natural carbon sinks and exacerbating the challenges of climate change. Efforts to reverse these trends, particularly through afforestation, reforestation, and revegetation (ARR), offer a practical and impactful strategy for restoring degraded ecosystems and enhancing their carbon sequestration potential. However, the success of ARR projects depends on the careful selection of species, restoration techniques, and the re-establishment of ecological conditions conducive to forest growth.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mangrove plantation in 6a, Negros island</title>
       <link>http://localhost:1313/projects/negros_6a/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/negros_6a/</guid>
-      <description>Mangrove plantations are among the most effective nature-based solutions for carbon dioxide (CO₂) sequestration, playing a crucial role in mitigating climate change.</description>
+      <description>&lt;p&gt;Mangrove plantations are among the most effective nature-based solutions for carbon dioxide (CO₂) sequestration, playing a crucial role in mitigating climate change. These coastal ecosystems store vast amounts of &amp;ldquo;blue carbon&amp;rdquo; in their biomass and waterlogged soils, sequestering up to three to five times more carbon per hectare than terrestrial forests. Mangroves capture CO₂ through their fast-growing root systems, trunks, and foliage, while their unique water-saturated soils lock carbon for centuries by slowing decomposition. Planting and restoring mangroves not only enhances carbon storage but also protects coastlines from erosion, provides critical habitats for marine biodiversity, and supports local livelihoods. However, mangroves are highly vulnerable to deforestation and land-use change, making their conservation and expansion essential for maximizing their climate mitigation potential. Mangrove plantations represent a powerful and sustainable tool for addressing global warming while delivering significant ecological and economic benefits.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mangrove plantation in Belaring, Negros island</title>
       <link>http://localhost:1313/projects/negros_belaring/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/negros_belaring/</guid>
-      <description>Mangrove plantations are among the most effective nature-based solutions for carbon dioxide (CO₂) sequestration, playing a crucial role in mitigating climate change.</description>
+      <description>&lt;p&gt;Mangrove plantations are among the most effective nature-based solutions for carbon dioxide (CO₂) sequestration, playing a crucial role in mitigating climate change. These coastal ecosystems store vast amounts of &amp;ldquo;blue carbon&amp;rdquo; in their biomass and waterlogged soils, sequestering up to three to five times more carbon per hectare than terrestrial forests. Mangroves capture CO₂ through their fast-growing root systems, trunks, and foliage, while their unique water-saturated soils lock carbon for centuries by slowing decomposition. Planting and restoring mangroves not only enhances carbon storage but also protects coastlines from erosion, provides critical habitats for marine biodiversity, and supports local livelihoods. However, mangroves are highly vulnerable to deforestation and land-use change, making their conservation and expansion essential for maximizing their climate mitigation potential. Mangrove plantations represent a powerful and sustainable tool for addressing global warming while delivering significant ecological and economic benefits.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mangrove plantation in Bocana, Negros island</title>
       <link>http://localhost:1313/projects/negros_bocana/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/negros_bocana/</guid>
-      <description>Mangrove plantations are among the most effective nature-based solutions for carbon dioxide (CO₂) sequestration, playing a crucial role in mitigating climate change.</description>
+      <description>&lt;p&gt;Mangrove plantations are among the most effective nature-based solutions for carbon dioxide (CO₂) sequestration, playing a crucial role in mitigating climate change. These coastal ecosystems store vast amounts of &amp;ldquo;blue carbon&amp;rdquo; in their biomass and waterlogged soils, sequestering up to three to five times more carbon per hectare than terrestrial forests. Mangroves capture CO₂ through their fast-growing root systems, trunks, and foliage, while their unique water-saturated soils lock carbon for centuries by slowing decomposition. Planting and restoring mangroves not only enhances carbon storage but also protects coastlines from erosion, provides critical habitats for marine biodiversity, and supports local livelihoods. However, mangroves are highly vulnerable to deforestation and land-use change, making their conservation and expansion essential for maximizing their climate mitigation potential. Mangrove plantations represent a powerful and sustainable tool for addressing global warming while delivering significant ecological and economic benefits.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mangrove plantation in Tortosa, Negros island</title>
       <link>http://localhost:1313/projects/negros_tortosa/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/negros_tortosa/</guid>
-      <description>Mangrove plantations are among the most effective nature-based solutions for carbon dioxide (CO₂) sequestration, playing a crucial role in mitigating climate change.</description>
+      <description>&lt;p&gt;Mangrove plantations are among the most effective nature-based solutions for carbon dioxide (CO₂) sequestration, playing a crucial role in mitigating climate change. These coastal ecosystems store vast amounts of &amp;ldquo;blue carbon&amp;rdquo; in their biomass and waterlogged soils, sequestering up to three to five times more carbon per hectare than terrestrial forests. Mangroves capture CO₂ through their fast-growing root systems, trunks, and foliage, while their unique water-saturated soils lock carbon for centuries by slowing decomposition. Planting and restoring mangroves not only enhances carbon storage but also protects coastlines from erosion, provides critical habitats for marine biodiversity, and supports local livelihoods. However, mangroves are highly vulnerable to deforestation and land-use change, making their conservation and expansion essential for maximizing their climate mitigation potential. Mangrove plantations represent a powerful and sustainable tool for addressing global warming while delivering significant ecological and economic benefits.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mangroves</title>
-      <link>http://localhost:1313/standards/mangroves/</link>
+      <link>http://localhost:1313/standards/complete/mangroves/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/standards/mangroves/</guid>
-      <description>Since the 1980s, global mangrove ecosystems have experienced significant declines, primarily driven by human activities such as deforestation, the expansion of aquaculture, and the extraction of soil for coastal development.</description>
+      <guid>http://localhost:1313/standards/complete/mangroves/</guid>
+      <description>&lt;p&gt;Since the 1980s, global mangrove ecosystems have experienced significant declines, primarily driven by human activities such as deforestation, the expansion of aquaculture, and the extraction of soil for coastal development. These activities have resulted in substantial loss of mangrove areas, reducing their ability to serve as vital carbon sinks. Efforts to restore these coastal wetlands, including mangrove revegetation, offer a promising avenue to counteract these losses. The success of such restoration initiatives, however, depends on the re-establishment of the original environmental conditions necessary for mangrove growth.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Marine Debris Collection &amp; Responsible Processing, Kagawa</title>
       <link>http://localhost:1313/projects/clean_ocean_ensemble_process/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/clean_ocean_ensemble_process/</guid>
-      <description>Clean Ocean Ensemble is a Japanese nonprofit organization. They develops collection technologies and uses AI-powered tools. By recording data on collected debris through a smartphone app and web maps, Clean Ocean Ensemble visualizes and quantifies cleanup efforts on web maps, improving efficiency and promoting recycling.</description>
+      <description>&lt;p&gt;Clean Ocean Ensemble is a Japanese nonprofit organization. They develops collection technologies and uses AI-powered tools. By recording data on collected debris through a smartphone app and web maps,  Clean Ocean Ensemble visualizes and quantifies cleanup efforts on web maps, improving efficiency and promoting recycling. One of their key activities is the collection of marine debris along the picturesque Tao coast of Shodoshima, located in Kagawa Prefecture, Japan. This region, known for its natural beauty, has faced increasing challenges due to the accumulation of marine litter, a pressing global issue that threatens both marine ecosystems and coastal livelihoods.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Marine Debris Collection &amp; Sustainable Recycling, Kagawa</title>
       <link>http://localhost:1313/projects/clean_ocean_ensemble_recycle/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/clean_ocean_ensemble_recycle/</guid>
-      <description>Clean Ocean Ensemble is a Japanese nonprofit organization. They develops collection technologies and uses AI-powered tools. By recording data on collected debris through a smartphone app and web maps, Clean Ocean Ensemble visualizes and quantifies cleanup efforts on web maps, improving efficiency and promoting recycling.</description>
+      <description>&lt;p&gt;Clean Ocean Ensemble is a Japanese nonprofit organization. They develops collection technologies and uses AI-powered tools. By recording data on collected debris through a smartphone app and web maps,  Clean Ocean Ensemble visualizes and quantifies cleanup efforts on web maps, improving efficiency and promoting recycling. One of their key activities is the collection of marine debris along the picturesque Tao coast of Shodoshima, located in Kagawa Prefecture, Japan. This region, known for its natural beauty, has faced increasing challenges due to the accumulation of marine litter, a pressing global issue that threatens both marine ecosystems and coastal livelihoods.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Regenerative Agriculture</title>
-      <link>http://localhost:1313/standards/regen_agriculture/</link>
+      <link>http://localhost:1313/standards/complete/regen_agriculture/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/standards/regen_agriculture/</guid>
-      <description>Nitrogen-based fertilizers are vital for modern agriculture but pose significant environmental challenges, particularly through the emission of nitrous oxide (N₂O), a greenhouse gas with a global warming potential 300 times that of carbon dioxide over a century.</description>
+      <guid>http://localhost:1313/standards/complete/regen_agriculture/</guid>
+      <description>&lt;p&gt;Nitrogen-based fertilizers are vital for modern agriculture but pose significant environmental challenges, particularly through the emission of nitrous oxide (N₂O), a greenhouse gas with a global warming potential 300 times that of carbon dioxide over a century. Overuse of these fertilizers not only exacerbates N₂O emissions but also degrades soil health and disrupts ecosystems. Reducing their application presents a critical opportunity to mitigate climate change while fostering sustainable agricultural practices.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Renewable Energy</title>
-      <link>http://localhost:1313/standards/renewable_energy/</link>
+      <link>http://localhost:1313/standards/complete/renewable_energy/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/standards/renewable_energy/</guid>
-      <description>Renewable energy is a cornerstone of global efforts to combat climate change and transition to a sustainable future. By replacing fossil fuel-based power generation, renewable energy sources such as solar, wind, and hydroelectric power dramatically reduce greenhouse gas emissions, particularly carbon dioxide (CO₂), which is the leading driver of global warming.</description>
+      <guid>http://localhost:1313/standards/complete/renewable_energy/</guid>
+      <description>&lt;p&gt;Renewable energy is a cornerstone of global efforts to combat climate change and transition to a sustainable future. By replacing fossil fuel-based power generation, renewable energy sources such as solar, wind, and hydroelectric power dramatically reduce greenhouse gas emissions, particularly carbon dioxide (CO₂), which is the leading driver of global warming. In addition to mitigating climate impacts, renewable energy enhances energy security and fosters economic growth by creating resilient, decentralized energy systems.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Carbontribe Labs joining Techstars Paris!</title>
       <link>http://localhost:1313/post/techstars_paris_2024/</link>
       <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/techstars_paris_2024/</guid>
-      <description>Great news!&#xA;We are thrilled to announce that Carbontribe Labs OÜ has been selected to join the Techstars Sustainability Paris! 🎉 Thank you to everyone who has supported us on this journey so far, and we look forward to the exciting challenges and opportunities ahead!</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/posts/paris-techstars-accelerator_sustainability-techstarssustainabilityparis-activity-7239144925844385792-wS5a?utm_source=share&amp;amp;utm_medium=member_desktop&#34;&gt;Great news!&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;We are thrilled to announce that &lt;a href=&#34;https://www.linkedin.com/company/carbontribe/posts/?feedView=all&#34;&gt;Carbontribe Labs OÜ&lt;/a&gt; has been selected to join the &lt;a href=&#34;https://www.linkedin.com/company/paris-techstars-accelerator/posts/?feedView=all&#34;&gt;Techstars Sustainability Paris&lt;/a&gt;! 🎉&#xA;Thank you to everyone who has supported us on this journey so far, and we look forward to the exciting challenges and opportunities ahead! 🚀&#xA;hashtag#Techstars hashtag#Sustainability hashtag#CarbontribeLabs hashtag#Paris&lt;/p&gt;</description>
     </item>
     <item>
       <title>Carbontribe featured in Quantum Commodity Intelligence</title>
       <link>http://localhost:1313/post/quantum_commodity_intelligence/</link>
       <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/quantum_commodity_intelligence/</guid>
-      <description>https://www.qcintel.com/carbon/article/singapore-japan-jv-invests-in-digital-mrv-blockchain-start-up-22014.html&#xA;Quantum Commodity Intelligence, a leading carbon media featured the strategic partnership and collaboration between Carbontribe Labs and Greenway Grid Global ( a TEPCO JV / CVC).</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qcintel.com/carbon/article/singapore-japan-jv-invests-in-digital-mrv-blockchain-start-up-22014.html&#34;&gt;https://www.qcintel.com/carbon/article/singapore-japan-jv-invests-in-digital-mrv-blockchain-start-up-22014.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Quantum Commodity Intelligence, a leading carbon media featured the strategic partnership and collaboration between Carbontribe Labs and Greenway Grid Global ( a TEPCO JV / CVC). Check out the article for insights into our joint efforts!&#xA;🚀🌿📰 #Carbontokenization #Carbontribe #dMRV #ReFi&lt;/p&gt;</description>
     </item>
     <item>
       <title>Carbontribe Labs has received strategic investment from Greenway Grid Global</title>
       <link>http://localhost:1313/post/ggg_fund_2024/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/ggg_fund_2024/</guid>
-      <description>https://prtimes.jp/main/html/rd/p/000000003.000132024.html&#xA;Exciting News! 🌿🌍 Thrilled to announce that Carbontribe Labs has received strategic investment from Greenway Grid Global (a TEPCO group CVC, the 4th largest utility power company globally).</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://prtimes.jp/main/html/rd/p/000000003.000132024.html&#34;&gt;https://prtimes.jp/main/html/rd/p/000000003.000132024.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Exciting News! 🌿🌍&#xA;Thrilled to announce that Carbontribe Labs has received strategic investment from Greenway Grid Global (a TEPCO group CVC, the 4th largest utility power company globally). We&amp;rsquo;re partnering to conduct forest analysis PoC in Southeast Asia, specifically in Indonesia and Vietnam, using Carbontribe&amp;rsquo;s technology for extensive analysis covering over 100,000 hectares. Together, we aim to achieve high-quality, transparent carbon credit generation through computer vision analysis for Regenerative Economy. Stay tuned for our environmental impact! 🌳💚&#xA;#Sustainability #GreenTech #CarbonCredit&lt;/p&gt;</description>
     </item>
     <item>
       <title>Carbontribe Labs OÜ is selected for TechFounders&#39; 19th batch</title>
       <link>http://localhost:1313/post/tech-founders-2024-2/</link>
       <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/tech-founders-2024-2/</guid>
-      <description>Carbontribe Labs OÜ has been selected for TechFounders&amp;rsquo; 19th batch with startups across EU and the US, starting from this week.</description>
+      <description>&lt;p&gt;Carbontribe Labs OÜ has been selected for TechFounders&amp;rsquo; 19th batch with startups across EU and the US, starting from this week. In collaboration with Technical University of Munich we aim to accelerate PoC for our computer vision technology and carbon credit generation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>TechFounders welcomes 12 pioneering start-ups to their newest cohort</title>
       <link>http://localhost:1313/post/tech-founders-2024-1/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/tech-founders-2024-1/</guid>
-      <description>https://www.linkedin.com/posts/techfounders_startups-founders-startupaccelerator-activity-7155189887900565505-BfBY?utm_source=share&amp;amp;utm_medium=member_desktop&#xA;Carbontribe Labs OÜ has been selected for TechFounders&amp;rsquo; 19th batch with 11 rising startups across EU and the US, starting from this week.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/posts/techfounders_startups-founders-startupaccelerator-activity-7155189887900565505-BfBY?utm_source=share&amp;amp;utm_medium=member_desktop&#34;&gt;https://www.linkedin.com/posts/techfounders_startups-founders-startupaccelerator-activity-7155189887900565505-BfBY?utm_source=share&amp;amp;utm_medium=member_desktop&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Carbontribe Labs OÜ has been selected for TechFounders&amp;rsquo; 19th batch with 11 rising startups across EU and the US, starting from this week. Through this five-month acceleration program, in collaboration with UnternehmerTUM, Technical University of Munich we aim to accelerate Proof of Concept (PoC) for our computer vision technology and carbon credit generation now with European energy and utility companies. 🚀 hashtag#Techfounders hashtag#CarbontribeLabs hashtag#unternehmertum&lt;/p&gt;</description>
     </item>
     <item>
       <title>Carbontribe speak at the DeImp23</title>
       <link>http://localhost:1313/post/deimp-2023/</link>
       <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/deimp-2023/</guid>
-      <description>&amp;ldquo;Happy to speak at the hashtag#DeImp23 on the topic of ReFi Firechat. The event will bring various projects leveraging web3 technologies in the fields of Regenerative Finance, Climate, Supply Chain, DeSci, Defi/UBI and more!</description>
+      <description>&lt;p&gt;&amp;ldquo;Happy to speak at the hashtag#DeImp23 on the topic of ReFi Firechat. The event will bring various projects leveraging web3 technologies in the fields of Regenerative Finance, Climate, Supply Chain, DeSci, Defi/UBI and more!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Carbontribe selected as the most exciting project of 2024 in the ReFi</title>
       <link>http://localhost:1313/post/inatba-2023/</link>
       <pubDate>Sat, 30 Dec 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/inatba-2023/</guid>
-      <description>https://www.linkedin.com/posts/inatba_inatba-inatbaawards-dlt-activity-7141381390679359488-ZFhX?utm_source=share&amp;amp;utm_medium=member_desktop&#xA;Thrilled to share that we&amp;rsquo;ve been nominated for the most exciting project of 2024 in the ReFi category at the INATBA Awards!</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/posts/inatba_inatba-inatbaawards-dlt-activity-7141381390679359488-ZFhX?utm_source=share&amp;amp;utm_medium=member_desktop&#34;&gt;https://www.linkedin.com/posts/inatba_inatba-inatbaawards-dlt-activity-7141381390679359488-ZFhX?utm_source=share&amp;amp;utm_medium=member_desktop&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Thrilled to share that we&amp;rsquo;ve been nominated for the most exciting project of 2024 in the ReFi category at the INATBA Awards! 🚀 hashtag#INATBAAwards hashtag#ReFi&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Carbontribe as one of top 50 blockchain companies for good</title>
+      <link>http://localhost:1313/post/berlin-top-blockchain-companies-for-good-2023/</link>
+      <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/berlin-top-blockchain-companies-for-good-2023/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/posts/positiveblockchain-io_blockchain-berlinstartups-berlin-activity-7127187866408890368-UWOO?utm_source=share&amp;amp;utm_medium=member_desktop&#34;&gt;https://www.linkedin.com/posts/positiveblockchain-io_blockchain-berlinstartups-berlin-activity-7127187866408890368-UWOO?utm_source=share&amp;amp;utm_medium=member_desktop&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;🌍✨ Carbontribe is gearing up for participation in Decentralised Impact Berlin on December 8th. Stay tuned for insights into our journey towards a sustainable future! hashtag#Carbontribe hashtag#DecentralisedImpact hashtag#SustainabilityLeadership&lt;/p&gt;</description>
     </item>
     <item>
       <title>Carbontribe Labs joining the BC100&#43;</title>
       <link>http://localhost:1313/post/bc100&#43;-2023/</link>
       <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/bc100&#43;-2023/</guid>
-      <description>https://bc100plus.org/&#xA;Carbontribe Labs is proud to join the BC100+, a global initiative under the High Patronage of H.E. Csaba Körösi, President of the 77th United Nations General Assembly , that aims to convene the blockchain ecosystem to the broader efforts of UN Agencies and global initiatives in support of the UN Charter values and the sustainable development goals (SDGs) by mapping global Blockchain for Sustainability ecosystems.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://bc100plus.org/&#34;&gt;https://bc100plus.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Carbontribe Labs is proud to join the BC100+, a global initiative under the High Patronage of H.E. Csaba Körösi, President of the 77th United Nations General Assembly , that aims to convene the blockchain ecosystem to the broader efforts of UN Agencies and global initiatives in support of the UN Charter values and the sustainable development goals (SDGs) by mapping global Blockchain for Sustainability ecosystems.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Carbontribe Labs, developer of a carbon credit generation AI tool, awarded the Decarbonization Division Prize at the Ichibiz Awards hosted by the Japan&#39;s Cabinet Office</title>
       <link>http://localhost:1313/post/ichi-biz-award-2023/</link>
       <pubDate>Tue, 07 Nov 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/ichi-biz-award-2023/</guid>
-      <description>https://prtimes.jp/main/html/rd/p/000000001.000132024.html&#xA;Thrilled to announce that Carbontribe clinched the Decarbonization Award at the &amp;ldquo;IchiBiz Award,&amp;rdquo; a business contest organized by the Cabinet Office of Japan🇯🇵, harnessing geospatial information.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://prtimes.jp/main/html/rd/p/000000001.000132024.html&#34;&gt;https://prtimes.jp/main/html/rd/p/000000001.000132024.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Thrilled to announce that Carbontribe clinched the Decarbonization Award at the &amp;ldquo;IchiBiz Award,&amp;rdquo; a business contest organized by the Cabinet Office of Japan🇯🇵, harnessing geospatial information. 🏆🌱 Our commitment to carbon neutrality is gaining recognition! hashtag#Carbontribe hashtag#IchiBizAward hashtag#DecarbonizationLeadership&lt;/p&gt;</description>
     </item>
     <item>
       <title>Carbontribe featured as a dMRV leader</title>
       <link>http://localhost:1313/post/dmrv-leader/</link>
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/dmrv-leader/</guid>
-      <description>While dMRV is a relatively new concept, it has garnered substantial attention in the market as an effective method for precise carbon credit generation and monitoring, along with faithfully replicating the value of ReFi tokens.</description>
+      <description>&lt;p&gt;While dMRV is a relatively new concept, it has garnered substantial attention in the market as an effective method for precise carbon credit generation and monitoring, along with faithfully replicating the value of ReFi tokens. Carbontribe Labs is also featured in the article. Learn more in the article:&#xA;&lt;a href=&#34;https://www.linkedin.com/pulse/dmrv-revolutionizing-carbon-credit-tokenization-mahsa-doorfard-dtfse%3FtrackingId=eqDwCZdcHxGcuVo%252Ftw3O7Q%253D%253D/?trackingId=eqDwCZdcHxGcuVo%2Ftw3O7Q%3D%3D&#34;&gt;https://www.linkedin.com/pulse/dmrv-revolutionizing-carbon-credit-tokenization-mahsa-doorfard-dtfse%3FtrackingId=eqDwCZdcHxGcuVo%252Ftw3O7Q%253D%253D/?trackingId=eqDwCZdcHxGcuVo%2Ftw3O7Q%3D%3D&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Carbontribe Labs speaking at AIAI Berlin Computer Vision summit 2023</title>
       <link>http://localhost:1313/post/aiai-2023/</link>
       <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/aiai-2023/</guid>
-      <description>https://world.aiacceleratorinstitute.com/location/berlin&#xA;Carbontribe Labs will be speaking at AIAI Berlin Computer Vision summit 2023 next week!&#xA;Join me in-person as the leading innovators from across the European ecosystem unite for the co-located Computer Vision Summit &amp;amp; Generative AI Summit.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://world.aiacceleratorinstitute.com/location/berlin&#34;&gt;https://world.aiacceleratorinstitute.com/location/berlin&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Carbontribe Labs will be speaking at AIAI Berlin Computer Vision summit 2023 next week!&lt;/p&gt;&#xA;&lt;p&gt;Join me in-person as the leading innovators from across the European ecosystem unite for the co-located Computer Vision Summit &amp;amp; Generative AI Summit.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -296,11 +310,11 @@
       <description></description>
     </item>
     <item>
-      <title>Carbontribe as one of top 50 blockchain companies for good</title>
-      <link>http://localhost:1313/post/berlin-top-blockchain-companies-for-good-2023/</link>
+      <title></title>
+      <link>http://localhost:1313/book/social_good_certificate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/berlin-top-blockchain-companies-for-good-2023/</guid>
-      <description>https://www.linkedin.com/posts/positiveblockchain-io_blockchain-berlinstartups-berlin-activity-7127187866408890368-UWOO?utm_source=share&amp;amp;utm_medium=member_desktop&#xA;🌍✨ Carbontribe is gearing up for participation in Decentralised Impact Berlin on December 8th. Stay tuned for insights into our journey towards a sustainable future!</description>
+      <guid>http://localhost:1313/book/social_good_certificate/</guid>
+      <description>&lt;!-- +++&#xA;author = &#34;Carbontribe&#34;&#xA;layout = &#34;book_single&#34;&#xA;title = &#34;Social Good Certificate&#34;&#xA;date = &#34;2025-02-21&#34;&#xA;weight = 1&#xA;parent = &#34;methodologies&#34;&#xA;+++&#xA;&#xA;# Social Good Certificate 🤝&#xA;&#xA;When you purchase a Carbontribe credit and complete your payment, a new challenge begins: transparently distributing the funds to project developers and local communities.&#xA;&#xA;![alt text](/images/sgcert1.png &#34;sgcert1&#34;)&#xA;&#xA;&#xA;&#xA;We track the money flow, and upon a successful transfer, we issue a Social Good Certificate, powered by NFT technology. This certificate securely stores transaction data with signatures from both ends, ensuring full transparency.&#xA;&#xA;![alt text](/images/sgcert2.png &#34;sgcert1&#34;)&#xA;&#xA;&#xA;As a buyer, you receive both the original Carbontribe credit and the Social Good Certificate, verifying your contribution to environmental and social impact.&#xA;&#xA;![alt text](/images/sgcert3.png &#34;sgcert1&#34;) --&gt;</description>
     </item>
   </channel>
 </rss>

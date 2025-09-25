@@ -4,7 +4,7 @@
     <title>DeImp23 on </title>
     <link>http://localhost:1313/tags/deimp23/</link>
     <description>Recent content in DeImp23 on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/deimp23/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/post/deimp-2023/</link>
       <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/deimp-2023/</guid>
-      <description>&amp;ldquo;Happy to speak at the hashtag#DeImp23 on the topic of ReFi Firechat. The event will bring various projects leveraging web3 technologies in the fields of Regenerative Finance, Climate, Supply Chain, DeSci, Defi/UBI and more!</description>
+      <description>&lt;p&gt;&amp;ldquo;Happy to speak at the hashtag#DeImp23 on the topic of ReFi Firechat. The event will bring various projects leveraging web3 technologies in the fields of Regenerative Finance, Climate, Supply Chain, DeSci, Defi/UBI and more!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

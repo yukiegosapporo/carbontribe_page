@@ -6,6 +6,7 @@ category="Clean Water"
 layout = "standard"
 description = "Clean Water"
 featured_image = "/images/standards/clean_water/clean_water.png"
+aliases = ["/standards/clean_water/"]
 tags = [
     "Clean Water",
     "Carbontribe",
@@ -19,6 +20,7 @@ developer_image = "/images/standards/clean_water/logo.png"
 
 hashtags = ["Clean Water", "Object detection", "Computer vision"]
 status="peer reviewed"
+standard_type = "complete"
 # published, planned
 
 methodology_urls=[{v = "v2025-03-01", link = "/files/methodologies/clean_water.pdf"}]

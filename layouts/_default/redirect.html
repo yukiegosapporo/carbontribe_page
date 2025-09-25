@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="0; url={{ .Params.redirect_to }}">
+    <script>
+        window.location.replace("{{ .Params.redirect_to }}");
+    </script>
+</head>
+<body>
+    <p>Redirecting to <a href="{{ .Params.redirect_to }}">{{ .Params.redirect_to }}</a>...</p>
+</body>
+</html>

@@ -6,6 +6,7 @@ category="Regenerative Agriculture"
 layout = "standard"
 description = "Regenerative Agriculture"
 featured_image = "images/standards/regen_agriculture/regen_agriculture.png"
+aliases = ["/standards/regen_agriculture/"]
 tags = [
     "Regenerative Agriculture",
     "Carbontribe",
@@ -21,6 +22,7 @@ hashtags = ["Regenerative Agriculture", "Object detection", "Computer vision", "
 status="review"
 # published, planned
 review_method="Third party review"
+standard_type = "complete"
 methodology_urls=[{v = "v2025-04-01", link = "/files/methodologies/regen_agriculture.pdf"}]
 accreditor_image = "/images/earthood.png"
 accreditor_name = "Earthood"

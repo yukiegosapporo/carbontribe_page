@@ -6,6 +6,7 @@ category="forest_land"
 layout = "standard"
 description = "Forest lands"
 featured_image = "images/hector-mavare-cqTNuxAqaJI-unsplash.png"
+aliases = ["/standards/forest_lands/"]
 tags = [
     "Blue Carbon",
     "Carbontribe",
@@ -21,6 +22,7 @@ developer_url = "https://carbontribe.me/"
 hashtags = ["Afforestation", "Forest lands", "Remote sensing", "Computer vision", "Satellite data", "IPCC compliant"]
 status="review"
 review_method="Third party review"
+standard_type = "complete"
 # published, planned
 
 methodology_urls=[{v = "v2025-06-19", link = "/files/methodologies/forest_lands_v3.pdf"}]

@@ -6,6 +6,7 @@ category="mangrove"
 layout = "standard"
 description = "Mangroves"
 featured_image = "images/mangroves.png"
+aliases = ["/standards/mangroves/"]
 tags = [
     "Blue Carbon",
     "Carbontribe",
@@ -21,6 +22,7 @@ hashtags = ["Afforestation", "Mangrove", "Remote sensing", "Computer vision", "S
 status="review"
 # published, planned
 review_method="Third party review"
+standard_type = "complete"
 
 methodology_urls=[{v = "v2025-04-01", link = "/files/methodologies/mangroves.pdf"}]
 accreditor_image = "/images/earthood.png"

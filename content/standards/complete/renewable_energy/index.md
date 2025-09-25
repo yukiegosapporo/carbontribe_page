@@ -6,6 +6,7 @@ category="Renewable Energy"
 layout = "standard"
 description = "Renewable Energy"
 featured_image = "images/standards/renewable/renewable.png"
+aliases = ["/standards/renewable_energy/"]
 tags = [
     "Renewable Energy",
     "Carbontribe",
@@ -20,6 +21,7 @@ developer_image = "/images/standards/renewable/logo.png"
 hashtags = ["Renewable Energy", "Object detection", "Computer vision"]
 status="review"
 # published, planned
+standard_type = "complete"
 
 methodology_url="https://carbontribe.me/"
 status_data = [

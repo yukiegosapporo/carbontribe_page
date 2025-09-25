@@ -18,6 +18,20 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   {{ $animations := resources.Get "js/animations.js" }}
   <script src="{{ $animations.Permalink }}"></script>
+  
+  <!-- PWA Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function(registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      });
+    }
+  </script>
 </body>
 
 </html>

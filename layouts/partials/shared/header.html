@@ -31,7 +31,11 @@
         {{ else }}
         <!-- Regular Menu Item -->
         <li class="nav-item" id="header-item">
-          <a class="nav-link px-4 fw-medium {{ if or (eq .URL $.RelPermalink) (and (hasPrefix $.RelPermalink .URL) (ne .URL "/")) }}active fw-bold text-primary{{ else }}text-primary{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+          {{ if eq .Name "News" }}
+          <a class="nav-link px-4 fw-medium text-primary" href="https://carbontribelabs.medium.com/" target="_blank" rel="noopener">{{ .Name }}</a>
+          {{ else }}
+          <a class="nav-link px-4 fw-medium {{ if or (eq .URL $.RelPermalink) (and (hasPrefix $.RelPermalink .URL) (ne .URL "/")) }}active fw-bold text-primary{{ else }}text-primary{{ end }}" href="{{ .URL }}"{{ if or (hasPrefix .URL "http://") (hasPrefix .URL "https://") }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
+          {{ end }}
         </li>
         {{ end }}
         {{ end }}

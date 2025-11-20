@@ -5,7 +5,7 @@ content:
   title: "Latest News"
   buttonPrimary:
     label: "Read more news"
-    url: "#"
+    url: "https://carbontribelabs.medium.com/"
   items:
     - "images/ggg.png"
     - "images/tepco.png"

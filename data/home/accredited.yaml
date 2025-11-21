@@ -8,9 +8,9 @@ content:
     pretitle: ""
     title: "Our methodologies have been officially certified by Earthood"
     text: "This certification validates the scientific rigor and real-world impact of our work across:"
-    text2: "- 🌱 Green forest restoration"
-    text3: "- 🌊 Mangrove regeneration"
-    text4: "- 🌾 Agricultural emissions reduction"
+    text2: "Green forest restoration"
+    text3: "Mangrove regeneration"
+    text4: "Agricultural emissions reduction"
     buttons: 
       - label: "See accreditation report"
         url: "/files/accreditation/report.pdf"

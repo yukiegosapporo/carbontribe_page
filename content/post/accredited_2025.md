@@ -18,11 +18,11 @@ After an extensive and thorough review process, we’re proud to announce that o
 
 This certification validates the scientific rigor and real-world impact of our work across:
 
-🌱 Green forest restoration
+Green forest restoration
 
-🌊 Mangrove regeneration
+Mangrove regeneration
 
-🌾 Agricultural emissions reduction
+Agricultural emissions reduction
 
 In addition to the approval of these individual methodologies, we’re especially proud that our Common Methodology, the foundation for all our work, has also been reviewed and approved. This core document outlines our unified approach to data collection, validation, and impact tracking across all ecosystems and project types.
 

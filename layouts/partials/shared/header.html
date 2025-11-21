@@ -100,61 +100,6 @@
   });
 </script>
 
-<!-- CSS for Smooth Hover Effect -->
-<style>
-  .dropdown-menu {
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    margin-top: 0.5rem !important;
-    pointer-events: none;
-  }
-
-  .dropdown-menu.show {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(5px);
-    pointer-events: auto;
-  }
-
-  #site-header {
-    transition: all 0.3s ease-in-out;
-  }
-
-  #site-header.scrolled {
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08) !important;
-  }
-
-  #header-item {
-    position: relative;
-    transition: all 0.3s ease;
-  }
-
-  #header-item:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: #94b884;
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
-  }
-
-  #header-item:hover:after {
-    width: 70%;
-  }
-
-  #header-item:hover {
-    transform: translateY(-3px);
-  }
-</style>
 
 <!-- Header Scroll Effect -->
 <script>
